@@ -1,0 +1,139 @@
+mundial,tipo_premio,jugador_o_seleccion,url_jugador,url,fecha_scraping
+2026,Balón de Oro,-,,https://www.losmundialesdefutbol.com/mundiales/2026_premios.php,2026-03-16T22:25:34.453098
+2026,Balón de Plata,-,,https://www.losmundialesdefutbol.com/mundiales/2026_premios.php,2026-03-16T22:25:34.453098
+2026,Balón de Bronce,-,,https://www.losmundialesdefutbol.com/mundiales/2026_premios.php,2026-03-16T22:25:34.453098
+2026,Botín de Oro,-,,https://www.losmundialesdefutbol.com/mundiales/2026_premios.php,2026-03-16T22:25:34.453098
+2026,Botín de Plata,-,,https://www.losmundialesdefutbol.com/mundiales/2026_premios.php,2026-03-16T22:25:34.453098
+2026,Botín de Bronce,-,,https://www.losmundialesdefutbol.com/mundiales/2026_premios.php,2026-03-16T22:25:34.453098
+2022,Balón de Oro,Lionel Messi,../jugadores/lionel_messi.php,https://www.losmundialesdefutbol.com/mundiales/2022_premios.php,2026-03-16T22:25:36.197287
+2022,Balón de Plata,Kylian Mbappé,../jugadores/kylian_mbappe.php,https://www.losmundialesdefutbol.com/mundiales/2022_premios.php,2026-03-16T22:25:36.197287
+2022,Balón de Bronce,Luka Modric,../jugadores/luka_modric.php,https://www.losmundialesdefutbol.com/mundiales/2022_premios.php,2026-03-16T22:25:36.197287
+2022,Botín de Oro,Kylian Mbappé,../jugadores/kylian_mbappe.php,https://www.losmundialesdefutbol.com/mundiales/2022_premios.php,2026-03-16T22:25:36.197287
+2022,Botín de Plata,Lionel Messi,../jugadores/lionel_messi.php,https://www.losmundialesdefutbol.com/mundiales/2022_premios.php,2026-03-16T22:25:36.197287
+2022,Botín de Bronce,Olivier Giroud,../jugadores/olivier_giroud.php,https://www.losmundialesdefutbol.com/mundiales/2022_premios.php,2026-03-16T22:25:36.197287
+2018,Balón de Oro,Luka Modric,../jugadores/luka_modric.php,https://www.losmundialesdefutbol.com/mundiales/2018_premios.php,2026-03-16T22:25:45.737951
+2018,Balón de Plata,Eden Hazard,../jugadores/eden_hazard.php,https://www.losmundialesdefutbol.com/mundiales/2018_premios.php,2026-03-16T22:25:45.737951
+2018,Balón de Bronce,Antoine Griezmann,../jugadores/antoine_griezmann.php,https://www.losmundialesdefutbol.com/mundiales/2018_premios.php,2026-03-16T22:25:45.737951
+2018,Botín de Oro,Harry Kane,../jugadores/harry_kane.php,https://www.losmundialesdefutbol.com/mundiales/2018_premios.php,2026-03-16T22:25:45.737951
+2018,Botín de Plata,Antoine Griezmann,../jugadores/antoine_griezmann.php,https://www.losmundialesdefutbol.com/mundiales/2018_premios.php,2026-03-16T22:25:45.737951
+2018,Botín de Bronce,Romelu Lukaku,../jugadores/romelu_lukaku.php,https://www.losmundialesdefutbol.com/mundiales/2018_premios.php,2026-03-16T22:25:45.737951
+2014,Balón de Oro,Lionel Messi,../jugadores/lionel_messi.php,https://www.losmundialesdefutbol.com/mundiales/2014_premios.php,2026-03-16T22:25:55.144885
+2014,Balón de Plata,Thomas Müller,../jugadores/thomas_mueller.php,https://www.losmundialesdefutbol.com/mundiales/2014_premios.php,2026-03-16T22:25:55.144885
+2014,Balón de Bronce,Arjen Robben,../jugadores/arjen_robben.php,https://www.losmundialesdefutbol.com/mundiales/2014_premios.php,2026-03-16T22:25:55.144885
+2014,Botín de Oro,James Rodríguez,../jugadores/james_rodriguez.php,https://www.losmundialesdefutbol.com/mundiales/2014_premios.php,2026-03-16T22:25:55.144885
+2014,Botín de Plata,Thomas Müller,../jugadores/thomas_mueller.php,https://www.losmundialesdefutbol.com/mundiales/2014_premios.php,2026-03-16T22:25:55.144885
+2014,Botín de Bronce,Neymar Jr.,../jugadores/neymar.php,https://www.losmundialesdefutbol.com/mundiales/2014_premios.php,2026-03-16T22:25:55.144885
+2010,Balón de Oro,Diego Forlan,../jugadores/diego_forlan.php,https://www.losmundialesdefutbol.com/mundiales/2010_premios.php,2026-03-16T22:26:04.673115
+2010,Balón de Plata,Wesley Sneijder,../jugadores/wesley_sneijder.php,https://www.losmundialesdefutbol.com/mundiales/2010_premios.php,2026-03-16T22:26:04.673115
+2010,Balón de Bronce,David Villa,../jugadores/david_villa.php,https://www.losmundialesdefutbol.com/mundiales/2010_premios.php,2026-03-16T22:26:04.673115
+2010,Botín de Oro,Thomas Müller,../jugadores/thomas_mueller.php,https://www.losmundialesdefutbol.com/mundiales/2010_premios.php,2026-03-16T22:26:04.673115
+2010,Botín de Plata,David Villa,../jugadores/david_villa.php,https://www.losmundialesdefutbol.com/mundiales/2010_premios.php,2026-03-16T22:26:04.673115
+2010,Botín de Bronce,Wesley Sneijder,../jugadores/wesley_sneijder.php,https://www.losmundialesdefutbol.com/mundiales/2010_premios.php,2026-03-16T22:26:04.673115
+2006,Balón de Oro,Zinedine Zidane,../jugadores/zinedine_zidane.php,https://www.losmundialesdefutbol.com/mundiales/2006_premios.php,2026-03-16T22:26:13.277160
+2006,Balón de Plata,Fabio Cannavaro,../jugadores/fabio_cannavaro.php,https://www.losmundialesdefutbol.com/mundiales/2006_premios.php,2026-03-16T22:26:13.277160
+2006,Balón de Bronce,Andrea Pirlo,../jugadores/andrea_pirlo.php,https://www.losmundialesdefutbol.com/mundiales/2006_premios.php,2026-03-16T22:26:13.277160
+2006,Botín de Oro,Miroslav Klose,../jugadores/miroslav_klose.php,https://www.losmundialesdefutbol.com/mundiales/2006_premios.php,2026-03-16T22:26:13.277160
+2006,Botín de Plata,Hernan Crespo,../jugadores/hernan_crespo.php,https://www.losmundialesdefutbol.com/mundiales/2006_premios.php,2026-03-16T22:26:13.277160
+2006,Botín de Bronce,Ronaldo,../jugadores/ronaldo.php,https://www.losmundialesdefutbol.com/mundiales/2006_premios.php,2026-03-16T22:26:13.277160
+2002,Balón de Oro,Oliver Kahn,../jugadores/oliver_kahn.php,https://www.losmundialesdefutbol.com/mundiales/2002_premios.php,2026-03-16T22:26:22.800691
+2002,Balón de Plata,Ronaldo,../jugadores/ronaldo.php,https://www.losmundialesdefutbol.com/mundiales/2002_premios.php,2026-03-16T22:26:22.800691
+2002,Balón de Bronce,Myung Bo Hong,../jugadores/myung_bo_hong.php,https://www.losmundialesdefutbol.com/mundiales/2002_premios.php,2026-03-16T22:26:22.800691
+2002,Botín de Oro,Ronaldo,../jugadores/ronaldo.php,https://www.losmundialesdefutbol.com/mundiales/2002_premios.php,2026-03-16T22:26:22.800691
+2002,Botín de Plata,-,,https://www.losmundialesdefutbol.com/mundiales/2002_premios.php,2026-03-16T22:26:22.800691
+2002,Botín de Bronce,-,,https://www.losmundialesdefutbol.com/mundiales/2002_premios.php,2026-03-16T22:26:22.800691
+1998,Balón de Oro,Ronaldo,../jugadores/ronaldo.php,https://www.losmundialesdefutbol.com/mundiales/1998_premios.php,2026-03-16T22:26:31.611825
+1998,Balón de Plata,Davor Suker,../jugadores/davor_suker.php,https://www.losmundialesdefutbol.com/mundiales/1998_premios.php,2026-03-16T22:26:31.611825
+1998,Balón de Bronce,Lilian Thuram,../jugadores/lilian_thuram.php,https://www.losmundialesdefutbol.com/mundiales/1998_premios.php,2026-03-16T22:26:31.611825
+1998,Botín de Oro,Davor Suker,../jugadores/davor_suker.php,https://www.losmundialesdefutbol.com/mundiales/1998_premios.php,2026-03-16T22:26:31.611825
+1998,Botín de Plata,-,,https://www.losmundialesdefutbol.com/mundiales/1998_premios.php,2026-03-16T22:26:31.611825
+1998,Botín de Bronce,-,,https://www.losmundialesdefutbol.com/mundiales/1998_premios.php,2026-03-16T22:26:31.611825
+1994,Balón de Oro,Romario,../jugadores/romario.php,https://www.losmundialesdefutbol.com/mundiales/1994_premios.php,2026-03-16T22:26:42.077793
+1994,Balón de Plata,Roberto Baggio,../jugadores/roberto_baggio.php,https://www.losmundialesdefutbol.com/mundiales/1994_premios.php,2026-03-16T22:26:42.077793
+1994,Balón de Bronce,Hristo Stoichkov,../jugadores/hristo_stoichkov.php,https://www.losmundialesdefutbol.com/mundiales/1994_premios.php,2026-03-16T22:26:42.077793
+1994,Botín de Oro,Oleg Salenko,../jugadores/oleg_salenko.php,https://www.losmundialesdefutbol.com/mundiales/1994_premios.php,2026-03-16T22:26:42.077793
+1994,Botín de Plata,-,,https://www.losmundialesdefutbol.com/mundiales/1994_premios.php,2026-03-16T22:26:42.077793
+1994,Botín de Bronce,-,,https://www.losmundialesdefutbol.com/mundiales/1994_premios.php,2026-03-16T22:26:42.077793
+1990,Balón de Oro,Salvatore Schillaci,../jugadores/salvatore_schillaci.php,https://www.losmundialesdefutbol.com/mundiales/1990_premios.php,2026-03-16T22:26:49.622889
+1990,Balón de Plata,Lothar Matthaeus,../jugadores/lothar_matthaeus.php,https://www.losmundialesdefutbol.com/mundiales/1990_premios.php,2026-03-16T22:26:49.622889
+1990,Balón de Bronce,Diego Maradona,../jugadores/diego_maradona.php,https://www.losmundialesdefutbol.com/mundiales/1990_premios.php,2026-03-16T22:26:49.622889
+1990,Botín de Oro,Salvatore Schillaci,../jugadores/salvatore_schillaci.php,https://www.losmundialesdefutbol.com/mundiales/1990_premios.php,2026-03-16T22:26:49.622889
+1990,Botín de Plata,-,,https://www.losmundialesdefutbol.com/mundiales/1990_premios.php,2026-03-16T22:26:49.622889
+1990,Botín de Bronce,-,,https://www.losmundialesdefutbol.com/mundiales/1990_premios.php,2026-03-16T22:26:49.622889
+1986,Balón de Oro,Diego Maradona,../jugadores/diego_maradona.php,https://www.losmundialesdefutbol.com/mundiales/1986_premios.php,2026-03-16T22:26:58.308137
+1986,Balón de Plata,Harald Schumacher,../jugadores/harald_schumacher.php,https://www.losmundialesdefutbol.com/mundiales/1986_premios.php,2026-03-16T22:26:58.308137
+1986,Balón de Bronce,Preben Elkjaer Larsen,../jugadores/preben_elkjaer_larsen.php,https://www.losmundialesdefutbol.com/mundiales/1986_premios.php,2026-03-16T22:26:58.308137
+1986,Botín de Oro,Gary Lineker,../jugadores/gary_lineker.php,https://www.losmundialesdefutbol.com/mundiales/1986_premios.php,2026-03-16T22:26:58.308137
+1986,Botín de Plata,-,,https://www.losmundialesdefutbol.com/mundiales/1986_premios.php,2026-03-16T22:26:58.308137
+1986,Botín de Bronce,-,,https://www.losmundialesdefutbol.com/mundiales/1986_premios.php,2026-03-16T22:26:58.308137
+1982,Balón de Oro,Paolo Rossi,../jugadores/paolo_rossi.php,https://www.losmundialesdefutbol.com/mundiales/1982_premios.php,2026-03-16T22:27:07.023330
+1982,Balón de Plata,Falcao,../jugadores/falcao.php,https://www.losmundialesdefutbol.com/mundiales/1982_premios.php,2026-03-16T22:27:07.023330
+1982,Balón de Bronce,Karl-Heinz Rummenigge,../jugadores/karl_heinz_rummenigge.php,https://www.losmundialesdefutbol.com/mundiales/1982_premios.php,2026-03-16T22:27:07.023330
+1982,Botín de Oro,Paolo Rossi,../jugadores/paolo_rossi.php,https://www.losmundialesdefutbol.com/mundiales/1982_premios.php,2026-03-16T22:27:07.023330
+1982,Botín de Plata,-,,https://www.losmundialesdefutbol.com/mundiales/1982_premios.php,2026-03-16T22:27:07.023330
+1982,Botín de Bronce,-,,https://www.losmundialesdefutbol.com/mundiales/1982_premios.php,2026-03-16T22:27:07.023330
+1978,Balón de Oro,-,,https://www.losmundialesdefutbol.com/mundiales/1978_premios.php,2026-03-16T22:27:15.819080
+1978,Balón de Plata,-,,https://www.losmundialesdefutbol.com/mundiales/1978_premios.php,2026-03-16T22:27:15.819080
+1978,Balón de Bronce,-,,https://www.losmundialesdefutbol.com/mundiales/1978_premios.php,2026-03-16T22:27:15.819080
+1978,Botín de Oro,Mario Kempes,../jugadores/mario_kempes.php,https://www.losmundialesdefutbol.com/mundiales/1978_premios.php,2026-03-16T22:27:15.819080
+1978,Botín de Plata,-,,https://www.losmundialesdefutbol.com/mundiales/1978_premios.php,2026-03-16T22:27:15.819080
+1978,Botín de Bronce,-,,https://www.losmundialesdefutbol.com/mundiales/1978_premios.php,2026-03-16T22:27:15.819080
+1974,Balón de Oro,-,,https://www.losmundialesdefutbol.com/mundiales/1974_premios.php,2026-03-16T22:27:26.348991
+1974,Balón de Plata,-,,https://www.losmundialesdefutbol.com/mundiales/1974_premios.php,2026-03-16T22:27:26.348991
+1974,Balón de Bronce,-,,https://www.losmundialesdefutbol.com/mundiales/1974_premios.php,2026-03-16T22:27:26.348991
+1974,Botín de Oro,Grzegorz Lato,../jugadores/grzegorz_lato.php,https://www.losmundialesdefutbol.com/mundiales/1974_premios.php,2026-03-16T22:27:26.348991
+1974,Botín de Plata,-,,https://www.losmundialesdefutbol.com/mundiales/1974_premios.php,2026-03-16T22:27:26.348991
+1974,Botín de Bronce,-,,https://www.losmundialesdefutbol.com/mundiales/1974_premios.php,2026-03-16T22:27:26.348991
+1970,Balón de Oro,-,,https://www.losmundialesdefutbol.com/mundiales/1970_premios.php,2026-03-16T22:27:35.044313
+1970,Balón de Plata,-,,https://www.losmundialesdefutbol.com/mundiales/1970_premios.php,2026-03-16T22:27:35.044313
+1970,Balón de Bronce,-,,https://www.losmundialesdefutbol.com/mundiales/1970_premios.php,2026-03-16T22:27:35.044313
+1970,Botín de Oro,Gerd Mueller,../jugadores/gerd_mueller.php,https://www.losmundialesdefutbol.com/mundiales/1970_premios.php,2026-03-16T22:27:35.044313
+1970,Botín de Plata,-,,https://www.losmundialesdefutbol.com/mundiales/1970_premios.php,2026-03-16T22:27:35.044313
+1970,Botín de Bronce,-,,https://www.losmundialesdefutbol.com/mundiales/1970_premios.php,2026-03-16T22:27:35.044313
+1966,Balón de Oro,-,,https://www.losmundialesdefutbol.com/mundiales/1966_premios.php,2026-03-16T22:27:43.236816
+1966,Balón de Plata,-,,https://www.losmundialesdefutbol.com/mundiales/1966_premios.php,2026-03-16T22:27:43.236816
+1966,Balón de Bronce,-,,https://www.losmundialesdefutbol.com/mundiales/1966_premios.php,2026-03-16T22:27:43.236816
+1966,Botín de Oro,Eusebio,../jugadores/eusebio.php,https://www.losmundialesdefutbol.com/mundiales/1966_premios.php,2026-03-16T22:27:43.236816
+1966,Botín de Plata,-,,https://www.losmundialesdefutbol.com/mundiales/1966_premios.php,2026-03-16T22:27:43.236816
+1966,Botín de Bronce,-,,https://www.losmundialesdefutbol.com/mundiales/1966_premios.php,2026-03-16T22:27:43.236816
+1962,Balón de Oro,-,,https://www.losmundialesdefutbol.com/mundiales/1962_premios.php,2026-03-16T22:27:53.160367
+1962,Balón de Plata,-,,https://www.losmundialesdefutbol.com/mundiales/1962_premios.php,2026-03-16T22:27:53.160367
+1962,Balón de Bronce,-,,https://www.losmundialesdefutbol.com/mundiales/1962_premios.php,2026-03-16T22:27:53.160367
+1962,Botín de Oro,Florian Albert,../jugadores/florian_albert.php,https://www.losmundialesdefutbol.com/mundiales/1962_premios.php,2026-03-16T22:27:53.160367
+1962,Botín de Plata,-,,https://www.losmundialesdefutbol.com/mundiales/1962_premios.php,2026-03-16T22:27:53.160367
+1962,Botín de Bronce,-,,https://www.losmundialesdefutbol.com/mundiales/1962_premios.php,2026-03-16T22:27:53.160367
+1958,Balón de Oro,-,,https://www.losmundialesdefutbol.com/mundiales/1958_premios.php,2026-03-16T22:28:03.123474
+1958,Balón de Plata,-,,https://www.losmundialesdefutbol.com/mundiales/1958_premios.php,2026-03-16T22:28:03.123474
+1958,Balón de Bronce,-,,https://www.losmundialesdefutbol.com/mundiales/1958_premios.php,2026-03-16T22:28:03.123474
+1958,Botín de Oro,Just Fontaine,../jugadores/just_fontaine.php,https://www.losmundialesdefutbol.com/mundiales/1958_premios.php,2026-03-16T22:28:03.123474
+1958,Botín de Plata,-,,https://www.losmundialesdefutbol.com/mundiales/1958_premios.php,2026-03-16T22:28:03.123474
+1958,Botín de Bronce,-,,https://www.losmundialesdefutbol.com/mundiales/1958_premios.php,2026-03-16T22:28:03.123474
+1954,Balón de Oro,-,,https://www.losmundialesdefutbol.com/mundiales/1954_premios.php,2026-03-16T22:28:11.380626
+1954,Balón de Plata,-,,https://www.losmundialesdefutbol.com/mundiales/1954_premios.php,2026-03-16T22:28:11.380626
+1954,Balón de Bronce,-,,https://www.losmundialesdefutbol.com/mundiales/1954_premios.php,2026-03-16T22:28:11.380626
+1954,Botín de Oro,Sandor Kocsis,../jugadores/sandor_kocsis.php,https://www.losmundialesdefutbol.com/mundiales/1954_premios.php,2026-03-16T22:28:11.380626
+1954,Botín de Plata,-,,https://www.losmundialesdefutbol.com/mundiales/1954_premios.php,2026-03-16T22:28:11.380626
+1954,Botín de Bronce,-,,https://www.losmundialesdefutbol.com/mundiales/1954_premios.php,2026-03-16T22:28:11.380626
+1950,Balón de Oro,-,,https://www.losmundialesdefutbol.com/mundiales/1950_premios.php,2026-03-16T22:28:17.526130
+1950,Balón de Plata,-,,https://www.losmundialesdefutbol.com/mundiales/1950_premios.php,2026-03-16T22:28:17.526130
+1950,Balón de Bronce,-,,https://www.losmundialesdefutbol.com/mundiales/1950_premios.php,2026-03-16T22:28:17.526130
+1950,Botín de Oro,Ademir,../jugadores/ademir.php,https://www.losmundialesdefutbol.com/mundiales/1950_premios.php,2026-03-16T22:28:17.526130
+1950,Botín de Plata,-,,https://www.losmundialesdefutbol.com/mundiales/1950_premios.php,2026-03-16T22:28:17.526130
+1950,Botín de Bronce,-,,https://www.losmundialesdefutbol.com/mundiales/1950_premios.php,2026-03-16T22:28:17.526130
+1938,Balón de Oro,-,,https://www.losmundialesdefutbol.com/mundiales/1938_premios.php,2026-03-16T22:28:26.428607
+1938,Balón de Plata,-,,https://www.losmundialesdefutbol.com/mundiales/1938_premios.php,2026-03-16T22:28:26.428607
+1938,Balón de Bronce,-,,https://www.losmundialesdefutbol.com/mundiales/1938_premios.php,2026-03-16T22:28:26.428607
+1938,Botín de Oro,Leonidas,../jugadores/leonidas.php,https://www.losmundialesdefutbol.com/mundiales/1938_premios.php,2026-03-16T22:28:26.428607
+1938,Botín de Plata,-,,https://www.losmundialesdefutbol.com/mundiales/1938_premios.php,2026-03-16T22:28:26.428607
+1938,Botín de Bronce,-,,https://www.losmundialesdefutbol.com/mundiales/1938_premios.php,2026-03-16T22:28:26.428607
+1934,Balón de Oro,-,,https://www.losmundialesdefutbol.com/mundiales/1934_premios.php,2026-03-16T22:28:35.642819
+1934,Balón de Plata,-,,https://www.losmundialesdefutbol.com/mundiales/1934_premios.php,2026-03-16T22:28:35.642819
+1934,Balón de Bronce,-,,https://www.losmundialesdefutbol.com/mundiales/1934_premios.php,2026-03-16T22:28:35.642819
+1934,Botín de Oro,Oldrich Nejedly,../jugadores/oldrich_nejedly.php,https://www.losmundialesdefutbol.com/mundiales/1934_premios.php,2026-03-16T22:28:35.642819
+1934,Botín de Plata,-,,https://www.losmundialesdefutbol.com/mundiales/1934_premios.php,2026-03-16T22:28:35.642819
+1934,Botín de Bronce,-,,https://www.losmundialesdefutbol.com/mundiales/1934_premios.php,2026-03-16T22:28:35.642819
+1930,Balón de Oro,-,,https://www.losmundialesdefutbol.com/mundiales/1930_premios.php,2026-03-16T22:28:44.653272
+1930,Balón de Plata,-,,https://www.losmundialesdefutbol.com/mundiales/1930_premios.php,2026-03-16T22:28:44.653272
+1930,Balón de Bronce,-,,https://www.losmundialesdefutbol.com/mundiales/1930_premios.php,2026-03-16T22:28:44.653272
+1930,Botín de Oro,Guillermo Stabile,../jugadores/guillermo_stabile.php,https://www.losmundialesdefutbol.com/mundiales/1930_premios.php,2026-03-16T22:28:44.653272
+1930,Botín de Plata,-,,https://www.losmundialesdefutbol.com/mundiales/1930_premios.php,2026-03-16T22:28:44.653272
+1930,Botín de Bronce,-,,https://www.losmundialesdefutbol.com/mundiales/1930_premios.php,2026-03-16T22:28:44.653272
