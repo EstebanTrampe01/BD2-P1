@@ -48,7 +48,7 @@ Pipeline de punta a punta:
 
 Separacion:
 
-- `output/`: datos raw oficiales usados por ETL siendo los que se usan en `transformar_output.py`
+- `output/`: datos raw oficiales usados por ETL (extraer, tranformar, cargar) siendo los que se usan en `transformar_output.py`
 - `output_db/`: datos normalizados para la BD
 
 ## 3. Estructura del repositorio
@@ -105,7 +105,7 @@ Decisiones tecnicas importantes:
 
 - Mantener `output/` como capa raw.
 - No forzar normalizacion fuerte en scraping.
-- Dejar limpieza y mapeo de IDs para ETL (`transformar_output.py`).
+- Dejar limpieza y mapeo de IDs para ETL, es decir extraer, transformar y cargar `transformar_output.py`
 
 ### 4.3 Salida cruda producida (`output/`)
 
@@ -171,7 +171,7 @@ Archivos de salida:
 - `output_db/_mapa_jugadores.csv`
 - `output_db/_mapa_partidos.csv`
 
-### 5.4 Limpiezas aplicadas (resumen)
+### 5.4 Limpiezas aplicadas
 
 - IDs normalizados (`18.0` -> `18`).
 - Fechas a formato SQL cuando aplica.
@@ -222,7 +222,7 @@ venv/bin/python cargar_bd.py
 El script:
 
 - conecta a MySQL,
-- limpia tablas destino (TRUNCATE controlado),
+- limpia tablas destino ,
 - inserta en orden de dependencias FK,
 - normaliza `NULL` y formatos al insertar.
 
@@ -249,7 +249,7 @@ Tablas principales:
 - `scraping_runs`, `scraping_metadata`
 
 
-## 8. Validaciones realizadas (estado del proyecto)
+## 8. Validaciones realizadas
 
 Estado validado despues de transformar y cargar:
 
@@ -258,10 +258,10 @@ Estado validado despues de transformar y cargar:
 - Huerfanos en joins criticos: `0`.
 - Conteos coherentes en tablas principales (selecciones, mundiales, jugadores, partidos, detalle de partido).
 
-Observaciones no bloqueantes:
+Observaciones:
 
-- Algunos campos opcionales vacios por fuente original (esperable).
-- Casos de 2026 con informacion incompleta se mantienen como `NULL` controlado.
+- Algunos campos opcionales vacios por fuente original algo que se tenia esperado
+- Casos de 2026 con informacion incompleta se mantienen como `NULL`.
 
 
 ## 9. Stored Procedures
@@ -273,7 +273,7 @@ Observaciones no bloqueantes:
 
 ### 9.2 Objetivo de cada SP
 
-- `sp_info_mundial`: vista integral por ano de mundial (ficha, grupos, partidos, posiciones, goleadores, premios, disciplina).
+- `sp_info_mundial`: vista integral por año de mundial (ficha, grupos, partidos, posiciones, goleadores, premios, disciplina).
 - `sp_info_pais`: historial completo por seleccion (participaciones, sedes, partidos, logros, disciplina, resumen por mundial).
 
 ### 9.3 Parametros
@@ -291,30 +291,23 @@ Observaciones no bloqueantes:
 - `p_anio` (opcional)
 - `p_solo_fase` (opcional)
 
-### 9.4 Ajustes realizados a los SP
+### 9.4  Carga de SP
 
-Se aplicaron mejoras para ejecucion robusta:
-
-- `SET NAMES utf8mb4;` agregado en ambos scripts para caracteres especiales.
-- `CALL` de prueba al final quedaron comentados para no ejecutar consultas automaticamente al importar.
-
-### 9.5 Carga de SP
-
-Comandos recomendados:
+Comandos:
 
 ```bash
 docker exec -i mundiales_db mysql --default-character-set=utf8mb4 -u mundiales_user -pmundiales1234 mundiales < stored/sp1.sql
 docker exec -i mundiales_db mysql --default-character-set=utf8mb4 -u mundiales_user -pmundiales1234 mundiales < stored/sp2.sql
 ```
 
-Prueba de ejemplo:
+Ejemplo:
 
 ```bash
 docker exec mundiales_db mysql --default-character-set=utf8mb4 -u mundiales_user -pmundiales1234 -D mundiales -e "CALL sp_info_pais('Mexico', 2022, NULL);"
 ```
 
 
-## 10. Guia de ejecucion rapida (reproducible)
+## 10. Guia de ejecucion rapida 
 
 Orden recomendado:
 
