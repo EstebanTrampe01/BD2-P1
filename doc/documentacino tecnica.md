@@ -40,36 +40,53 @@
 
 Pipeline de punta a punta:
 
-1. **Scraping** -> genera CSV crudos en `output/`.
+1. **Scraping** -> usa `scrapy.cfg` + paquete `mundiales_scraper/` y genera CSV crudos.
 2. **Transformacion** -> `transformar_output.py` genera CSV limpios en `output_db/`.
 3. **Infraestructura BD** -> `docker-compose.yml` levanta MySQL y ejecuta `init/schema.sql`.
 4. **Carga** -> `cargar_bd.py` inserta `output_db/*.csv` en MySQL.
-5. **Consulta** -> stored procedures (`sp1.sql`, `sp2.sql`) para explotacion.
+5. **Consulta** -> stored procedures (`stored/sp1.sql`, `stored/sp2.sql`) para explotacion.
 
-Separacion clave:
+Separacion:
 
-- `output/`: datos raw (tal cual salen del scraping).
-- `output_db/`: datos normalizados para la BD.
+- `output/`: datos raw oficiales usados por ETL siendo los que se usan en `transformar_output.py`
+- `output_db/`: datos normalizados para la BD
 
-
-## 3. Estructura del repositorio (actual)
+## 3. Estructura del repositorio
 
 Archivos y carpetas principales:
 
+- `scrapy.cfg` -> configuracion principal de Scrapy.
+- `mundiales_scraper/` -> paquete del scraper (settings, items, pipelines, spiders).
 - `output/` -> CSV crudos del scraping.
 - `output_db/` -> CSV normalizados.
 - `transformar_output.py` -> ETL de crudo a normalizado.
 - `cargar_bd.py` -> carga a MySQL desde `output_db`.
 - `init/schema.sql` -> modelo SQL oficial.
 - `docker-compose.yml` -> servicio MySQL.
-- `sp1.sql` -> procedimiento `sp_info_mundial`.
-- `sp2.sql` -> procedimiento `sp_info_pais`.
-- `storedProcedures.md` -> documentacion funcional de SP.
-- `scrapt_doc.md` -> documentacion detallada de scraping.
-- `TrasformacionCarga.md` -> documentacion detallada de ETL/carga.
+- `stored/sp1.sql` -> procedimiento `sp_info_mundial`.
+- `stored/sp2.sql` -> procedimiento `sp_info_pais`.
+- `doc/storedProcedures.md` -> documentacion funcional de SP.
+- `doc/scrapt_doc.md` -> documentacion detallada de scraping.
+- `doc/TrasformacionCarga.md` -> documentacion detallada de ETL/carga.
 
 
 ## 4. Capa 1: Scraping (extraccion)
+
+Implementacion actual del scraper:
+
+- Config principal: `scrapy.cfg` (setting default `mundiales_scraper.settings`).
+- Spider principal: `mundiales_scraper/spiders/mundiales.py` (name: `mundiales`).
+- Componentes de soporte:
+  - `mundiales_scraper/settings.py`
+  - `mundiales_scraper/items.py`
+  - `mundiales_scraper/pipelines.py`
+  - `mundiales_scraper/middlewares.py`
+
+Ejecucion tipica del scraping:
+
+```bash
+scrapy crawl mundiales
+```
 
 ### 4.1 Alcance de la extraccion
 
@@ -251,8 +268,8 @@ Observaciones no bloqueantes:
 
 ### 9.1 Archivos
 
-- `sp1.sql` -> `sp_info_mundial`
-- `sp2.sql` -> `sp_info_pais`
+- `stored/sp1.sql` -> `sp_info_mundial`
+- `stored/sp2.sql` -> `sp_info_pais`
 
 ### 9.2 Objetivo de cada SP
 
@@ -286,8 +303,8 @@ Se aplicaron mejoras para ejecucion robusta:
 Comandos recomendados:
 
 ```bash
-docker exec -i mundiales_db mysql --default-character-set=utf8mb4 -u mundiales_user -pmundiales1234 mundiales < sp1.sql
-docker exec -i mundiales_db mysql --default-character-set=utf8mb4 -u mundiales_user -pmundiales1234 mundiales < sp2.sql
+docker exec -i mundiales_db mysql --default-character-set=utf8mb4 -u mundiales_user -pmundiales1234 mundiales < stored/sp1.sql
+docker exec -i mundiales_db mysql --default-character-set=utf8mb4 -u mundiales_user -pmundiales1234 mundiales < stored/sp2.sql
 ```
 
 Prueba de ejemplo:
@@ -322,6 +339,6 @@ venv/bin/python cargar_bd.py
 4. Cargar SP:
 
 ```bash
-docker exec -i mundiales_db mysql --default-character-set=utf8mb4 -u mundiales_user -pmundiales1234 mundiales < sp1.sql
-docker exec -i mundiales_db mysql --default-character-set=utf8mb4 -u mundiales_user -pmundiales1234 mundiales < sp2.sql
+docker exec -i mundiales_db mysql --default-character-set=utf8mb4 -u mundiales_user -pmundiales1234 mundiales < stored/sp1.sql
+docker exec -i mundiales_db mysql --default-character-set=utf8mb4 -u mundiales_user -pmundiales1234 mundiales < stored/sp2.sql
 ```
