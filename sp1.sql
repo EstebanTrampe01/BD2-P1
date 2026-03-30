@@ -10,6 +10,7 @@
 -- =============================================================================
 
 USE mundiales;
+SET NAMES utf8mb4;
 
 DROP PROCEDURE IF EXISTS sp_info_mundial;
 
@@ -245,6 +246,6 @@ DELIMITER ;
 -- =============================================================================
 -- CALL sp_info_mundial(2014, NULL,  NULL,         NULL);
 -- CALL sp_info_mundial(2018, 'B',   NULL,         NULL);
- CALL sp_info_mundial(2022, NULL,  'Argentina',  NULL);
+-- CALL sp_info_mundial(2022, NULL,  'Argentina',  NULL);
 -- CALL sp_info_mundial(2014, NULL,  NULL,         '2014-07-13');
 -- CALL sp_info_mundial(2010, 'A',   'España',     NULL);

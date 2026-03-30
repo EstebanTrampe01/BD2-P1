@@ -9,6 +9,7 @@
 -- =============================================================================
 
 USE mundiales;
+SET NAMES utf8mb4;
 
 DROP PROCEDURE IF EXISTS sp_info_pais;
 
@@ -342,5 +343,5 @@ DELIMITER ;
 -- CALL sp_info_pais('Argentina', 2022, NULL);          -- solo Mundial 2022
 -- CALL sp_info_pais('Alemania',  NULL, 'Final');       -- solo partidos de finales
 -- CALL sp_info_pais('Uruguay',   NULL, 'Grupo');       -- solo fase de grupos
- CALL sp_info_pais('Méx',       NULL, NULL);          -- búsqueda parcial "México"
+-- CALL sp_info_pais('Méx',       NULL, NULL);          -- búsqueda parcial "México"
 -- CALL sp_info_pais('Francia',   1998, NULL);          -- Francia 1998 completo
