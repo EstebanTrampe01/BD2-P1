@@ -1,6 +1,8 @@
 USE mundiales;
 
--- Dia 1: simular resultados de partidos (2026)
+-- Dia 1: simular resultados de partidos del 2026
+-- 14 partidos con resultados completos
+
 START TRANSACTION;
 
 SET @dia := 1;
@@ -85,11 +87,3 @@ INSERT INTO log_ejecucion (dia_carga, evento, detalle)
 VALUES (@dia, 'FIN_CAMBIOS', 'Dia 1 aplicado correctamente');
 
 COMMIT;
-
--- Verificacion rapida
-SELECT p.id_partido, p.numero_partido, p.goles_local, p.goles_visitante
-FROM partidos p
-JOIN mundiales m ON m.id_mundial = p.id_mundial
-WHERE m.anio = 2026
-  AND p.numero_partido IN (1, 4, 5, 7, 8, 9, 10, 11, 13, 14)
-ORDER BY p.id_partido;

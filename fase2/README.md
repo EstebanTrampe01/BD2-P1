@@ -117,17 +117,17 @@ Con esto se puede levantar y cargar la BD sin depender de la carpeta `fase1/`.
 
 ## Orden de ejecucion de scripts en esta carpeta
 
-1. `00_create_logs.sql`
-2. `01_day1_changes.sql`
-3. `02_validacion_post_cambios.sql`
+1. `schema/create_logs.sql`
+2. `schema/day1_changes.sql`
+3. `schema/validacion_post_cambios.sql`
 4. backup FULL + INCREMENTAL/DIFERENCIAL (dia 1)
-5. `04_day2_changes.sql`
-6. `02_validacion_post_cambios.sql`
+5. `schema/day2_changes.sql`
+6. `schema/validacion_post_cambios.sql`
 7. backup FULL + INCREMENTAL/DIFERENCIAL (dia 2)
-8. `06_day3_changes.sql`
-9. `02_validacion_post_cambios.sql`
+8. `schema/day3_changes.sql`
+9. `schema/validacion_post_cambios.sql`
 10. backup FULL + INCREMENTAL/DIFERENCIAL (dia 3)
-11. `08_validacion_integridad_restore.sql` (despues de restauraciones)
+11. `schema/validacion_integridad_restore.sql` (despues de restauraciones)
 
 ## Notas
 
