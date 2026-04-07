@@ -1,7 +1,7 @@
 USE mundiales;
 
 -- Dia 1: simular resultados de partidos del 2026
--- 14 partidos con resultados completos
+-- 10 partidos con resultados completos
 
 START TRANSACTION;
 
