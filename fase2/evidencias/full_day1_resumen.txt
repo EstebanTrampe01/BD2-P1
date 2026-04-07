@@ -1,0 +1,4 @@
+BACKUP FULL DIA 1
+inicio=2026-04-07 12:18:30
+fin=2026-04-07 12:18:37
+duracion_seg=6.74
