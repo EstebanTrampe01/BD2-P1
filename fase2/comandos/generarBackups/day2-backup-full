@@ -1,0 +1,25 @@
+cd "/home/dant/Escritorio/Repository/Usac/BD2/BD2-P1/fase2"
+mkdir -p backups/full backups_evidencia logs_tiempo evidencias
+
+START="$(date '+%Y-%m-%d %H:%M:%S')"
+/usr/bin/time -f "%e" -o logs_tiempo/full_day2.sec \
+docker run --rm --user 0:0 --network fase2_default \
+  -v fase2_mundiales_data:/var/lib/mysql \
+  -v "$PWD/backups:/backups" \
+  percona/percona-xtrabackup:8.0 \
+  xtrabackup --backup \
+    --target-dir=/backups/full/day2 \
+    --datadir=/var/lib/mysql \
+    --host=mundiales_db --port=3306 \
+    --user=root --password=root1234
+
+END="$(date '+%Y-%m-%d %H:%M:%S')"
+sudo chown -R "$(id -un):$(id -gn)" backups/full/day2
+{
+  echo "BACKUP FULL DIA 2"
+  echo "inicio=$START"
+  echo "fin=$END"
+  echo "duracion_seg=$(cat logs_tiempo/full_day2.sec)"
+} > evidencias/full_day2_resumen.txt
+
+tar -czf backups_evidencia/full_day2.tar.gz -C backups/full day2

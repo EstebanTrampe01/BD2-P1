@@ -3,7 +3,9 @@ services:
     image: mysql:8.0
     container_name: mundiales_db
     restart: unless-stopped
+    command: --default-time-zone=-06:00
     environment:
+      TZ: America/Guatemala
       MYSQL_ROOT_PASSWORD: root1234
       MYSQL_DATABASE: mundiales
       MYSQL_USER: mundiales_user
