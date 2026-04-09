@@ -3,7 +3,7 @@ mkdir -p backups/inc backups_evidencia logs_tiempo evidencias
 
 START="$(date '+%Y-%m-%d %H:%M:%S')"
 /usr/bin/time -f "%e" -o logs_tiempo/inc_day2.sec \
-docker run --rm --user 0:0 --network fase2_default \
+docker run --rm --user 0:0 --network container:mundiales_db \
   -v fase2_mundiales_data:/var/lib/mysql \
   -v "$PWD/backups:/backups" \
   percona/percona-xtrabackup:8.0 \
@@ -11,7 +11,7 @@ docker run --rm --user 0:0 --network fase2_default \
     --target-dir=/backups/inc/day2 \
     --incremental-basedir=/backups/inc/day1 \
     --datadir=/var/lib/mysql \
-    --host=mundiales_db --port=3306 \
+    --host=127.0.0.1 --port=3306 \
     --user=root --password=root1234
 
 END="$(date '+%Y-%m-%d %H:%M:%S')"

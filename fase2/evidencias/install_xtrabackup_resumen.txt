@@ -1,0 +1,4 @@
+INSTALACION XTRABACKUP
+inicio=2026-04-08 22:14:52
+fin=2026-04-08 22:14:53
+duracion_seg=1.28
