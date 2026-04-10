@@ -1,0 +1,13 @@
+dia,estrategia,accion,hora_inicio,hora_fin,duracion_seg,responsable,archivo_backup,resultado,observaciones
+1,FULL,BACKUP,,,,,,,,
+1,INCREMENTAL_O_DIF,BACKUP,,,,,,,,
+2,FULL,BACKUP,,,,,,,,
+2,INCREMENTAL_O_DIF,BACKUP,,,,,,,,
+3,FULL,BACKUP,,,,,,,,
+3,INCREMENTAL_O_DIF,BACKUP,,,,,,,,
+1,FULL,RESTORE,,,,,,,,
+2,FULL,RESTORE,,,,,,,,
+3,FULL,RESTORE,,,,,,,,
+1,INCREMENTAL_O_DIF,RESTORE,,,,,,,,
+2,INCREMENTAL_O_DIF,RESTORE,,,,,,,,
+3,INCREMENTAL_O_DIF,RESTORE,,,,,,,,

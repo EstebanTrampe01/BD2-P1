@@ -1,0 +1,4 @@
+BACKUP INCREMENTAL DIA 1
+inicio=2026-04-07 17:56:16
+fin=2026-04-07 17:56:22
+duracion_seg=6.16

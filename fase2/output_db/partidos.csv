@@ -1,0 +1,1037 @@
+id_partido,source_url,id_mundial,numero_partido,fecha,etapa,id_local,goles_local,goles_visitante,id_visitante
+1,../partidos/2022_catar_ecuador.php,22,1,20-Nov-2022,"1ra Ronda, Grupo A",18,0,2,31
+2,../partidos/2022_inglaterra_iran.php,22,2,21-Nov-2022,"1ra Ronda, Grupo B",49,6,2,53
+3,../partidos/2022_senegal_holanda.php,22,3,21-Nov-2022,"1ra Ronda, Grupo A",77,0,2,66
+4,../partidos/2022_estados_unidos_gales.php,22,4,21-Nov-2022,"1ra Ronda, Grupo B",39,1,1,41
+5,../partidos/2022_argentina_arabia_saudita.php,22,5,22-Nov-2022,"1ra Ronda, Grupo C",7,1,2,5
+6,../partidos/2022_dinamarca_tunez.php,22,6,22-Nov-2022,"1ra Ronda, Grupo D",30,0,0,86
+7,../partidos/2022_mexico_polonia.php,22,7,22-Nov-2022,"1ra Ronda, Grupo C",62,0,0,70
+8,../partidos/2022_francia_australia.php,22,8,22-Nov-2022,"1ra Ronda, Grupo D",40,4,1,8
+9,../partidos/2022_marruecos_croacia.php,22,9,23-Nov-2022,"1ra Ronda, Grupo F",61,0,0,27
+10,../partidos/2022_alemania_japon.php,22,10,23-Nov-2022,"1ra Ronda, Grupo E",1,1,2,58
+11,../partidos/2022_espana_costa_rica.php,22,11,23-Nov-2022,"1ra Ronda, Grupo E",38,7,0,25
+12,../partidos/2022_belgica_canada.php,22,12,23-Nov-2022,"1ra Ronda, Grupo F",14,1,0,17
+13,../partidos/2022_suiza_camerun.php,22,13,24-Nov-2022,"1ra Ronda, Grupo G",82,1,0,16
+14,../partidos/2022_uruguay_corea_del_sur.php,22,14,24-Nov-2022,"1ra Ronda, Grupo H",89,0,0,24
+15,../partidos/2022_portugal_ghana.php,22,15,24-Nov-2022,"1ra Ronda, Grupo H",71,3,2,42
+16,../partidos/2022_brasil_serbia.php,22,16,24-Nov-2022,"1ra Ronda, Grupo G",12,2,0,78
+17,../partidos/2022_gales_iran.php,22,17,25-Nov-2022,"1ra Ronda, Grupo B",41,0,2,53
+18,../partidos/2022_catar_senegal.php,22,18,25-Nov-2022,"1ra Ronda, Grupo A",18,1,3,77
+19,../partidos/2022_holanda_ecuador.php,22,19,25-Nov-2022,"1ra Ronda, Grupo A",66,1,1,31
+20,../partidos/2022_inglaterra_estados_unidos.php,22,20,25-Nov-2022,"1ra Ronda, Grupo B",49,0,0,39
+21,../partidos/2022_tunez_australia.php,22,21,26-Nov-2022,"1ra Ronda, Grupo D",86,0,1,8
+22,../partidos/2022_polonia_arabia_saudita.php,22,22,26-Nov-2022,"1ra Ronda, Grupo C",70,2,0,5
+23,../partidos/2022_francia_dinamarca.php,22,23,26-Nov-2022,"1ra Ronda, Grupo D",40,2,1,30
+24,../partidos/2022_argentina_mexico.php,22,24,26-Nov-2022,"1ra Ronda, Grupo C",7,2,0,62
+25,../partidos/2022_japon_costa_rica.php,22,25,27-Nov-2022,"1ra Ronda, Grupo E",58,0,1,25
+26,../partidos/2022_belgica_marruecos.php,22,26,27-Nov-2022,"1ra Ronda, Grupo F",14,0,2,61
+27,../partidos/2022_croacia_canada.php,22,27,27-Nov-2022,"1ra Ronda, Grupo F",27,4,1,17
+28,../partidos/2022_espana_alemania.php,22,28,27-Nov-2022,"1ra Ronda, Grupo E",38,1,1,1
+29,../partidos/2022_camerun_serbia.php,22,29,28-Nov-2022,"1ra Ronda, Grupo G",16,3,3,78
+30,../partidos/2022_corea_del_sur_ghana.php,22,30,28-Nov-2022,"1ra Ronda, Grupo H",24,2,3,42
+31,../partidos/2022_brasil_suiza.php,22,31,28-Nov-2022,"1ra Ronda, Grupo G",12,1,0,82
+32,../partidos/2022_portugal_uruguay.php,22,32,28-Nov-2022,"1ra Ronda, Grupo H",71,2,0,89
+33,../partidos/2022_holanda_catar.php,22,33,29-Nov-2022,"1ra Ronda, Grupo A",66,2,0,18
+34,../partidos/2022_ecuador_senegal.php,22,34,29-Nov-2022,"1ra Ronda, Grupo A",31,1,2,77
+35,../partidos/2022_gales_inglaterra.php,22,35,29-Nov-2022,"1ra Ronda, Grupo B",41,0,3,49
+36,../partidos/2022_iran_estados_unidos.php,22,36,29-Nov-2022,"1ra Ronda, Grupo B",53,0,1,39
+37,../partidos/2022_australia_dinamarca.php,22,37,30-Nov-2022,"1ra Ronda, Grupo D",8,1,0,30
+38,../partidos/2022_tunez_francia.php,22,38,30-Nov-2022,"1ra Ronda, Grupo D",86,1,0,40
+39,../partidos/2022_arabia_saudita_mexico.php,22,39,30-Nov-2022,"1ra Ronda, Grupo C",5,1,2,62
+40,../partidos/2022_polonia_argentina.php,22,40,30-Nov-2022,"1ra Ronda, Grupo C",70,0,2,7
+41,../partidos/2022_croacia_belgica.php,22,41,01-Dec-2022,"1ra Ronda, Grupo F",27,0,0,14
+42,../partidos/2022_canada_marruecos.php,22,42,01-Dec-2022,"1ra Ronda, Grupo F",17,1,2,61
+43,../partidos/2022_japon_espana.php,22,43,01-Dec-2022,"1ra Ronda, Grupo E",58,2,1,38
+44,../partidos/2022_costa_rica_alemania.php,22,44,01-Dec-2022,"1ra Ronda, Grupo E",25,2,4,1
+45,../partidos/2022_ghana_uruguay.php,22,45,02-Dec-2022,"1ra Ronda, Grupo H",42,0,2,89
+46,../partidos/2022_corea_del_sur_portugal.php,22,46,02-Dec-2022,"1ra Ronda, Grupo H",24,2,1,71
+47,../partidos/2022_serbia_suiza.php,22,47,02-Dec-2022,"1ra Ronda, Grupo G",78,2,3,82
+48,../partidos/2022_camerun_brasil.php,22,48,02-Dec-2022,"1ra Ronda, Grupo G",16,1,0,12
+49,../partidos/2022_holanda_estados_unidos.php,22,49,03-Dec-2022,Octavos,66,3,1,39
+50,../partidos/2022_argentina_australia.php,22,50,03-Dec-2022,Octavos,7,2,1,8
+51,../partidos/2022_inglaterra_senegal.php,22,51,04-Dec-2022,Octavos,49,3,0,77
+52,../partidos/2022_francia_polonia.php,22,52,04-Dec-2022,Octavos,40,3,1,70
+53,../partidos/2022_japon_croacia.php,22,53,05-Dec-2022,Octavos,58,1,1,27
+54,../partidos/2022_brasil_corea_del_sur.php,22,54,05-Dec-2022,Octavos,12,4,1,24
+55,../partidos/2022_marruecos_espana.php,22,55,06-Dec-2022,Octavos,61,0,0,38
+56,../partidos/2022_portugal_suiza.php,22,56,06-Dec-2022,Octavos,71,6,1,82
+57,../partidos/2022_holanda_argentina.php,22,57,09-Dec-2022,Cuartos,66,2,2,7
+58,../partidos/2022_croacia_brasil.php,22,58,09-Dec-2022,Cuartos,27,1,1,12
+59,../partidos/2022_inglaterra_francia.php,22,59,10-Dec-2022,Cuartos,49,1,2,40
+60,../partidos/2022_marruecos_portugal.php,22,60,10-Dec-2022,Cuartos,61,1,0,71
+61,../partidos/2022_argentina_croacia.php,22,61,13-Dec-2022,Semis,7,3,0,27
+62,../partidos/2022_francia_marruecos.php,22,62,14-Dec-2022,Semis,40,2,0,61
+63,../partidos/2022_croacia_marruecos.php,22,63,17-Dec-2022,3er Puesto,27,2,1,61
+64,../partidos/2022_argentina_francia.php,22,64,18-Dec-2022,Final,7,3,3,40
+966,,23,1,11-Jun-2026,"1ra Ronda, Grupo A",62,,,80
+967,,23,2,11-Jun-2026,"1ra Ronda, Grupo A",24,,,
+968,,23,3,12-Jun-2026,"1ra Ronda, Grupo B",17,,,
+969,,23,4,12-Jun-2026,"1ra Ronda, Grupo D",39,,,68
+970,,23,5,13-Jun-2026,"1ra Ronda, Grupo C",12,,,61
+971,,23,6,13-Jun-2026,"1ra Ronda, Grupo D",8,,,
+972,,23,7,13-Jun-2026,"1ra Ronda, Grupo C",44,,,35
+973,,23,8,13-Jun-2026,"1ra Ronda, Grupo B",18,,,82
+974,,23,9,14-Jun-2026,"1ra Ronda, Grupo E",1,,,29
+975,,23,10,14-Jun-2026,"1ra Ronda, Grupo E",26,,,31
+976,,23,11,14-Jun-2026,"1ra Ronda, Grupo F",66,,,58
+977,,23,12,14-Jun-2026,"1ra Ronda, Grupo F",86,,,
+978,,23,13,15-Jun-2026,"1ra Ronda, Grupo H",38,,,15
+979,,23,14,15-Jun-2026,"1ra Ronda, Grupo H",5,,,89
+980,,23,15,15-Jun-2026,"1ra Ronda, Grupo G",14,,,32
+981,,23,16,15-Jun-2026,"1ra Ronda, Grupo G",53,,,65
+982,,23,17,16-Jun-2026,"1ra Ronda, Grupo I",40,,,77
+983,,23,18,16-Jun-2026,"1ra Ronda, Grupo I",64,,,
+984,,23,19,16-Jun-2026,"1ra Ronda, Grupo J",7,,,6
+985,,23,20,16-Jun-2026,"1ra Ronda, Grupo J",9,,,59
+986,,23,21,17-Jun-2026,"1ra Ronda, Grupo L",49,,,27
+987,,23,22,17-Jun-2026,"1ra Ronda, Grupo L",42,,,67
+988,,23,23,17-Jun-2026,"1ra Ronda, Grupo K",71,,,
+989,,23,24,17-Jun-2026,"1ra Ronda, Grupo K",90,,,22
+990,,23,25,18-Jun-2026,"1ra Ronda, Grupo A",80,,,
+991,,23,26,18-Jun-2026,"1ra Ronda, Grupo B",82,,,
+992,,23,27,18-Jun-2026,"1ra Ronda, Grupo B",17,,,18
+993,,23,28,18-Jun-2026,"1ra Ronda, Grupo A",62,,,24
+994,,23,29,19-Jun-2026,"1ra Ronda, Grupo C",12,,,44
+995,,23,30,19-Jun-2026,"1ra Ronda, Grupo C",35,,,61
+996,,23,31,19-Jun-2026,"1ra Ronda, Grupo D",68,,,
+997,,23,32,19-Jun-2026,"1ra Ronda, Grupo D",39,,,8
+998,,23,33,20-Jun-2026,"1ra Ronda, Grupo E",1,,,26
+999,,23,34,20-Jun-2026,"1ra Ronda, Grupo E",31,,,29
+1000,,23,35,20-Jun-2026,"1ra Ronda, Grupo F",66,,,
+1001,,23,36,20-Jun-2026,"1ra Ronda, Grupo F",86,,,58
+1002,,23,37,21-Jun-2026,"1ra Ronda, Grupo H",38,,,5
+1003,,23,38,21-Jun-2026,"1ra Ronda, Grupo H",89,,,15
+1004,,23,39,21-Jun-2026,"1ra Ronda, Grupo G",14,,,53
+1005,,23,40,21-Jun-2026,"1ra Ronda, Grupo G",65,,,32
+1006,,23,41,22-Jun-2026,"1ra Ronda, Grupo I",40,,,
+1007,,23,42,22-Jun-2026,"1ra Ronda, Grupo I",64,,,77
+1008,,23,43,22-Jun-2026,"1ra Ronda, Grupo J",7,,,9
+1009,,23,44,22-Jun-2026,"1ra Ronda, Grupo J",59,,,6
+1010,,23,45,23-Jun-2026,"1ra Ronda, Grupo L",49,,,42
+1011,,23,46,23-Jun-2026,"1ra Ronda, Grupo L",67,,,27
+1012,,23,47,23-Jun-2026,"1ra Ronda, Grupo K",71,,,90
+1013,,23,48,23-Jun-2026,"1ra Ronda, Grupo K",22,,,
+1014,,23,49,24-Jun-2026,"1ra Ronda, Grupo C",35,,,12
+1015,,23,50,24-Jun-2026,"1ra Ronda, Grupo C",61,,,44
+1016,,23,51,24-Jun-2026,"1ra Ronda, Grupo B",82,,,17
+1017,,23,52,24-Jun-2026,"1ra Ronda, Grupo B",18,,,
+1018,,23,53,24-Jun-2026,"1ra Ronda, Grupo A",62,,,
+1019,,23,54,24-Jun-2026,"1ra Ronda, Grupo A",80,,,24
+1020,,23,55,25-Jun-2026,"1ra Ronda, Grupo E",31,,,1
+1021,,23,56,25-Jun-2026,"1ra Ronda, Grupo E",29,,,26
+1022,,23,57,25-Jun-2026,"1ra Ronda, Grupo F",86,,,66
+1023,,23,58,25-Jun-2026,"1ra Ronda, Grupo F",58,,,
+1024,,23,59,25-Jun-2026,"1ra Ronda, Grupo D",39,,,
+1025,,23,60,25-Jun-2026,"1ra Ronda, Grupo D",68,,,8
+1026,,23,61,26-Jun-2026,"1ra Ronda, Grupo I",64,,,40
+1027,,23,62,26-Jun-2026,"1ra Ronda, Grupo I",77,,,
+1028,,23,63,26-Jun-2026,"1ra Ronda, Grupo G",65,,,14
+1029,,23,64,26-Jun-2026,"1ra Ronda, Grupo G",32,,,53
+1030,,23,65,26-Jun-2026,"1ra Ronda, Grupo H",89,,,38
+1031,,23,66,26-Jun-2026,"1ra Ronda, Grupo H",15,,,5
+1032,,23,67,27-Jun-2026,"1ra Ronda, Grupo L",67,,,49
+1033,,23,68,27-Jun-2026,"1ra Ronda, Grupo L",27,,,42
+1034,,23,69,27-Jun-2026,"1ra Ronda, Grupo J",59,,,7
+1035,,23,70,27-Jun-2026,"1ra Ronda, Grupo J",6,,,9
+1036,,23,71,27-Jun-2026,"1ra Ronda, Grupo K",22,,,71
+1037,,23,72,27-Jun-2026,"1ra Ronda, Grupo K",90,,,
+66,../partidos/2018_rusia_arabia_saudita.php,21,1,14-Jun-2018,"1ra Ronda, Grupo A",76,5,0,5
+67,../partidos/2018_egipto_uruguay.php,21,2,15-Jun-2018,"1ra Ronda, Grupo A",32,0,1,89
+68,../partidos/2018_portugal_espana.php,21,3,15-Jun-2018,"1ra Ronda, Grupo B",71,3,3,38
+69,../partidos/2018_marruecos_iran.php,21,4,15-Jun-2018,"1ra Ronda, Grupo B",61,0,1,53
+70,../partidos/2018_francia_australia.php,21,5,16-Jun-2018,"1ra Ronda, Grupo C",40,2,1,8
+71,../partidos/2018_peru_dinamarca.php,21,6,16-Jun-2018,"1ra Ronda, Grupo C",69,0,1,30
+72,../partidos/2018_argentina_islandia.php,21,7,16-Jun-2018,"1ra Ronda, Grupo D",7,1,1,54
+73,../partidos/2018_croacia_nigeria.php,21,8,16-Jun-2018,"1ra Ronda, Grupo D",27,2,0,63
+74,../partidos/2018_brasil_suiza.php,21,9,17-Jun-2018,"1ra Ronda, Grupo E",12,1,1,82
+75,../partidos/2018_costa_rica_serbia.php,21,10,17-Jun-2018,"1ra Ronda, Grupo E",25,0,1,78
+76,../partidos/2018_alemania_mexico.php,21,11,17-Jun-2018,"1ra Ronda, Grupo F",1,0,1,62
+77,../partidos/2018_suecia_corea_del_sur.php,21,12,18-Jun-2018,"1ra Ronda, Grupo F",81,1,0,24
+78,../partidos/2018_belgica_panama.php,21,13,18-Jun-2018,"1ra Ronda, Grupo G",14,3,0,67
+79,../partidos/2018_tunez_inglaterra.php,21,14,18-Jun-2018,"1ra Ronda, Grupo G",86,1,2,49
+80,../partidos/2018_polonia_senegal.php,21,15,19-Jun-2018,"1ra Ronda, Grupo H",70,1,2,77
+81,../partidos/2018_colombia_japon.php,21,16,19-Jun-2018,"1ra Ronda, Grupo H",22,1,2,58
+82,../partidos/2018_rusia_egipto.php,21,17,19-Jun-2018,"1ra Ronda, Grupo A",76,3,1,32
+83,../partidos/2018_uruguay_arabia_saudita.php,21,18,20-Jun-2018,"1ra Ronda, Grupo A",89,1,0,5
+84,../partidos/2018_portugal_marruecos.php,21,19,20-Jun-2018,"1ra Ronda, Grupo B",71,1,0,61
+85,../partidos/2018_iran_espana.php,21,20,20-Jun-2018,"1ra Ronda, Grupo B",53,0,1,38
+86,../partidos/2018_francia_peru.php,21,21,21-Jun-2018,"1ra Ronda, Grupo C",40,1,0,69
+87,../partidos/2018_dinamarca_australia.php,21,22,21-Jun-2018,"1ra Ronda, Grupo C",30,1,1,8
+88,../partidos/2018_argentina_croacia.php,21,23,21-Jun-2018,"1ra Ronda, Grupo D",7,0,3,27
+89,../partidos/2018_nigeria_islandia.php,21,24,22-Jun-2018,"1ra Ronda, Grupo D",63,2,0,54
+90,../partidos/2018_brasil_costa_rica.php,21,25,22-Jun-2018,"1ra Ronda, Grupo E",12,2,0,25
+91,../partidos/2018_serbia_suiza.php,21,26,22-Jun-2018,"1ra Ronda, Grupo E",78,1,2,82
+92,../partidos/2018_alemania_suecia.php,21,27,23-Jun-2018,"1ra Ronda, Grupo F",1,2,1,81
+93,../partidos/2018_corea_del_sur_mexico.php,21,28,23-Jun-2018,"1ra Ronda, Grupo F",24,1,2,62
+94,../partidos/2018_belgica_tunez.php,21,29,23-Jun-2018,"1ra Ronda, Grupo G",14,5,2,86
+95,../partidos/2018_inglaterra_panama.php,21,30,24-Jun-2018,"1ra Ronda, Grupo G",49,6,1,67
+96,../partidos/2018_polonia_colombia.php,21,31,24-Jun-2018,"1ra Ronda, Grupo H",70,0,3,22
+97,../partidos/2018_japon_senegal.php,21,32,24-Jun-2018,"1ra Ronda, Grupo H",58,2,2,77
+98,../partidos/2018_uruguay_rusia.php,21,33,25-Jun-2018,"1ra Ronda, Grupo A",89,3,0,76
+99,../partidos/2018_arabia_saudita_egipto.php,21,34,25-Jun-2018,"1ra Ronda, Grupo A",5,2,1,32
+100,../partidos/2018_iran_portugal.php,21,35,25-Jun-2018,"1ra Ronda, Grupo B",53,1,1,71
+101,../partidos/2018_espana_marruecos.php,21,36,25-Jun-2018,"1ra Ronda, Grupo B",38,2,2,61
+102,../partidos/2018_dinamarca_francia.php,21,37,26-Jun-2018,"1ra Ronda, Grupo C",30,0,0,40
+103,../partidos/2018_australia_peru.php,21,38,26-Jun-2018,"1ra Ronda, Grupo C",8,0,2,69
+104,../partidos/2018_nigeria_argentina.php,21,39,26-Jun-2018,"1ra Ronda, Grupo D",63,1,2,7
+105,../partidos/2018_islandia_croacia.php,21,40,26-Jun-2018,"1ra Ronda, Grupo D",54,1,2,27
+106,../partidos/2018_serbia_brasil.php,21,41,27-Jun-2018,"1ra Ronda, Grupo E",78,0,2,12
+107,../partidos/2018_suiza_costa_rica.php,21,42,27-Jun-2018,"1ra Ronda, Grupo E",82,2,2,25
+108,../partidos/2018_corea_del_sur_alemania.php,21,43,27-Jun-2018,"1ra Ronda, Grupo F",24,2,0,1
+109,../partidos/2018_mexico_suecia.php,21,44,27-Jun-2018,"1ra Ronda, Grupo F",62,0,3,81
+110,../partidos/2018_inglaterra_belgica.php,21,45,28-Jun-2018,"1ra Ronda, Grupo G",49,0,1,14
+111,../partidos/2018_panama_tunez.php,21,46,28-Jun-2018,"1ra Ronda, Grupo G",67,1,2,86
+112,../partidos/2018_japon_polonia.php,21,47,28-Jun-2018,"1ra Ronda, Grupo H",58,0,1,70
+113,../partidos/2018_senegal_colombia.php,21,48,28-Jun-2018,"1ra Ronda, Grupo H",77,0,1,22
+114,../partidos/2018_uruguay_portugal.php,21,49,30-Jun-2018,Octavos,89,2,1,71
+115,../partidos/2018_francia_argentina.php,21,50,30-Jun-2018,Octavos,40,4,3,7
+116,../partidos/2018_espana_rusia.php,21,51,01-Jul-2018,Octavos,38,1,1,76
+117,../partidos/2018_croacia_dinamarca.php,21,52,01-Jul-2018,Octavos,27,1,1,30
+118,../partidos/2018_brasil_mexico.php,21,53,02-Jul-2018,Octavos,12,2,0,62
+119,../partidos/2018_belgica_japon.php,21,54,02-Jul-2018,Octavos,14,3,2,58
+120,../partidos/2018_suecia_suiza.php,21,55,03-Jul-2018,Octavos,81,1,0,82
+121,../partidos/2018_colombia_inglaterra.php,21,56,03-Jul-2018,Octavos,22,1,1,49
+122,../partidos/2018_uruguay_francia.php,21,57,06-Jul-2018,Cuartos,89,0,2,40
+123,../partidos/2018_brasil_belgica.php,21,58,06-Jul-2018,Cuartos,12,1,2,14
+124,../partidos/2018_rusia_croacia.php,21,59,07-Jul-2018,Cuartos,76,2,2,27
+125,../partidos/2018_suecia_inglaterra.php,21,60,07-Jul-2018,Cuartos,81,0,2,49
+126,../partidos/2018_francia_belgica.php,21,61,10-Jul-2018,Semis,40,1,0,14
+127,../partidos/2018_croacia_inglaterra.php,21,62,11-Jul-2018,Semis,27,2,1,49
+128,../partidos/2018_belgica_inglaterra.php,21,63,14-Jul-2018,3er Puesto,14,2,0,49
+129,../partidos/2018_francia_croacia.php,21,64,15-Jul-2018,Final,40,4,2,27
+130,../partidos/2014_brasil_croacia.php,20,1,12-Jun-2014,"1ra Ronda, Grupo A",12,3,1,27
+131,../partidos/2014_mexico_camerun.php,20,2,13-Jun-2014,"1ra Ronda, Grupo A",62,1,0,16
+132,../partidos/2014_espana_holanda.php,20,3,13-Jun-2014,"1ra Ronda, Grupo B",38,1,5,66
+133,../partidos/2014_chile_australia.php,20,4,13-Jun-2014,"1ra Ronda, Grupo B",20,3,1,8
+134,../partidos/2014_colombia_grecia.php,20,5,14-Jun-2014,"1ra Ronda, Grupo C",22,3,0,43
+135,../partidos/2014_costa_de_marfil_japon.php,20,6,14-Jun-2014,"1ra Ronda, Grupo C",26,2,1,58
+136,../partidos/2014_uruguay_costa_rica.php,20,7,14-Jun-2014,"1ra Ronda, Grupo D",89,1,3,25
+137,../partidos/2014_inglaterra_italia.php,20,8,14-Jun-2014,"1ra Ronda, Grupo D",49,1,2,56
+138,../partidos/2014_suiza_ecuador.php,20,9,15-Jun-2014,"1ra Ronda, Grupo E",82,2,1,31
+139,../partidos/2014_francia_honduras.php,20,10,15-Jun-2014,"1ra Ronda, Grupo E",40,3,0,45
+140,../partidos/2014_argentina_bosnia_herzegovina.php,20,11,15-Jun-2014,"1ra Ronda, Grupo F",7,2,1,11
+141,../partidos/2014_iran_nigeria.php,20,12,16-Jun-2014,"1ra Ronda, Grupo F",53,0,0,63
+142,../partidos/2014_alemania_portugal.php,20,13,16-Jun-2014,"1ra Ronda, Grupo G",1,4,0,71
+143,../partidos/2014_ghana_estados_unidos.php,20,14,16-Jun-2014,"1ra Ronda, Grupo G",42,1,2,39
+144,../partidos/2014_belgica_argelia.php,20,15,17-Jun-2014,"1ra Ronda, Grupo H",14,2,1,6
+145,../partidos/2014_rusia_corea_del_sur.php,20,16,17-Jun-2014,"1ra Ronda, Grupo H",76,1,1,24
+146,../partidos/2014_brasil_mexico.php,20,17,17-Jun-2014,"1ra Ronda, Grupo A",12,0,0,62
+147,../partidos/2014_camerun_croacia.php,20,18,18-Jun-2014,"1ra Ronda, Grupo A",16,0,4,27
+148,../partidos/2014_espana_chile.php,20,19,18-Jun-2014,"1ra Ronda, Grupo B",38,0,2,20
+149,../partidos/2014_australia_holanda.php,20,20,18-Jun-2014,"1ra Ronda, Grupo B",8,2,3,66
+150,../partidos/2014_colombia_costa_de_marfil.php,20,21,19-Jun-2014,"1ra Ronda, Grupo C",22,2,1,26
+151,../partidos/2014_japon_grecia.php,20,22,19-Jun-2014,"1ra Ronda, Grupo C",58,0,0,43
+152,../partidos/2014_uruguay_inglaterra.php,20,23,19-Jun-2014,"1ra Ronda, Grupo D",89,2,1,49
+153,../partidos/2014_italia_costa_rica.php,20,24,20-Jun-2014,"1ra Ronda, Grupo D",56,0,1,25
+154,../partidos/2014_suiza_francia.php,20,25,20-Jun-2014,"1ra Ronda, Grupo E",82,2,5,40
+155,../partidos/2014_honduras_ecuador.php,20,26,20-Jun-2014,"1ra Ronda, Grupo E",45,1,2,31
+156,../partidos/2014_argentina_iran.php,20,27,21-Jun-2014,"1ra Ronda, Grupo F",7,1,0,53
+157,../partidos/2014_nigeria_bosnia_herzegovina.php,20,28,21-Jun-2014,"1ra Ronda, Grupo F",63,1,0,11
+158,../partidos/2014_alemania_ghana.php,20,29,21-Jun-2014,"1ra Ronda, Grupo G",1,2,2,42
+159,../partidos/2014_estados_unidos_portugal.php,20,30,22-Jun-2014,"1ra Ronda, Grupo G",39,2,2,71
+160,../partidos/2014_belgica_rusia.php,20,31,22-Jun-2014,"1ra Ronda, Grupo H",14,1,0,76
+161,../partidos/2014_corea_del_sur_argelia.php,20,32,22-Jun-2014,"1ra Ronda, Grupo H",24,2,4,6
+162,../partidos/2014_camerun_brasil.php,20,33,23-Jun-2014,"1ra Ronda, Grupo A",16,1,4,12
+163,../partidos/2014_croacia_mexico.php,20,34,23-Jun-2014,"1ra Ronda, Grupo A",27,1,3,62
+164,../partidos/2014_australia_espana.php,20,35,23-Jun-2014,"1ra Ronda, Grupo B",8,0,3,38
+165,../partidos/2014_holanda_chile.php,20,36,23-Jun-2014,"1ra Ronda, Grupo B",66,2,0,20
+166,../partidos/2014_japon_colombia.php,20,37,24-Jun-2014,"1ra Ronda, Grupo C",58,1,4,22
+167,../partidos/2014_grecia_costa_de_marfil.php,20,38,24-Jun-2014,"1ra Ronda, Grupo C",43,2,1,26
+168,../partidos/2014_italia_uruguay.php,20,39,24-Jun-2014,"1ra Ronda, Grupo D",56,0,1,89
+169,../partidos/2014_costa_rica_inglaterra.php,20,40,24-Jun-2014,"1ra Ronda, Grupo D",25,0,0,49
+170,../partidos/2014_honduras_suiza.php,20,41,25-Jun-2014,"1ra Ronda, Grupo E",45,0,3,82
+171,../partidos/2014_ecuador_francia.php,20,42,25-Jun-2014,"1ra Ronda, Grupo E",31,0,0,40
+172,../partidos/2014_nigeria_argentina.php,20,43,25-Jun-2014,"1ra Ronda, Grupo F",63,2,3,7
+173,../partidos/2014_bosnia_herzegovina_iran.php,20,44,25-Jun-2014,"1ra Ronda, Grupo F",11,3,1,53
+174,../partidos/2014_estados_unidos_alemania.php,20,45,26-Jun-2014,"1ra Ronda, Grupo G",39,0,1,1
+175,../partidos/2014_portugal_ghana.php,20,46,26-Jun-2014,"1ra Ronda, Grupo G",71,2,1,42
+176,../partidos/2014_corea_del_sur_belgica.php,20,47,26-Jun-2014,"1ra Ronda, Grupo H",24,0,1,14
+177,../partidos/2014_argelia_rusia.php,20,48,26-Jun-2014,"1ra Ronda, Grupo H",6,1,1,76
+178,../partidos/2014_brasil_chile.php,20,49,28-Jun-2014,Octavos,12,1,1,20
+179,../partidos/2014_colombia_uruguay.php,20,50,28-Jun-2014,Octavos,22,2,0,89
+180,../partidos/2014_holanda_mexico.php,20,51,29-Jun-2014,Octavos,66,2,1,62
+181,../partidos/2014_costa_rica_grecia.php,20,52,29-Jun-2014,Octavos,25,1,1,43
+182,../partidos/2014_francia_nigeria.php,20,53,30-Jun-2014,Octavos,40,2,0,63
+183,../partidos/2014_alemania_argelia.php,20,54,30-Jun-2014,Octavos,1,2,1,6
+184,../partidos/2014_argentina_suiza.php,20,55,01-Jul-2014,Octavos,7,1,0,82
+185,../partidos/2014_belgica_estados_unidos.php,20,56,01-Jul-2014,Octavos,14,2,1,39
+186,../partidos/2014_brasil_colombia.php,20,57,04-Jul-2014,Cuartos,12,2,1,22
+187,../partidos/2014_francia_alemania.php,20,58,04-Jul-2014,Cuartos,40,0,1,1
+188,../partidos/2014_holanda_costa_rica.php,20,59,05-Jul-2014,Cuartos,66,0,0,25
+189,../partidos/2014_argentina_belgica.php,20,60,05-Jul-2014,Cuartos,7,1,0,14
+190,../partidos/2014_brasil_alemania.php,20,61,08-Jul-2014,Semis,12,1,7,1
+191,../partidos/2014_holanda_argentina.php,20,62,09-Jul-2014,Semis,66,0,0,7
+192,../partidos/2014_brasil_holanda.php,20,63,12-Jul-2014,3er Puesto,12,0,3,66
+193,../partidos/2014_alemania_argentina.php,20,64,13-Jul-2014,Final,1,1,0,7
+194,../partidos/2010_sudafrica_mexico.php,19,1,11-Jun-2010,"1ra Ronda, Grupo A",80,1,1,62
+195,../partidos/2010_uruguay_francia.php,19,2,11-Jun-2010,"1ra Ronda, Grupo A",89,0,0,40
+196,../partidos/2010_argentina_nigeria.php,19,3,12-Jun-2010,"1ra Ronda, Grupo B",7,1,0,63
+197,../partidos/2010_corea_del_sur_grecia.php,19,4,12-Jun-2010,"1ra Ronda, Grupo B",24,2,0,43
+198,../partidos/2010_inglaterra_estados_unidos.php,19,5,12-Jun-2010,"1ra Ronda, Grupo C",49,1,1,39
+199,../partidos/2010_argelia_eslovenia.php,19,6,13-Jun-2010,"1ra Ronda, Grupo C",6,0,1,37
+200,../partidos/2010_alemania_australia.php,19,7,13-Jun-2010,"1ra Ronda, Grupo D",1,4,0,8
+201,../partidos/2010_serbia_ghana.php,19,8,13-Jun-2010,"1ra Ronda, Grupo D",78,0,1,42
+202,../partidos/2010_holanda_dinamarca.php,19,9,14-Jun-2010,"1ra Ronda, Grupo E",66,2,0,30
+203,../partidos/2010_japon_camerun.php,19,10,14-Jun-2010,"1ra Ronda, Grupo E",58,1,0,16
+204,../partidos/2010_italia_paraguay.php,19,11,14-Jun-2010,"1ra Ronda, Grupo F",56,1,1,68
+205,../partidos/2010_nueva_zelanda_eslovaquia.php,19,12,15-Jun-2010,"1ra Ronda, Grupo F",65,1,1,36
+206,../partidos/2010_costa_de_marfil_portugal.php,19,13,15-Jun-2010,"1ra Ronda, Grupo G",26,0,0,71
+207,../partidos/2010_brasil_corea_del_norte.php,19,14,15-Jun-2010,"1ra Ronda, Grupo G",12,2,1,23
+208,../partidos/2010_honduras_chile.php,19,15,16-Jun-2010,"1ra Ronda, Grupo H",45,0,1,20
+209,../partidos/2010_espana_suiza.php,19,16,16-Jun-2010,"1ra Ronda, Grupo H",38,0,1,82
+210,../partidos/2010_sudafrica_uruguay.php,19,17,16-Jun-2010,"1ra Ronda, Grupo A",80,0,3,89
+211,../partidos/2010_francia_mexico.php,19,18,17-Jun-2010,"1ra Ronda, Grupo A",40,0,2,62
+212,../partidos/2010_grecia_nigeria.php,19,19,17-Jun-2010,"1ra Ronda, Grupo B",43,2,1,63
+213,../partidos/2010_argentina_corea_del_sur.php,19,20,17-Jun-2010,"1ra Ronda, Grupo B",7,4,1,24
+214,../partidos/2010_alemania_serbia.php,19,21,18-Jun-2010,"1ra Ronda, Grupo D",1,0,1,78
+215,../partidos/2010_eslovenia_estados_unidos.php,19,22,18-Jun-2010,"1ra Ronda, Grupo C",37,2,2,39
+216,../partidos/2010_inglaterra_argelia.php,19,23,18-Jun-2010,"1ra Ronda, Grupo C",49,0,0,6
+217,../partidos/2010_ghana_australia.php,19,24,19-Jun-2010,"1ra Ronda, Grupo D",42,1,1,8
+218,../partidos/2010_holanda_japon.php,19,25,19-Jun-2010,"1ra Ronda, Grupo E",66,1,0,58
+219,../partidos/2010_camerun_dinamarca.php,19,26,19-Jun-2010,"1ra Ronda, Grupo E",16,1,2,30
+220,../partidos/2010_eslovaquia_paraguay.php,19,27,20-Jun-2010,"1ra Ronda, Grupo F",36,0,2,68
+221,../partidos/2010_italia_nueva_zelanda.php,19,28,20-Jun-2010,"1ra Ronda, Grupo F",56,1,1,65
+222,../partidos/2010_brasil_costa_de_marfil.php,19,29,20-Jun-2010,"1ra Ronda, Grupo G",12,3,1,26
+223,../partidos/2010_portugal_corea_del_norte.php,19,30,21-Jun-2010,"1ra Ronda, Grupo G",71,7,0,23
+224,../partidos/2010_chile_suiza.php,19,31,21-Jun-2010,"1ra Ronda, Grupo H",20,1,0,82
+225,../partidos/2010_espana_honduras.php,19,32,21-Jun-2010,"1ra Ronda, Grupo H",38,2,0,45
+226,../partidos/2010_mexico_uruguay.php,19,33,22-Jun-2010,"1ra Ronda, Grupo A",62,0,1,89
+227,../partidos/2010_francia_sudafrica.php,19,34,22-Jun-2010,"1ra Ronda, Grupo A",40,1,2,80
+228,../partidos/2010_nigeria_corea_del_sur.php,19,35,22-Jun-2010,"1ra Ronda, Grupo B",63,2,2,24
+229,../partidos/2010_grecia_argentina.php,19,36,22-Jun-2010,"1ra Ronda, Grupo B",43,0,2,7
+230,../partidos/2010_eslovenia_inglaterra.php,19,37,23-Jun-2010,"1ra Ronda, Grupo C",37,0,1,49
+231,../partidos/2010_estados_unidos_argelia.php,19,38,23-Jun-2010,"1ra Ronda, Grupo C",39,1,0,6
+232,../partidos/2010_ghana_alemania.php,19,39,23-Jun-2010,"1ra Ronda, Grupo D",42,0,1,1
+233,../partidos/2010_australia_serbia.php,19,40,23-Jun-2010,"1ra Ronda, Grupo D",8,2,1,78
+234,../partidos/2010_eslovaquia_italia.php,19,41,24-Jun-2010,"1ra Ronda, Grupo F",36,3,2,56
+235,../partidos/2010_paraguay_nueva_zelanda.php,19,42,24-Jun-2010,"1ra Ronda, Grupo F",68,0,0,65
+236,../partidos/2010_dinamarca_japon.php,19,43,24-Jun-2010,"1ra Ronda, Grupo E",30,1,3,58
+237,../partidos/2010_camerun_holanda.php,19,44,24-Jun-2010,"1ra Ronda, Grupo E",16,1,2,66
+238,../partidos/2010_portugal_brasil.php,19,45,25-Jun-2010,"1ra Ronda, Grupo G",71,0,0,12
+239,../partidos/2010_corea_del_norte_costa_de_marfil.php,19,46,25-Jun-2010,"1ra Ronda, Grupo G",23,0,3,26
+240,../partidos/2010_chile_espana.php,19,47,25-Jun-2010,"1ra Ronda, Grupo H",20,1,2,38
+241,../partidos/2010_suiza_honduras.php,19,48,25-Jun-2010,"1ra Ronda, Grupo H",82,0,0,45
+242,../partidos/2010_uruguay_corea_del_sur.php,19,49,26-Jun-2010,Octavos,89,2,1,24
+243,../partidos/2010_estados_unidos_ghana.php,19,50,26-Jun-2010,Octavos,39,1,2,42
+244,../partidos/2010_alemania_inglaterra.php,19,51,27-Jun-2010,Octavos,1,4,1,49
+245,../partidos/2010_argentina_mexico.php,19,52,27-Jun-2010,Octavos,7,3,1,62
+246,../partidos/2010_holanda_eslovaquia.php,19,53,28-Jun-2010,Octavos,66,2,1,36
+247,../partidos/2010_brasil_chile.php,19,54,28-Jun-2010,Octavos,12,3,0,20
+248,../partidos/2010_paraguay_japon.php,19,55,29-Jun-2010,Octavos,68,0,0,58
+249,../partidos/2010_espana_portugal.php,19,56,29-Jun-2010,Octavos,38,1,0,71
+250,../partidos/2010_holanda_brasil.php,19,57,02-Jul-2010,Cuartos,66,2,1,12
+251,../partidos/2010_uruguay_ghana.php,19,58,02-Jul-2010,Cuartos,89,1,1,42
+252,../partidos/2010_argentina_alemania.php,19,59,03-Jul-2010,Cuartos,7,0,4,1
+253,../partidos/2010_paraguay_espana.php,19,60,03-Jul-2010,Cuartos,68,0,1,38
+254,../partidos/2010_uruguay_holanda.php,19,61,06-Jul-2010,Semis,89,2,3,66
+255,../partidos/2010_alemania_espana.php,19,62,07-Jul-2010,Semis,1,0,1,38
+256,../partidos/2010_uruguay_alemania.php,19,63,10-Jul-2010,3er Puesto,89,2,3,1
+257,../partidos/2010_holanda_espana.php,19,64,11-Jul-2010,Final,66,0,1,38
+258,../partidos/2006_alemania_costa_rica.php,18,1,09-Jun-2006,"1ra Ronda, Grupo A",1,4,2,25
+259,../partidos/2006_polonia_ecuador.php,18,2,09-Jun-2006,"1ra Ronda, Grupo A",70,0,2,31
+260,../partidos/2006_inglaterra_paraguay.php,18,3,10-Jun-2006,"1ra Ronda, Grupo B",49,1,0,68
+261,../partidos/2006_trinidad_y_tobago_suecia.php,18,4,10-Jun-2006,"1ra Ronda, Grupo B",84,0,0,81
+262,../partidos/2006_argentina_costa_de_marfil.php,18,5,10-Jun-2006,"1ra Ronda, Grupo C",7,2,1,26
+263,../partidos/2006_serbia_y_montenegro_holanda.php,18,6,11-Jun-2006,"1ra Ronda, Grupo C",79,0,1,66
+264,../partidos/2006_mexico_iran.php,18,7,11-Jun-2006,"1ra Ronda, Grupo D",62,3,1,53
+265,../partidos/2006_angola_portugal.php,18,8,11-Jun-2006,"1ra Ronda, Grupo D",4,0,1,71
+266,../partidos/2006_italia_ghana.php,18,9,12-Jun-2006,"1ra Ronda, Grupo E",56,2,0,42
+267,../partidos/2006_estados_unidos_republica_checa.php,18,10,12-Jun-2006,"1ra Ronda, Grupo E",39,0,3,74
+268,../partidos/2006_australia_japon.php,18,11,12-Jun-2006,"1ra Ronda, Grupo F",8,3,1,58
+269,../partidos/2006_brasil_croacia.php,18,12,13-Jun-2006,"1ra Ronda, Grupo F",12,1,0,27
+270,../partidos/2006_francia_suiza.php,18,13,13-Jun-2006,"1ra Ronda, Grupo G",40,0,0,82
+271,../partidos/2006_corea_del_sur_togo.php,18,14,13-Jun-2006,"1ra Ronda, Grupo G",24,2,1,83
+272,../partidos/2006_espana_ucrania.php,18,15,14-Jun-2006,"1ra Ronda, Grupo H",38,4,0,88
+273,../partidos/2006_tunez_arabia_saudita.php,18,16,14-Jun-2006,"1ra Ronda, Grupo H",86,2,2,5
+274,../partidos/2006_alemania_polonia.php,18,17,14-Jun-2006,"1ra Ronda, Grupo A",1,1,0,70
+275,../partidos/2006_ecuador_costa_rica.php,18,18,15-Jun-2006,"1ra Ronda, Grupo A",31,3,0,25
+276,../partidos/2006_inglaterra_trinidad_y_tobago.php,18,19,15-Jun-2006,"1ra Ronda, Grupo B",49,2,0,84
+277,../partidos/2006_suecia_paraguay.php,18,20,15-Jun-2006,"1ra Ronda, Grupo B",81,1,0,68
+278,../partidos/2006_argentina_serbia_y_montenegro.php,18,21,16-Jun-2006,"1ra Ronda, Grupo C",7,6,0,79
+279,../partidos/2006_holanda_costa_de_marfil.php,18,22,16-Jun-2006,"1ra Ronda, Grupo C",66,2,1,26
+280,../partidos/2006_mexico_angola.php,18,23,16-Jun-2006,"1ra Ronda, Grupo D",62,0,0,4
+281,../partidos/2006_portugal_iran.php,18,24,17-Jun-2006,"1ra Ronda, Grupo D",71,2,0,53
+282,../partidos/2006_italia_estados_unidos.php,18,25,17-Jun-2006,"1ra Ronda, Grupo E",56,1,1,39
+283,../partidos/2006_republica_checa_ghana.php,18,26,17-Jun-2006,"1ra Ronda, Grupo E",74,0,2,42
+284,../partidos/2006_brasil_australia.php,18,27,18-Jun-2006,"1ra Ronda, Grupo F",12,2,0,8
+285,../partidos/2006_japon_croacia.php,18,28,18-Jun-2006,"1ra Ronda, Grupo F",58,0,0,27
+286,../partidos/2006_francia_corea_del_sur.php,18,29,18-Jun-2006,"1ra Ronda, Grupo G",40,1,1,24
+287,../partidos/2006_togo_suiza.php,18,30,19-Jun-2006,"1ra Ronda, Grupo G",83,0,2,82
+288,../partidos/2006_espana_tunez.php,18,31,19-Jun-2006,"1ra Ronda, Grupo H",38,3,1,86
+289,../partidos/2006_arabia_saudita_ucrania.php,18,32,19-Jun-2006,"1ra Ronda, Grupo H",5,0,4,88
+290,../partidos/2006_ecuador_alemania.php,18,33,20-Jun-2006,"1ra Ronda, Grupo A",31,0,3,1
+291,../partidos/2006_costa_rica_polonia.php,18,34,20-Jun-2006,"1ra Ronda, Grupo A",25,1,2,70
+292,../partidos/2006_suecia_inglaterra.php,18,35,20-Jun-2006,"1ra Ronda, Grupo B",81,2,2,49
+293,../partidos/2006_paraguay_trinidad_y_tobago.php,18,36,20-Jun-2006,"1ra Ronda, Grupo B",68,2,0,84
+294,../partidos/2006_holanda_argentina.php,18,37,21-Jun-2006,"1ra Ronda, Grupo C",66,0,0,7
+295,../partidos/2006_costa_de_marfil_serbia_y_montenegro.php,18,38,21-Jun-2006,"1ra Ronda, Grupo C",26,3,2,79
+296,../partidos/2006_portugal_mexico.php,18,39,21-Jun-2006,"1ra Ronda, Grupo D",71,2,1,62
+297,../partidos/2006_iran_angola.php,18,40,21-Jun-2006,"1ra Ronda, Grupo D",53,1,1,4
+298,../partidos/2006_republica_checa_italia.php,18,41,22-Jun-2006,"1ra Ronda, Grupo E",74,0,2,56
+299,../partidos/2006_ghana_estados_unidos.php,18,42,22-Jun-2006,"1ra Ronda, Grupo E",42,2,1,39
+300,../partidos/2006_japon_brasil.php,18,43,22-Jun-2006,"1ra Ronda, Grupo F",58,1,4,12
+301,../partidos/2006_croacia_australia.php,18,44,22-Jun-2006,"1ra Ronda, Grupo F",27,2,2,8
+302,../partidos/2006_togo_francia.php,18,45,23-Jun-2006,"1ra Ronda, Grupo G",83,0,2,40
+303,../partidos/2006_suiza_corea_del_sur.php,18,46,23-Jun-2006,"1ra Ronda, Grupo G",82,2,0,24
+304,../partidos/2006_arabia_saudita_espana.php,18,47,23-Jun-2006,"1ra Ronda, Grupo H",5,0,1,38
+305,../partidos/2006_ucrania_tunez.php,18,48,23-Jun-2006,"1ra Ronda, Grupo H",88,1,0,86
+306,../partidos/2006_alemania_suecia.php,18,49,24-Jun-2006,Octavos,1,2,0,81
+307,../partidos/2006_argentina_mexico.php,18,50,24-Jun-2006,Octavos,7,2,1,62
+308,../partidos/2006_inglaterra_ecuador.php,18,51,25-Jun-2006,Octavos,49,1,0,31
+309,../partidos/2006_portugal_holanda.php,18,52,25-Jun-2006,Octavos,71,1,0,66
+310,../partidos/2006_italia_australia.php,18,53,26-Jun-2006,Octavos,56,1,0,8
+311,../partidos/2006_suiza_ucrania.php,18,54,26-Jun-2006,Octavos,82,0,0,88
+312,../partidos/2006_brasil_ghana.php,18,55,27-Jun-2006,Octavos,12,3,0,42
+313,../partidos/2006_espana_francia.php,18,56,27-Jun-2006,Octavos,38,1,3,40
+314,../partidos/2006_alemania_argentina.php,18,57,30-Jun-2006,Cuartos,1,1,1,7
+315,../partidos/2006_italia_ucrania.php,18,58,30-Jun-2006,Cuartos,56,3,0,88
+316,../partidos/2006_inglaterra_portugal.php,18,59,01-Jul-2006,Cuartos,49,0,0,71
+317,../partidos/2006_brasil_francia.php,18,60,01-Jul-2006,Cuartos,12,0,1,40
+318,../partidos/2006_alemania_italia.php,18,61,04-Jul-2006,Semis,1,0,2,56
+319,../partidos/2006_portugal_francia.php,18,62,05-Jul-2006,Semis,71,0,1,40
+320,../partidos/2006_alemania_portugal.php,18,63,08-Jul-2006,3er Puesto,1,3,1,71
+321,../partidos/2006_italia_francia.php,18,64,09-Jul-2006,Final,56,1,1,40
+322,../partidos/2002_francia_senegal.php,17,1,31-May-2002,"1ra Ronda, Grupo A",40,0,1,77
+323,../partidos/2002_irlanda_camerun.php,17,2,01-Jun-2002,"1ra Ronda, Grupo E",51,1,1,16
+324,../partidos/2002_uruguay_dinamarca.php,17,3,01-Jun-2002,"1ra Ronda, Grupo A",89,1,2,30
+325,../partidos/2002_alemania_arabia_saudita.php,17,4,01-Jun-2002,"1ra Ronda, Grupo E",1,8,0,5
+326,../partidos/2002_inglaterra_suecia.php,17,5,02-Jun-2002,"1ra Ronda, Grupo F",49,1,1,81
+327,../partidos/2002_paraguay_sudafrica.php,17,6,02-Jun-2002,"1ra Ronda, Grupo B",68,2,2,80
+328,../partidos/2002_argentina_nigeria.php,17,7,02-Jun-2002,"1ra Ronda, Grupo F",7,1,0,63
+329,../partidos/2002_espana_eslovenia.php,17,8,02-Jun-2002,"1ra Ronda, Grupo B",38,3,1,37
+330,../partidos/2002_croacia_mexico.php,17,9,03-Jun-2002,"1ra Ronda, Grupo G",27,0,1,62
+331,../partidos/2002_brasil_turquia.php,17,10,03-Jun-2002,"1ra Ronda, Grupo C",12,2,1,85
+332,../partidos/2002_italia_ecuador.php,17,11,03-Jun-2002,"1ra Ronda, Grupo G",56,2,0,31
+333,../partidos/2002_china_costa_rica.php,17,12,04-Jun-2002,"1ra Ronda, Grupo C",21,0,2,25
+334,../partidos/2002_japon_belgica.php,17,13,04-Jun-2002,"1ra Ronda, Grupo H",58,2,2,14
+335,../partidos/2002_corea_del_sur_polonia.php,17,14,04-Jun-2002,"1ra Ronda, Grupo D",24,2,0,70
+336,../partidos/2002_rusia_tunez.php,17,15,05-Jun-2002,"1ra Ronda, Grupo H",76,2,0,86
+337,../partidos/2002_estados_unidos_portugal.php,17,16,05-Jun-2002,"1ra Ronda, Grupo D",39,3,2,71
+338,../partidos/2002_alemania_irlanda.php,17,17,05-Jun-2002,"1ra Ronda, Grupo E",1,1,1,51
+339,../partidos/2002_francia_uruguay.php,17,18,06-Jun-2002,"1ra Ronda, Grupo A",40,0,0,89
+340,../partidos/2002_camerun_arabia_saudita.php,17,19,06-Jun-2002,"1ra Ronda, Grupo E",16,1,0,5
+341,../partidos/2002_dinamarca_senegal.php,17,20,06-Jun-2002,"1ra Ronda, Grupo A",30,1,1,77
+342,../partidos/2002_suecia_nigeria.php,17,21,07-Jun-2002,"1ra Ronda, Grupo F",81,2,1,63
+343,../partidos/2002_espana_paraguay.php,17,22,07-Jun-2002,"1ra Ronda, Grupo B",38,3,1,68
+344,../partidos/2002_argentina_inglaterra.php,17,23,07-Jun-2002,"1ra Ronda, Grupo F",7,0,1,49
+345,../partidos/2002_sudafrica_eslovenia.php,17,24,08-Jun-2002,"1ra Ronda, Grupo B",80,1,0,37
+346,../partidos/2002_italia_croacia.php,17,25,08-Jun-2002,"1ra Ronda, Grupo G",56,1,2,27
+347,../partidos/2002_brasil_china.php,17,26,08-Jun-2002,"1ra Ronda, Grupo C",12,4,0,21
+348,../partidos/2002_mexico_ecuador.php,17,27,09-Jun-2002,"1ra Ronda, Grupo G",62,2,1,31
+349,../partidos/2002_costa_rica_turquia.php,17,28,09-Jun-2002,"1ra Ronda, Grupo C",25,1,1,85
+350,../partidos/2002_japon_rusia.php,17,29,09-Jun-2002,"1ra Ronda, Grupo H",58,1,0,76
+351,../partidos/2002_corea_del_sur_estados_unidos.php,17,30,10-Jun-2002,"1ra Ronda, Grupo D",24,1,1,39
+352,../partidos/2002_tunez_belgica.php,17,31,10-Jun-2002,"1ra Ronda, Grupo H",86,1,1,14
+353,../partidos/2002_portugal_polonia.php,17,32,10-Jun-2002,"1ra Ronda, Grupo D",71,4,0,70
+354,../partidos/2002_dinamarca_francia.php,17,33,11-Jun-2002,"1ra Ronda, Grupo A",30,2,0,40
+355,../partidos/2002_senegal_uruguay.php,17,34,11-Jun-2002,"1ra Ronda, Grupo A",77,3,3,89
+356,../partidos/2002_camerun_alemania.php,17,35,11-Jun-2002,"1ra Ronda, Grupo E",16,0,2,1
+357,../partidos/2002_arabia_saudita_irlanda.php,17,36,11-Jun-2002,"1ra Ronda, Grupo E",5,0,3,51
+358,../partidos/2002_suecia_argentina.php,17,37,12-Jun-2002,"1ra Ronda, Grupo F",81,1,1,7
+359,../partidos/2002_nigeria_inglaterra.php,17,38,12-Jun-2002,"1ra Ronda, Grupo F",63,0,0,49
+360,../partidos/2002_sudafrica_espana.php,17,39,12-Jun-2002,"1ra Ronda, Grupo B",80,2,3,38
+361,../partidos/2002_eslovenia_paraguay.php,17,40,12-Jun-2002,"1ra Ronda, Grupo B",37,1,3,68
+362,../partidos/2002_costa_rica_brasil.php,17,41,13-Jun-2002,"1ra Ronda, Grupo C",25,2,5,12
+363,../partidos/2002_turquia_china.php,17,42,13-Jun-2002,"1ra Ronda, Grupo C",85,3,0,21
+364,../partidos/2002_mexico_italia.php,17,43,13-Jun-2002,"1ra Ronda, Grupo G",62,1,1,56
+365,../partidos/2002_ecuador_croacia.php,17,44,13-Jun-2002,"1ra Ronda, Grupo G",31,1,0,27
+366,../partidos/2002_tunez_japon.php,17,45,14-Jun-2002,"1ra Ronda, Grupo H",86,0,2,58
+367,../partidos/2002_belgica_rusia.php,17,46,14-Jun-2002,"1ra Ronda, Grupo H",14,3,2,76
+368,../partidos/2002_portugal_corea_del_sur.php,17,47,14-Jun-2002,"1ra Ronda, Grupo D",71,0,1,24
+369,../partidos/2002_polonia_estados_unidos.php,17,48,14-Jun-2002,"1ra Ronda, Grupo D",70,3,1,39
+370,../partidos/2002_alemania_paraguay.php,17,49,15-Jun-2002,Octavos,1,1,0,68
+371,../partidos/2002_dinamarca_inglaterra.php,17,50,15-Jun-2002,Octavos,30,0,3,49
+372,../partidos/2002_suecia_senegal.php,17,51,16-Jun-2002,Octavos,81,1,2,77
+373,../partidos/2002_espana_irlanda.php,17,52,16-Jun-2002,Octavos,38,1,1,51
+374,../partidos/2002_mexico_estados_unidos.php,17,53,17-Jun-2002,Octavos,62,0,2,39
+375,../partidos/2002_brasil_belgica.php,17,54,17-Jun-2002,Octavos,12,2,0,14
+376,../partidos/2002_japon_turquia.php,17,55,18-Jun-2002,Octavos,58,0,1,85
+377,../partidos/2002_corea_del_sur_italia.php,17,56,18-Jun-2002,Octavos,24,2,1,56
+378,../partidos/2002_inglaterra_brasil.php,17,57,21-Jun-2002,Cuartos,49,1,2,12
+379,../partidos/2002_alemania_estados_unidos.php,17,58,21-Jun-2002,Cuartos,1,1,0,39
+380,../partidos/2002_espana_corea_del_sur.php,17,59,22-Jun-2002,Cuartos,38,0,0,24
+381,../partidos/2002_senegal_turquia.php,17,60,22-Jun-2002,Cuartos,77,0,1,85
+382,../partidos/2002_alemania_corea_del_sur.php,17,61,25-Jun-2002,Semis,1,1,0,24
+383,../partidos/2002_brasil_turquia_2.php,17,62,26-Jun-2002,Semis,12,1,0,85
+384,../partidos/2002_corea_del_sur_turquia.php,17,63,29-Jun-2002,3er Puesto,24,2,3,85
+385,../partidos/2002_alemania_brasil.php,17,64,30-Jun-2002,Final,1,0,2,12
+386,../partidos/1998_brasil_escocia.php,16,1,10-Jun-1998,"1ra Ronda, Grupo A",12,2,1,35
+387,../partidos/1998_marruecos_noruega.php,16,2,10-Jun-1998,"1ra Ronda, Grupo A",61,2,2,64
+388,../partidos/1998_camerun_austria.php,16,3,11-Jun-1998,"1ra Ronda, Grupo B",16,1,1,9
+389,../partidos/1998_italia_chile.php,16,4,11-Jun-1998,"1ra Ronda, Grupo B",56,2,2,20
+390,../partidos/1998_arabia_saudita_dinamarca.php,16,5,12-Jun-1998,"1ra Ronda, Grupo C",5,0,1,30
+391,../partidos/1998_francia_sudafrica.php,16,6,12-Jun-1998,"1ra Ronda, Grupo C",40,3,0,80
+392,../partidos/1998_paraguay_bulgaria.php,16,7,12-Jun-1998,"1ra Ronda, Grupo D",68,0,0,13
+393,../partidos/1998_holanda_belgica.php,16,8,13-Jun-1998,"1ra Ronda, Grupo E",66,0,0,14
+394,../partidos/1998_corea_del_sur_mexico.php,16,9,13-Jun-1998,"1ra Ronda, Grupo E",24,1,3,62
+395,../partidos/1998_espana_nigeria.php,16,10,13-Jun-1998,"1ra Ronda, Grupo D",38,2,3,63
+396,../partidos/1998_jamaica_croacia.php,16,11,14-Jun-1998,"1ra Ronda, Grupo H",57,1,3,27
+397,../partidos/1998_rf_de_yugoslavia_iran.php,16,12,14-Jun-1998,"1ra Ronda, Grupo F",73,1,0,53
+398,../partidos/1998_argentina_japon.php,16,13,14-Jun-1998,"1ra Ronda, Grupo H",7,1,0,58
+399,../partidos/1998_alemania_estados_unidos.php,16,14,15-Jun-1998,"1ra Ronda, Grupo F",1,2,0,39
+400,../partidos/1998_rumania_colombia.php,16,15,15-Jun-1998,"1ra Ronda, Grupo G",75,1,0,22
+401,../partidos/1998_inglaterra_tunez.php,16,16,15-Jun-1998,"1ra Ronda, Grupo G",49,2,0,86
+402,../partidos/1998_escocia_noruega.php,16,17,16-Jun-1998,"1ra Ronda, Grupo A",35,1,1,64
+403,../partidos/1998_brasil_marruecos.php,16,18,16-Jun-1998,"1ra Ronda, Grupo A",12,3,0,61
+404,../partidos/1998_chile_austria.php,16,19,17-Jun-1998,"1ra Ronda, Grupo B",20,1,1,9
+405,../partidos/1998_italia_camerun.php,16,20,17-Jun-1998,"1ra Ronda, Grupo B",56,3,0,16
+406,../partidos/1998_francia_arabia_saudita.php,16,21,18-Jun-1998,"1ra Ronda, Grupo C",40,4,0,5
+407,../partidos/1998_sudafrica_dinamarca.php,16,22,18-Jun-1998,"1ra Ronda, Grupo C",80,1,1,30
+408,../partidos/1998_nigeria_bulgaria.php,16,23,19-Jun-1998,"1ra Ronda, Grupo D",63,1,0,13
+409,../partidos/1998_espana_paraguay.php,16,24,19-Jun-1998,"1ra Ronda, Grupo D",38,0,0,68
+410,../partidos/1998_holanda_corea_del_sur.php,16,25,20-Jun-1998,"1ra Ronda, Grupo E",66,5,0,24
+411,../partidos/1998_belgica_mexico.php,16,26,20-Jun-1998,"1ra Ronda, Grupo E",14,2,2,62
+412,../partidos/1998_japon_croacia.php,16,27,20-Jun-1998,"1ra Ronda, Grupo H",58,0,1,27
+413,../partidos/1998_argentina_jamaica.php,16,28,21-Jun-1998,"1ra Ronda, Grupo H",7,5,0,57
+414,../partidos/1998_alemania_rf_de_yugoslavia.php,16,29,21-Jun-1998,"1ra Ronda, Grupo F",1,2,2,73
+415,../partidos/1998_estados_unidos_iran.php,16,30,21-Jun-1998,"1ra Ronda, Grupo F",39,1,2,53
+416,../partidos/1998_colombia_tunez.php,16,31,22-Jun-1998,"1ra Ronda, Grupo G",22,1,0,86
+417,../partidos/1998_rumania_inglaterra.php,16,32,22-Jun-1998,"1ra Ronda, Grupo G",75,2,1,49
+418,../partidos/1998_italia_austria.php,16,33,23-Jun-1998,"1ra Ronda, Grupo B",56,2,1,9
+419,../partidos/1998_escocia_marruecos.php,16,34,23-Jun-1998,"1ra Ronda, Grupo A",35,0,3,61
+420,../partidos/1998_brasil_noruega.php,16,35,23-Jun-1998,"1ra Ronda, Grupo A",12,1,2,64
+421,../partidos/1998_chile_camerun.php,16,36,23-Jun-1998,"1ra Ronda, Grupo B",20,1,1,16
+422,../partidos/1998_espana_bulgaria.php,16,37,24-Jun-1998,"1ra Ronda, Grupo D",38,6,1,13
+423,../partidos/1998_francia_dinamarca.php,16,38,24-Jun-1998,"1ra Ronda, Grupo C",40,2,1,30
+424,../partidos/1998_nigeria_paraguay.php,16,39,24-Jun-1998,"1ra Ronda, Grupo D",63,1,3,68
+425,../partidos/1998_sudafrica_arabia_saudita.php,16,40,24-Jun-1998,"1ra Ronda, Grupo C",80,2,2,5
+426,../partidos/1998_belgica_corea_del_sur.php,16,41,25-Jun-1998,"1ra Ronda, Grupo E",14,1,1,24
+427,../partidos/1998_holanda_mexico.php,16,42,25-Jun-1998,"1ra Ronda, Grupo E",66,2,2,62
+428,../partidos/1998_alemania_iran.php,16,43,25-Jun-1998,"1ra Ronda, Grupo F",1,2,0,53
+429,../partidos/1998_estados_unidos_rf_de_yugoslavia.php,16,44,25-Jun-1998,"1ra Ronda, Grupo F",39,0,1,73
+430,../partidos/1998_rumania_tunez.php,16,45,26-Jun-1998,"1ra Ronda, Grupo G",75,1,1,86
+431,../partidos/1998_colombia_inglaterra.php,16,46,26-Jun-1998,"1ra Ronda, Grupo G",22,0,2,49
+432,../partidos/1998_japon_jamaica.php,16,47,26-Jun-1998,"1ra Ronda, Grupo H",58,1,2,57
+433,../partidos/1998_argentina_croacia.php,16,48,26-Jun-1998,"1ra Ronda, Grupo H",7,1,0,27
+434,../partidos/1998_brasil_chile.php,16,49,27-Jun-1998,Octavos,12,4,1,20
+435,../partidos/1998_italia_noruega.php,16,50,27-Jun-1998,Octavos,56,1,0,64
+436,../partidos/1998_nigeria_dinamarca.php,16,51,28-Jun-1998,Octavos,63,1,4,30
+437,../partidos/1998_francia_paraguay.php,16,52,28-Jun-1998,Octavos,40,1,0,68
+438,../partidos/1998_alemania_mexico.php,16,53,29-Jun-1998,Octavos,1,2,1,62
+439,../partidos/1998_holanda_rf_de_yugoslavia.php,16,54,29-Jun-1998,Octavos,66,2,1,73
+440,../partidos/1998_argentina_inglaterra.php,16,55,30-Jun-1998,Octavos,7,2,2,49
+441,../partidos/1998_rumania_croacia.php,16,56,30-Jun-1998,Octavos,75,0,1,27
+442,../partidos/1998_italia_francia.php,16,57,03-Jul-1998,Cuartos,56,0,0,40
+443,../partidos/1998_brasil_dinamarca.php,16,58,03-Jul-1998,Cuartos,12,3,2,30
+444,../partidos/1998_alemania_croacia.php,16,59,04-Jul-1998,Cuartos,1,0,3,27
+445,../partidos/1998_holanda_argentina.php,16,60,04-Jul-1998,Cuartos,66,2,1,7
+446,../partidos/1998_brasil_holanda.php,16,61,07-Jul-1998,Semis,12,1,1,66
+447,../partidos/1998_francia_croacia.php,16,62,08-Jul-1998,Semis,40,2,1,27
+448,../partidos/1998_holanda_croacia.php,16,63,11-Jul-1998,3er Puesto,66,1,2,27
+449,../partidos/1998_brasil_francia.php,16,64,12-Jul-1998,Final,12,0,3,40
+450,../partidos/1994_alemania_bolivia.php,15,1,17-Jun-1994,"1ra Ronda, Grupo C",1,1,0,10
+451,../partidos/1994_espana_corea_del_sur.php,15,2,17-Jun-1994,"1ra Ronda, Grupo C",38,2,2,24
+452,../partidos/1994_estados_unidos_suiza.php,15,3,18-Jun-1994,"1ra Ronda, Grupo A",39,1,1,82
+453,../partidos/1994_italia_irlanda.php,15,4,18-Jun-1994,"1ra Ronda, Grupo E",56,0,1,51
+454,../partidos/1994_colombia_rumania.php,15,5,18-Jun-1994,"1ra Ronda, Grupo A",22,1,3,75
+455,../partidos/1994_belgica_marruecos.php,15,6,19-Jun-1994,"1ra Ronda, Grupo F",14,1,0,61
+456,../partidos/1994_noruega_mexico.php,15,7,19-Jun-1994,"1ra Ronda, Grupo E",64,1,0,62
+457,../partidos/1994_camerun_suecia.php,15,8,19-Jun-1994,"1ra Ronda, Grupo B",16,2,2,81
+458,../partidos/1994_brasil_rusia.php,15,9,20-Jun-1994,"1ra Ronda, Grupo B",12,2,0,76
+459,../partidos/1994_holanda_arabia_saudita.php,15,10,20-Jun-1994,"1ra Ronda, Grupo F",66,2,1,5
+460,../partidos/1994_argentina_grecia.php,15,11,21-Jun-1994,"1ra Ronda, Grupo D",7,4,0,43
+461,../partidos/1994_alemania_espana.php,15,12,21-Jun-1994,"1ra Ronda, Grupo C",1,1,1,38
+462,../partidos/1994_nigeria_bulgaria.php,15,13,21-Jun-1994,"1ra Ronda, Grupo D",63,3,0,13
+463,../partidos/1994_rumania_suiza.php,15,14,22-Jun-1994,"1ra Ronda, Grupo A",75,1,4,82
+464,../partidos/1994_estados_unidos_colombia.php,15,15,22-Jun-1994,"1ra Ronda, Grupo A",39,2,1,22
+465,../partidos/1994_italia_noruega.php,15,16,23-Jun-1994,"1ra Ronda, Grupo E",56,1,0,64
+466,../partidos/1994_corea_del_sur_bolivia.php,15,17,23-Jun-1994,"1ra Ronda, Grupo C",24,0,0,10
+467,../partidos/1994_mexico_irlanda.php,15,18,24-Jun-1994,"1ra Ronda, Grupo E",62,2,1,51
+468,../partidos/1994_brasil_camerun.php,15,19,24-Jun-1994,"1ra Ronda, Grupo B",12,3,0,16
+469,../partidos/1994_suecia_rusia.php,15,20,24-Jun-1994,"1ra Ronda, Grupo B",81,3,1,76
+470,../partidos/1994_belgica_holanda.php,15,21,25-Jun-1994,"1ra Ronda, Grupo F",14,1,0,66
+471,../partidos/1994_arabia_saudita_marruecos.php,15,22,25-Jun-1994,"1ra Ronda, Grupo F",5,2,1,61
+472,../partidos/1994_argentina_nigeria.php,15,23,25-Jun-1994,"1ra Ronda, Grupo D",7,2,1,63
+473,../partidos/1994_bulgaria_grecia.php,15,24,26-Jun-1994,"1ra Ronda, Grupo D",13,4,0,43
+474,../partidos/1994_estados_unidos_rumania.php,15,25,26-Jun-1994,"1ra Ronda, Grupo A",39,0,1,75
+475,../partidos/1994_suiza_colombia.php,15,26,26-Jun-1994,"1ra Ronda, Grupo A",82,0,2,22
+476,../partidos/1994_bolivia_espana.php,15,27,27-Jun-1994,"1ra Ronda, Grupo C",10,1,3,38
+477,../partidos/1994_alemania_corea_del_sur.php,15,28,27-Jun-1994,"1ra Ronda, Grupo C",1,3,2,24
+478,../partidos/1994_irlanda_noruega.php,15,29,28-Jun-1994,"1ra Ronda, Grupo E",51,0,0,64
+479,../partidos/1994_italia_mexico.php,15,30,28-Jun-1994,"1ra Ronda, Grupo E",56,1,1,62
+480,../partidos/1994_rusia_camerun.php,15,31,28-Jun-1994,"1ra Ronda, Grupo B",76,6,1,16
+481,../partidos/1994_brasil_suecia.php,15,32,28-Jun-1994,"1ra Ronda, Grupo B",12,1,1,81
+482,../partidos/1994_marruecos_holanda.php,15,33,29-Jun-1994,"1ra Ronda, Grupo F",61,1,2,66
+483,../partidos/1994_belgica_arabia_saudita.php,15,34,29-Jun-1994,"1ra Ronda, Grupo F",14,0,1,5
+484,../partidos/1994_grecia_nigeria.php,15,35,30-Jun-1994,"1ra Ronda, Grupo D",43,0,2,63
+485,../partidos/1994_argentina_bulgaria.php,15,36,30-Jun-1994,"1ra Ronda, Grupo D",7,0,2,13
+486,../partidos/1994_alemania_belgica.php,15,37,02-Jul-1994,Octavos,1,3,2,14
+487,../partidos/1994_espana_suiza.php,15,38,02-Jul-1994,Octavos,38,3,0,82
+488,../partidos/1994_arabia_saudita_suecia.php,15,39,03-Jul-1994,Octavos,5,1,3,81
+489,../partidos/1994_rumania_argentina.php,15,40,03-Jul-1994,Octavos,75,3,2,7
+490,../partidos/1994_holanda_irlanda.php,15,41,04-Jul-1994,Octavos,66,2,0,51
+491,../partidos/1994_brasil_estados_unidos.php,15,42,04-Jul-1994,Octavos,12,1,0,39
+492,../partidos/1994_nigeria_italia.php,15,43,05-Jul-1994,Octavos,63,1,2,56
+493,../partidos/1994_mexico_bulgaria.php,15,44,05-Jul-1994,Octavos,62,1,1,13
+494,../partidos/1994_italia_espana.php,15,45,09-Jul-1994,Cuartos,56,2,1,38
+495,../partidos/1994_holanda_brasil.php,15,46,09-Jul-1994,Cuartos,66,2,3,12
+496,../partidos/1994_bulgaria_alemania.php,15,47,10-Jul-1994,Cuartos,13,2,1,1
+497,../partidos/1994_rumania_suecia.php,15,48,10-Jul-1994,Cuartos,75,2,2,81
+498,../partidos/1994_bulgaria_italia.php,15,49,13-Jul-1994,Semis,13,1,2,56
+499,../partidos/1994_suecia_brasil.php,15,50,13-Jul-1994,Semis,81,0,1,12
+500,../partidos/1994_suecia_bulgaria.php,15,51,16-Jul-1994,3er Puesto,81,4,0,13
+501,../partidos/1994_brasil_italia.php,15,52,17-Jul-1994,Final,12,0,0,56
+502,../partidos/1990_argentina_camerun.php,14,1,08-Jun-1990,"1ra Ronda, Grupo B",7,0,1,16
+503,../partidos/1990_urss_rumania.php,14,2,09-Jun-1990,"1ra Ronda, Grupo B",87,0,2,75
+504,../partidos/1990_italia_austria.php,14,3,09-Jun-1990,"1ra Ronda, Grupo A",56,1,0,9
+505,../partidos/1990_emiratos_arabes_colombia.php,14,4,09-Jun-1990,"1ra Ronda, Grupo D",34,0,2,22
+506,../partidos/1990_estados_unidos_checoslovaquia.php,14,5,10-Jun-1990,"1ra Ronda, Grupo A",39,1,5,19
+507,../partidos/1990_brasil_suecia.php,14,6,10-Jun-1990,"1ra Ronda, Grupo C",12,2,1,81
+508,../partidos/1990_alemania_occidental_yugoslavia.php,14,7,10-Jun-1990,"1ra Ronda, Grupo D",2,4,1,91
+509,../partidos/1990_costa_rica_escocia.php,14,8,11-Jun-1990,"1ra Ronda, Grupo C",25,1,0,35
+510,../partidos/1990_inglaterra_irlanda.php,14,9,11-Jun-1990,"1ra Ronda, Grupo F",49,1,1,51
+511,../partidos/1990_belgica_corea_del_sur.php,14,10,12-Jun-1990,"1ra Ronda, Grupo E",14,2,0,24
+512,../partidos/1990_holanda_egipto.php,14,11,12-Jun-1990,"1ra Ronda, Grupo F",66,1,1,32
+513,../partidos/1990_uruguay_espana.php,14,12,13-Jun-1990,"1ra Ronda, Grupo E",89,0,0,38
+514,../partidos/1990_argentina_urss.php,14,13,13-Jun-1990,"1ra Ronda, Grupo B",7,2,0,87
+515,../partidos/1990_yugoslavia_colombia.php,14,14,14-Jun-1990,"1ra Ronda, Grupo D",91,1,0,22
+516,../partidos/1990_italia_estados_unidos.php,14,15,14-Jun-1990,"1ra Ronda, Grupo A",56,1,0,39
+517,../partidos/1990_camerun_rumania.php,14,16,14-Jun-1990,"1ra Ronda, Grupo B",16,2,1,75
+518,../partidos/1990_austria_checoslovaquia.php,14,17,15-Jun-1990,"1ra Ronda, Grupo A",9,0,1,19
+519,../partidos/1990_alemania_occidental_emiratos_arabes.php,14,18,15-Jun-1990,"1ra Ronda, Grupo D",2,5,1,34
+520,../partidos/1990_brasil_costa_rica.php,14,19,16-Jun-1990,"1ra Ronda, Grupo C",12,1,0,25
+521,../partidos/1990_suecia_escocia.php,14,20,16-Jun-1990,"1ra Ronda, Grupo C",81,1,2,35
+522,../partidos/1990_inglaterra_holanda.php,14,21,16-Jun-1990,"1ra Ronda, Grupo F",49,0,0,66
+523,../partidos/1990_irlanda_egipto.php,14,22,17-Jun-1990,"1ra Ronda, Grupo F",51,0,0,32
+524,../partidos/1990_belgica_uruguay.php,14,23,17-Jun-1990,"1ra Ronda, Grupo E",14,3,1,89
+525,../partidos/1990_corea_del_sur_espana.php,14,24,17-Jun-1990,"1ra Ronda, Grupo E",24,1,3,38
+526,../partidos/1990_argentina_rumania.php,14,25,18-Jun-1990,"1ra Ronda, Grupo B",7,1,1,75
+527,../partidos/1990_camerun_urss.php,14,26,18-Jun-1990,"1ra Ronda, Grupo B",16,0,4,87
+528,../partidos/1990_alemania_occidental_colombia.php,14,27,19-Jun-1990,"1ra Ronda, Grupo D",2,1,1,22
+529,../partidos/1990_yugoslavia_emiratos_arabes.php,14,28,19-Jun-1990,"1ra Ronda, Grupo D",91,4,1,34
+530,../partidos/1990_italia_checoslovaquia.php,14,29,19-Jun-1990,"1ra Ronda, Grupo A",56,2,0,19
+531,../partidos/1990_austria_estados_unidos.php,14,30,19-Jun-1990,"1ra Ronda, Grupo A",9,2,1,39
+532,../partidos/1990_brasil_escocia.php,14,31,20-Jun-1990,"1ra Ronda, Grupo C",12,1,0,35
+533,../partidos/1990_suecia_costa_rica.php,14,32,20-Jun-1990,"1ra Ronda, Grupo C",81,1,2,25
+534,../partidos/1990_belgica_espana.php,14,33,21-Jun-1990,"1ra Ronda, Grupo E",14,1,2,38
+535,../partidos/1990_corea_del_sur_uruguay.php,14,34,21-Jun-1990,"1ra Ronda, Grupo E",24,0,1,89
+536,../partidos/1990_inglaterra_egipto.php,14,35,21-Jun-1990,"1ra Ronda, Grupo F",49,1,0,32
+537,../partidos/1990_irlanda_holanda.php,14,36,21-Jun-1990,"1ra Ronda, Grupo F",51,1,1,66
+538,../partidos/1990_camerun_colombia.php,14,37,23-Jun-1990,Octavos,16,2,1,22
+539,../partidos/1990_checoslovaquia_costa_rica.php,14,38,23-Jun-1990,Octavos,19,4,1,25
+540,../partidos/1990_brasil_argentina.php,14,39,24-Jun-1990,Octavos,12,0,1,7
+541,../partidos/1990_alemania_occidental_holanda.php,14,40,24-Jun-1990,Octavos,2,2,1,66
+542,../partidos/1990_irlanda_rumania.php,14,41,25-Jun-1990,Octavos,51,0,0,75
+543,../partidos/1990_italia_uruguay.php,14,42,25-Jun-1990,Octavos,56,2,0,89
+544,../partidos/1990_espana_yugoslavia.php,14,43,26-Jun-1990,Octavos,38,1,2,91
+545,../partidos/1990_inglaterra_belgica.php,14,44,26-Jun-1990,Octavos,49,1,0,14
+546,../partidos/1990_argentina_yugoslavia.php,14,45,30-Jun-1990,Cuartos,7,0,0,91
+547,../partidos/1990_italia_irlanda.php,14,46,30-Jun-1990,Cuartos,56,1,0,51
+548,../partidos/1990_alemania_occidental_checoslovaquia.php,14,47,01-Jul-1990,Cuartos,2,1,0,19
+549,../partidos/1990_camerun_inglaterra.php,14,48,01-Jul-1990,Cuartos,16,2,3,49
+550,../partidos/1990_italia_argentina.php,14,49,03-Jul-1990,Semis,56,1,1,7
+551,../partidos/1990_inglaterra_alemania_occidental.php,14,50,04-Jul-1990,Semis,49,1,1,2
+552,../partidos/1990_italia_inglaterra.php,14,51,07-Jul-1990,3er Puesto,56,2,1,49
+553,../partidos/1990_argentina_alemania_occidental.php,14,52,08-Jul-1990,Final,7,0,1,2
+554,../partidos/1986_bulgaria_italia.php,13,1,31-May-1986,"1ra Ronda, Grupo A",13,1,1,56
+555,../partidos/1986_espana_brasil.php,13,2,01-Jun-1986,"1ra Ronda, Grupo D",38,0,1,12
+556,../partidos/1986_canada_francia.php,13,3,01-Jun-1986,"1ra Ronda, Grupo C",17,0,1,40
+557,../partidos/1986_argentina_corea_del_sur.php,13,4,02-Jun-1986,"1ra Ronda, Grupo A",7,3,1,24
+558,../partidos/1986_urss_hungria.php,13,5,02-Jun-1986,"1ra Ronda, Grupo C",87,6,0,46
+559,../partidos/1986_marruecos_polonia.php,13,6,02-Jun-1986,"1ra Ronda, Grupo F",61,0,0,70
+560,../partidos/1986_belgica_mexico.php,13,7,03-Jun-1986,"1ra Ronda, Grupo B",14,1,2,62
+561,../partidos/1986_portugal_inglaterra.php,13,8,03-Jun-1986,"1ra Ronda, Grupo F",71,1,0,49
+562,../partidos/1986_argelia_irlanda_del_norte.php,13,9,03-Jun-1986,"1ra Ronda, Grupo D",6,1,1,52
+563,../partidos/1986_escocia_dinamarca.php,13,10,04-Jun-1986,"1ra Ronda, Grupo E",35,0,1,30
+564,../partidos/1986_uruguay_alemania_occidental.php,13,11,04-Jun-1986,"1ra Ronda, Grupo E",89,1,1,2
+565,../partidos/1986_paraguay_iraq.php,13,12,04-Jun-1986,"1ra Ronda, Grupo B",68,1,0,50
+566,../partidos/1986_francia_urss.php,13,13,05-Jun-1986,"1ra Ronda, Grupo C",40,1,1,87
+567,../partidos/1986_corea_del_sur_bulgaria.php,13,14,05-Jun-1986,"1ra Ronda, Grupo A",24,1,1,13
+568,../partidos/1986_italia_argentina.php,13,15,05-Jun-1986,"1ra Ronda, Grupo A",56,1,1,7
+569,../partidos/1986_hungria_canada.php,13,16,06-Jun-1986,"1ra Ronda, Grupo C",46,2,0,17
+570,../partidos/1986_brasil_argelia.php,13,17,06-Jun-1986,"1ra Ronda, Grupo D",12,1,0,6
+571,../partidos/1986_inglaterra_marruecos.php,13,18,06-Jun-1986,"1ra Ronda, Grupo F",49,0,0,61
+572,../partidos/1986_mexico_paraguay.php,13,19,07-Jun-1986,"1ra Ronda, Grupo B",62,1,1,68
+573,../partidos/1986_polonia_portugal.php,13,20,07-Jun-1986,"1ra Ronda, Grupo F",70,1,0,71
+574,../partidos/1986_irlanda_del_norte_espana.php,13,21,07-Jun-1986,"1ra Ronda, Grupo D",52,1,2,38
+575,../partidos/1986_iraq_belgica.php,13,22,08-Jun-1986,"1ra Ronda, Grupo B",50,1,2,14
+576,../partidos/1986_alemania_occidental_escocia.php,13,23,08-Jun-1986,"1ra Ronda, Grupo E",2,2,1,35
+577,../partidos/1986_dinamarca_uruguay.php,13,24,08-Jun-1986,"1ra Ronda, Grupo E",30,6,1,89
+578,../partidos/1986_urss_canada.php,13,25,09-Jun-1986,"1ra Ronda, Grupo C",87,2,0,17
+579,../partidos/1986_hungria_francia.php,13,26,09-Jun-1986,"1ra Ronda, Grupo C",46,0,3,40
+580,../partidos/1986_corea_del_sur_italia.php,13,27,10-Jun-1986,"1ra Ronda, Grupo A",24,2,3,56
+581,../partidos/1986_argentina_bulgaria.php,13,28,10-Jun-1986,"1ra Ronda, Grupo A",7,2,0,13
+582,../partidos/1986_paraguay_belgica.php,13,29,11-Jun-1986,"1ra Ronda, Grupo B",68,2,2,14
+583,../partidos/1986_inglaterra_polonia.php,13,30,11-Jun-1986,"1ra Ronda, Grupo F",49,3,0,70
+584,../partidos/1986_portugal_marruecos.php,13,31,11-Jun-1986,"1ra Ronda, Grupo F",71,1,3,61
+585,../partidos/1986_iraq_mexico.php,13,32,11-Jun-1986,"1ra Ronda, Grupo B",50,0,1,62
+586,../partidos/1986_irlanda_del_norte_brasil.php,13,33,12-Jun-1986,"1ra Ronda, Grupo D",52,0,3,12
+587,../partidos/1986_argelia_espana.php,13,34,12-Jun-1986,"1ra Ronda, Grupo D",6,0,3,38
+588,../partidos/1986_dinamarca_alemania_occidental.php,13,35,13-Jun-1986,"1ra Ronda, Grupo E",30,2,0,2
+589,../partidos/1986_escocia_uruguay.php,13,36,13-Jun-1986,"1ra Ronda, Grupo E",35,0,0,89
+590,../partidos/1986_urss_belgica.php,13,37,15-Jun-1986,Octavos,87,3,4,14
+591,../partidos/1986_mexico_bulgaria.php,13,38,15-Jun-1986,Octavos,62,2,0,13
+592,../partidos/1986_brasil_polonia.php,13,39,16-Jun-1986,Octavos,12,4,0,70
+593,../partidos/1986_argentina_uruguay.php,13,40,16-Jun-1986,Octavos,7,1,0,89
+594,../partidos/1986_marruecos_alemania_occidental.php,13,41,17-Jun-1986,Octavos,61,0,1,2
+595,../partidos/1986_italia_francia.php,13,42,17-Jun-1986,Octavos,56,0,2,40
+596,../partidos/1986_dinamarca_espana.php,13,43,18-Jun-1986,Octavos,30,1,5,38
+597,../partidos/1986_inglaterra_paraguay.php,13,44,18-Jun-1986,Octavos,49,3,0,68
+598,../partidos/1986_mexico_alemania_occidental.php,13,45,21-Jun-1986,Cuartos,62,0,0,2
+599,../partidos/1986_brasil_francia.php,13,46,21-Jun-1986,Cuartos,12,1,1,40
+600,../partidos/1986_belgica_espana.php,13,47,22-Jun-1986,Cuartos,14,1,1,38
+601,../partidos/1986_argentina_inglaterra.php,13,48,22-Jun-1986,Cuartos,7,2,1,49
+602,../partidos/1986_argentina_belgica.php,13,49,25-Jun-1986,Semis,7,2,0,14
+603,../partidos/1986_alemania_occidental_francia.php,13,50,25-Jun-1986,Semis,2,2,0,40
+604,../partidos/1986_belgica_francia.php,13,51,28-Jun-1986,3er Puesto,14,2,4,40
+605,../partidos/1986_argentina_alemania_occidental.php,13,52,29-Jun-1986,Final,7,3,2,2
+606,../partidos/1982_argentina_belgica.php,12,1,13-Jun-1982,"1ra Ronda, Grupo C",7,0,1,14
+607,../partidos/1982_brasil_urss.php,12,2,14-Jun-1982,"1ra Ronda, Grupo F",12,2,1,87
+608,../partidos/1982_italia_polonia.php,12,3,14-Jun-1982,"1ra Ronda, Grupo A",56,0,0,70
+609,../partidos/1982_peru_camerun.php,12,4,15-Jun-1982,"1ra Ronda, Grupo A",69,0,0,16
+610,../partidos/1982_escocia_nueva_zelanda.php,12,5,15-Jun-1982,"1ra Ronda, Grupo F",35,5,2,65
+611,../partidos/1982_hungria_el_salvador.php,12,6,15-Jun-1982,"1ra Ronda, Grupo C",46,10,1,33
+612,../partidos/1982_alemania_occidental_argelia.php,12,7,16-Jun-1982,"1ra Ronda, Grupo B",2,1,2,6
+613,../partidos/1982_espana_honduras.php,12,8,16-Jun-1982,"1ra Ronda, Grupo E",38,1,1,45
+614,../partidos/1982_inglaterra_francia.php,12,9,16-Jun-1982,"1ra Ronda, Grupo D",49,3,1,40
+615,../partidos/1982_checoslovaquia_kuwait.php,12,10,17-Jun-1982,"1ra Ronda, Grupo D",19,1,1,60
+616,../partidos/1982_yugoslavia_irlanda_del_norte.php,12,11,17-Jun-1982,"1ra Ronda, Grupo E",91,0,0,52
+617,../partidos/1982_chile_austria.php,12,12,17-Jun-1982,"1ra Ronda, Grupo B",20,0,1,9
+618,../partidos/1982_argentina_hungria.php,12,13,18-Jun-1982,"1ra Ronda, Grupo C",7,4,1,46
+619,../partidos/1982_italia_peru.php,12,14,18-Jun-1982,"1ra Ronda, Grupo A",56,1,1,69
+620,../partidos/1982_brasil_escocia.php,12,15,18-Jun-1982,"1ra Ronda, Grupo F",12,4,1,35
+621,../partidos/1982_polonia_camerun.php,12,16,19-Jun-1982,"1ra Ronda, Grupo A",70,0,0,16
+622,../partidos/1982_belgica_el_salvador.php,12,17,19-Jun-1982,"1ra Ronda, Grupo C",14,1,0,33
+623,../partidos/1982_urss_nueva_zelanda.php,12,18,19-Jun-1982,"1ra Ronda, Grupo F",87,3,0,65
+624,../partidos/1982_espana_yugoslavia.php,12,19,20-Jun-1982,"1ra Ronda, Grupo E",38,2,1,91
+625,../partidos/1982_inglaterra_checoslovaquia.php,12,20,20-Jun-1982,"1ra Ronda, Grupo D",49,2,0,19
+626,../partidos/1982_alemania_occidental_chile.php,12,21,20-Jun-1982,"1ra Ronda, Grupo B",2,4,1,20
+627,../partidos/1982_honduras_irlanda_del_norte.php,12,22,21-Jun-1982,"1ra Ronda, Grupo E",45,1,1,52
+628,../partidos/1982_francia_kuwait.php,12,23,21-Jun-1982,"1ra Ronda, Grupo D",40,4,1,60
+629,../partidos/1982_argelia_austria.php,12,24,21-Jun-1982,"1ra Ronda, Grupo B",6,0,2,9
+630,../partidos/1982_urss_escocia.php,12,25,22-Jun-1982,"1ra Ronda, Grupo F",87,2,2,35
+631,../partidos/1982_belgica_hungria.php,12,26,22-Jun-1982,"1ra Ronda, Grupo C",14,1,1,46
+632,../partidos/1982_polonia_peru.php,12,27,22-Jun-1982,"1ra Ronda, Grupo A",70,5,1,69
+633,../partidos/1982_italia_camerun.php,12,28,23-Jun-1982,"1ra Ronda, Grupo A",56,1,1,16
+634,../partidos/1982_argentina_el_salvador.php,12,29,23-Jun-1982,"1ra Ronda, Grupo C",7,2,0,33
+635,../partidos/1982_brasil_nueva_zelanda.php,12,30,23-Jun-1982,"1ra Ronda, Grupo F",12,4,0,65
+636,../partidos/1982_honduras_yugoslavia.php,12,31,24-Jun-1982,"1ra Ronda, Grupo E",45,0,1,91
+637,../partidos/1982_francia_checoslovaquia.php,12,32,24-Jun-1982,"1ra Ronda, Grupo D",40,1,1,19
+638,../partidos/1982_argelia_chile.php,12,33,24-Jun-1982,"1ra Ronda, Grupo B",6,3,2,20
+639,../partidos/1982_irlanda_del_norte_espana.php,12,34,25-Jun-1982,"1ra Ronda, Grupo E",52,1,0,38
+640,../partidos/1982_alemania_occidental_austria.php,12,35,25-Jun-1982,"1ra Ronda, Grupo B",2,1,0,9
+641,../partidos/1982_inglaterra_kuwait.php,12,36,25-Jun-1982,"1ra Ronda, Grupo D",49,1,0,60
+642,../partidos/1982_austria_francia.php,12,37,28-Jun-1982,"2da Ronda, Grupo 4",9,0,1,40
+643,../partidos/1982_polonia_belgica.php,12,38,28-Jun-1982,"2da Ronda, Grupo 1",70,3,0,14
+644,../partidos/1982_alemania_occidental_inglaterra.php,12,39,29-Jun-1982,"2da Ronda, Grupo 2",2,0,0,49
+645,../partidos/1982_italia_argentina.php,12,40,29-Jun-1982,"2da Ronda, Grupo 3",56,2,1,7
+646,../partidos/1982_belgica_urss.php,12,41,01-Jul-1982,"2da Ronda, Grupo 1",14,0,1,87
+647,../partidos/1982_austria_irlanda_del_norte.php,12,42,01-Jul-1982,"2da Ronda, Grupo 4",9,2,2,52
+648,../partidos/1982_argentina_brasil.php,12,43,02-Jul-1982,"2da Ronda, Grupo 3",7,1,3,12
+649,../partidos/1982_alemania_occidental_espana.php,12,44,02-Jul-1982,"2da Ronda, Grupo 2",2,2,1,38
+650,../partidos/1982_francia_irlanda_del_norte.php,12,45,04-Jul-1982,"2da Ronda, Grupo 4",40,4,1,52
+651,../partidos/1982_polonia_urss.php,12,46,04-Jul-1982,"2da Ronda, Grupo 1",70,0,0,87
+652,../partidos/1982_italia_brasil.php,12,47,05-Jul-1982,"2da Ronda, Grupo 3",56,3,2,12
+653,../partidos/1982_espana_inglaterra.php,12,48,05-Jul-1982,"2da Ronda, Grupo 2",38,0,0,49
+654,../partidos/1982_alemania_occidental_francia.php,12,49,08-Jul-1982,Semis,2,3,3,40
+655,../partidos/1982_polonia_italia.php,12,50,08-Jul-1982,Semis,70,0,2,56
+656,../partidos/1982_polonia_francia.php,12,51,10-Jul-1982,3er Puesto,70,3,2,40
+657,../partidos/1982_italia_alemania_occidental.php,12,52,11-Jul-1982,Final,56,3,1,2
+658,../partidos/1978_alemania_occidental_polonia.php,11,1,01-Jun-1978,"1ra Ronda, Grupo 2",2,0,0,70
+659,../partidos/1978_tunez_mexico.php,11,2,02-Jun-1978,"1ra Ronda, Grupo 2",86,3,1,62
+660,../partidos/1978_italia_francia.php,11,3,02-Jun-1978,"1ra Ronda, Grupo 1",56,2,1,40
+661,../partidos/1978_argentina_hungria.php,11,4,02-Jun-1978,"1ra Ronda, Grupo 1",7,2,1,46
+662,../partidos/1978_holanda_iran.php,11,5,03-Jun-1978,"1ra Ronda, Grupo 4",66,3,0,53
+663,../partidos/1978_austria_espana.php,11,6,03-Jun-1978,"1ra Ronda, Grupo 3",9,2,1,38
+664,../partidos/1978_peru_escocia.php,11,7,03-Jun-1978,"1ra Ronda, Grupo 4",69,3,1,35
+665,../partidos/1978_suecia_brasil.php,11,8,03-Jun-1978,"1ra Ronda, Grupo 3",81,1,1,12
+666,../partidos/1978_alemania_occidental_mexico.php,11,9,06-Jun-1978,"1ra Ronda, Grupo 2",2,6,0,62
+667,../partidos/1978_argentina_francia.php,11,10,06-Jun-1978,"1ra Ronda, Grupo 1",7,2,1,40
+668,../partidos/1978_polonia_tunez.php,11,11,06-Jun-1978,"1ra Ronda, Grupo 2",70,1,0,86
+669,../partidos/1978_italia_hungria.php,11,12,06-Jun-1978,"1ra Ronda, Grupo 1",56,3,1,46
+670,../partidos/1978_holanda_peru.php,11,13,07-Jun-1978,"1ra Ronda, Grupo 4",66,0,0,69
+671,../partidos/1978_brasil_espana.php,11,14,07-Jun-1978,"1ra Ronda, Grupo 3",12,0,0,38
+672,../partidos/1978_escocia_iran.php,11,15,07-Jun-1978,"1ra Ronda, Grupo 4",35,1,1,53
+673,../partidos/1978_austria_suecia.php,11,16,07-Jun-1978,"1ra Ronda, Grupo 3",9,1,0,81
+674,../partidos/1978_italia_argentina.php,11,17,10-Jun-1978,"1ra Ronda, Grupo 1",56,1,0,7
+675,../partidos/1978_alemania_occidental_tunez.php,11,18,10-Jun-1978,"1ra Ronda, Grupo 2",2,0,0,86
+676,../partidos/1978_francia_hungria.php,11,19,10-Jun-1978,"1ra Ronda, Grupo 1",40,3,1,46
+677,../partidos/1978_polonia_mexico.php,11,20,10-Jun-1978,"1ra Ronda, Grupo 2",70,3,1,62
+678,../partidos/1978_peru_iran.php,11,21,11-Jun-1978,"1ra Ronda, Grupo 4",69,4,1,53
+679,../partidos/1978_espana_suecia.php,11,22,11-Jun-1978,"1ra Ronda, Grupo 3",38,1,0,81
+680,../partidos/1978_escocia_holanda.php,11,23,11-Jun-1978,"1ra Ronda, Grupo 4",35,3,2,66
+681,../partidos/1978_brasil_austria.php,11,24,11-Jun-1978,"1ra Ronda, Grupo 3",12,1,0,9
+682,../partidos/1978_holanda_austria.php,11,25,14-Jun-1978,"2da Ronda, Grupo A",66,5,1,9
+683,../partidos/1978_alemania_occidental_italia.php,11,26,14-Jun-1978,"2da Ronda, Grupo A",2,0,0,56
+684,../partidos/1978_brasil_peru.php,11,27,14-Jun-1978,"2da Ronda, Grupo B",12,3,0,69
+685,../partidos/1978_argentina_polonia.php,11,28,14-Jun-1978,"2da Ronda, Grupo B",7,2,0,70
+686,../partidos/1978_argentina_brasil.php,11,29,18-Jun-1978,"2da Ronda, Grupo B",7,0,0,12
+687,../partidos/1978_polonia_peru.php,11,30,18-Jun-1978,"2da Ronda, Grupo B",70,1,0,69
+688,../partidos/1978_alemania_occidental_holanda.php,11,31,18-Jun-1978,"2da Ronda, Grupo A",2,2,2,66
+689,../partidos/1978_italia_austria.php,11,32,18-Jun-1978,"2da Ronda, Grupo A",56,1,0,9
+690,../partidos/1978_argentina_peru.php,11,33,21-Jun-1978,"2da Ronda, Grupo B",7,6,0,69
+691,../partidos/1978_holanda_italia.php,11,34,21-Jun-1978,"2da Ronda, Grupo A",66,2,1,56
+692,../partidos/1978_brasil_polonia.php,11,35,21-Jun-1978,"2da Ronda, Grupo B",12,3,1,70
+693,../partidos/1978_austria_alemania_occidental.php,11,36,21-Jun-1978,"2da Ronda, Grupo A",9,3,2,2
+694,../partidos/1978_brasil_italia.php,11,37,24-Jun-1978,3er Puesto,12,2,1,56
+695,../partidos/1978_argentina_holanda.php,11,38,25-Jun-1978,Final,7,3,1,66
+696,../partidos/1974_brasil_yugoslavia.php,10,1,13-Jun-1974,"1ra Ronda, Grupo 2",12,0,0,91
+697,../partidos/1974_alemania_occidental_chile.php,10,2,14-Jun-1974,"1ra Ronda, Grupo 1",2,1,0,20
+698,../partidos/1974_alemania_oriental_australia.php,10,3,14-Jun-1974,"1ra Ronda, Grupo 1",3,2,0,8
+699,../partidos/1974_zaire_escocia.php,10,4,14-Jun-1974,"1ra Ronda, Grupo 2",92,0,2,35
+700,../partidos/1974_suecia_bulgaria.php,10,5,15-Jun-1974,"1ra Ronda, Grupo 3",81,0,0,13
+701,../partidos/1974_polonia_argentina.php,10,6,15-Jun-1974,"1ra Ronda, Grupo 4",70,3,2,7
+702,../partidos/1974_italia_haiti.php,10,7,15-Jun-1974,"1ra Ronda, Grupo 4",56,3,1,44
+703,../partidos/1974_uruguay_holanda.php,10,8,15-Jun-1974,"1ra Ronda, Grupo 3",89,0,2,66
+704,../partidos/1974_escocia_brasil.php,10,9,18-Jun-1974,"1ra Ronda, Grupo 2",35,0,0,12
+705,../partidos/1974_australia_alemania_occidental.php,10,10,18-Jun-1974,"1ra Ronda, Grupo 1",8,0,3,2
+706,../partidos/1974_yugoslavia_zaire.php,10,11,18-Jun-1974,"1ra Ronda, Grupo 2",91,9,0,92
+707,../partidos/1974_chile_alemania_oriental.php,10,12,18-Jun-1974,"1ra Ronda, Grupo 1",20,1,1,3
+708,../partidos/1974_holanda_suecia.php,10,13,19-Jun-1974,"1ra Ronda, Grupo 3",66,0,0,81
+709,../partidos/1974_argentina_italia.php,10,14,19-Jun-1974,"1ra Ronda, Grupo 4",7,1,1,56
+710,../partidos/1974_haiti_polonia.php,10,15,19-Jun-1974,"1ra Ronda, Grupo 4",44,0,7,70
+711,../partidos/1974_bulgaria_uruguay.php,10,16,19-Jun-1974,"1ra Ronda, Grupo 3",13,1,1,89
+712,../partidos/1974_zaire_brasil.php,10,17,22-Jun-1974,"1ra Ronda, Grupo 2",92,0,3,12
+713,../partidos/1974_alemania_oriental_alemania_occidental.php,10,18,22-Jun-1974,"1ra Ronda, Grupo 1",3,1,0,2
+714,../partidos/1974_australia_chile.php,10,19,22-Jun-1974,"1ra Ronda, Grupo 1",8,0,0,20
+715,../partidos/1974_escocia_yugoslavia.php,10,20,22-Jun-1974,"1ra Ronda, Grupo 2",35,1,1,91
+716,../partidos/1974_polonia_italia.php,10,21,23-Jun-1974,"1ra Ronda, Grupo 4",70,2,1,56
+717,../partidos/1974_argentina_haiti.php,10,22,23-Jun-1974,"1ra Ronda, Grupo 4",7,4,1,44
+718,../partidos/1974_bulgaria_holanda.php,10,23,23-Jun-1974,"1ra Ronda, Grupo 3",13,1,4,66
+719,../partidos/1974_suecia_uruguay.php,10,24,23-Jun-1974,"1ra Ronda, Grupo 3",81,3,0,89
+720,../partidos/1974_suecia_polonia.php,10,25,26-Jun-1974,"2da Ronda, Grupo B",81,0,1,70
+721,../partidos/1974_yugoslavia_alemania_occidental.php,10,26,26-Jun-1974,"2da Ronda, Grupo B",91,0,2,2
+722,../partidos/1974_holanda_argentina.php,10,27,26-Jun-1974,"2da Ronda, Grupo A",66,4,0,7
+723,../partidos/1974_brasil_alemania_oriental.php,10,28,26-Jun-1974,"2da Ronda, Grupo A",12,1,0,3
+724,../partidos/1974_alemania_oriental_holanda.php,10,29,30-Jun-1974,"2da Ronda, Grupo A",3,0,2,66
+725,../partidos/1974_argentina_brasil.php,10,30,30-Jun-1974,"2da Ronda, Grupo A",7,1,2,12
+726,../partidos/1974_polonia_yugoslavia.php,10,31,30-Jun-1974,"2da Ronda, Grupo B",70,2,1,91
+727,../partidos/1974_alemania_occidental_suecia.php,10,32,30-Jun-1974,"2da Ronda, Grupo B",2,4,2,81
+728,../partidos/1974_suecia_yugoslavia.php,10,33,03-Jul-1974,"2da Ronda, Grupo B",81,2,1,91
+729,../partidos/1974_argentina_alemania_oriental.php,10,34,03-Jul-1974,"2da Ronda, Grupo A",7,1,1,3
+730,../partidos/1974_polonia_alemania_occidental.php,10,35,03-Jul-1974,"2da Ronda, Grupo B",70,0,1,2
+731,../partidos/1974_holanda_brasil.php,10,36,03-Jul-1974,"2da Ronda, Grupo A",66,2,0,12
+732,../partidos/1974_brasil_polonia.php,10,37,06-Jul-1974,3er Puesto,12,0,1,70
+733,../partidos/1974_holanda_alemania_occidental.php,10,38,07-Jul-1974,Final,66,1,2,2
+734,../partidos/1970_mexico_urss.php,9,1,31-May-1970,"1ra Ronda, Grupo 1",62,0,0,87
+735,../partidos/1970_inglaterra_rumania.php,9,2,02-Jun-1970,"1ra Ronda, Grupo 3",49,1,0,75
+736,../partidos/1970_uruguay_israel.php,9,3,02-Jun-1970,"1ra Ronda, Grupo 2",89,2,0,55
+737,../partidos/1970_peru_bulgaria.php,9,4,02-Jun-1970,"1ra Ronda, Grupo 4",69,3,2,13
+738,../partidos/1970_italia_suecia.php,9,5,03-Jun-1970,"1ra Ronda, Grupo 2",56,1,0,81
+739,../partidos/1970_alemania_occidental_marruecos.php,9,6,03-Jun-1970,"1ra Ronda, Grupo 4",2,2,1,61
+740,../partidos/1970_belgica_el_salvador.php,9,7,03-Jun-1970,"1ra Ronda, Grupo 1",14,3,0,33
+741,../partidos/1970_brasil_checoslovaquia.php,9,8,03-Jun-1970,"1ra Ronda, Grupo 3",12,4,1,19
+742,../partidos/1970_peru_marruecos.php,9,9,06-Jun-1970,"1ra Ronda, Grupo 4",69,3,0,61
+743,../partidos/1970_rumania_checoslovaquia.php,9,10,06-Jun-1970,"1ra Ronda, Grupo 3",75,2,1,19
+744,../partidos/1970_urss_belgica.php,9,11,06-Jun-1970,"1ra Ronda, Grupo 1",87,4,1,14
+745,../partidos/1970_uruguay_italia.php,9,12,06-Jun-1970,"1ra Ronda, Grupo 2",89,0,0,56
+746,../partidos/1970_suecia_israel.php,9,13,07-Jun-1970,"1ra Ronda, Grupo 2",81,1,1,55
+747,../partidos/1970_mexico_el_salvador.php,9,14,07-Jun-1970,"1ra Ronda, Grupo 1",62,4,0,33
+748,../partidos/1970_alemania_occidental_bulgaria.php,9,15,07-Jun-1970,"1ra Ronda, Grupo 4",2,5,2,13
+749,../partidos/1970_brasil_inglaterra.php,9,16,07-Jun-1970,"1ra Ronda, Grupo 3",12,1,0,49
+750,../partidos/1970_urss_el_salvador.php,9,17,10-Jun-1970,"1ra Ronda, Grupo 1",87,2,0,33
+751,../partidos/1970_suecia_uruguay.php,9,18,10-Jun-1970,"1ra Ronda, Grupo 2",81,1,0,89
+752,../partidos/1970_alemania_occidental_peru.php,9,19,10-Jun-1970,"1ra Ronda, Grupo 4",2,3,1,69
+753,../partidos/1970_brasil_rumania.php,9,20,10-Jun-1970,"1ra Ronda, Grupo 3",12,3,2,75
+754,../partidos/1970_bulgaria_marruecos.php,9,21,11-Jun-1970,"1ra Ronda, Grupo 4",13,1,1,61
+755,../partidos/1970_inglaterra_checoslovaquia.php,9,22,11-Jun-1970,"1ra Ronda, Grupo 3",49,1,0,19
+756,../partidos/1970_mexico_belgica.php,9,23,11-Jun-1970,"1ra Ronda, Grupo 1",62,1,0,14
+757,../partidos/1970_italia_israel.php,9,24,11-Jun-1970,"1ra Ronda, Grupo 2",56,0,0,55
+758,../partidos/1970_alemania_occidental_inglaterra.php,9,25,14-Jun-1970,Cuartos,2,3,2,49
+759,../partidos/1970_italia_mexico.php,9,26,14-Jun-1970,Cuartos,56,4,1,62
+760,../partidos/1970_uruguay_urss.php,9,27,14-Jun-1970,Cuartos,89,1,0,87
+761,../partidos/1970_brasil_peru.php,9,28,14-Jun-1970,Cuartos,12,4,2,69
+762,../partidos/1970_uruguay_brasil.php,9,29,17-Jun-1970,Semis,89,1,3,12
+763,../partidos/1970_italia_alemania_occidental.php,9,30,17-Jun-1970,Semis,56,4,3,2
+764,../partidos/1970_uruguay_alemania_occidental.php,9,31,20-Jun-1970,3er Puesto,89,0,1,2
+765,../partidos/1970_brasil_italia.php,9,32,21-Jun-1970,Final,12,4,1,56
+766,../partidos/1966_inglaterra_uruguay.php,8,1,11-Jul-1966,"1ra Ronda, Grupo 1",49,0,0,89
+767,../partidos/1966_alemania_occidental_suiza.php,8,2,12-Jul-1966,"1ra Ronda, Grupo 2",2,5,0,82
+768,../partidos/1966_urss_corea_del_norte.php,8,3,12-Jul-1966,"1ra Ronda, Grupo 4",87,3,0,23
+769,../partidos/1966_brasil_bulgaria.php,8,4,12-Jul-1966,"1ra Ronda, Grupo 3",12,2,0,13
+770,../partidos/1966_francia_mexico.php,8,5,13-Jul-1966,"1ra Ronda, Grupo 1",40,1,1,62
+771,../partidos/1966_italia_chile.php,8,6,13-Jul-1966,"1ra Ronda, Grupo 4",56,2,0,20
+772,../partidos/1966_portugal_hungria.php,8,7,13-Jul-1966,"1ra Ronda, Grupo 3",71,3,1,46
+773,../partidos/1966_argentina_espana.php,8,8,13-Jul-1966,"1ra Ronda, Grupo 2",7,2,1,38
+774,../partidos/1966_uruguay_francia.php,8,9,15-Jul-1966,"1ra Ronda, Grupo 1",89,2,1,40
+775,../partidos/1966_hungria_brasil.php,8,10,15-Jul-1966,"1ra Ronda, Grupo 3",46,3,1,12
+776,../partidos/1966_espana_suiza.php,8,11,15-Jul-1966,"1ra Ronda, Grupo 2",38,2,1,82
+777,../partidos/1966_corea_del_norte_chile.php,8,12,15-Jul-1966,"1ra Ronda, Grupo 4",23,1,1,20
+778,../partidos/1966_portugal_bulgaria.php,8,13,16-Jul-1966,"1ra Ronda, Grupo 3",71,3,0,13
+779,../partidos/1966_alemania_occidental_argentina.php,8,14,16-Jul-1966,"1ra Ronda, Grupo 2",2,0,0,7
+780,../partidos/1966_urss_italia.php,8,15,16-Jul-1966,"1ra Ronda, Grupo 4",87,1,0,56
+781,../partidos/1966_inglaterra_mexico.php,8,16,16-Jul-1966,"1ra Ronda, Grupo 1",49,2,0,62
+782,../partidos/1966_portugal_brasil.php,8,17,19-Jul-1966,"1ra Ronda, Grupo 3",71,3,1,12
+783,../partidos/1966_uruguay_mexico.php,8,18,19-Jul-1966,"1ra Ronda, Grupo 1",89,0,0,62
+784,../partidos/1966_argentina_suiza.php,8,19,19-Jul-1966,"1ra Ronda, Grupo 2",7,2,0,82
+785,../partidos/1966_corea_del_norte_italia.php,8,20,19-Jul-1966,"1ra Ronda, Grupo 4",23,1,0,56
+786,../partidos/1966_inglaterra_francia.php,8,21,20-Jul-1966,"1ra Ronda, Grupo 1",49,2,0,40
+787,../partidos/1966_alemania_occidental_espana.php,8,22,20-Jul-1966,"1ra Ronda, Grupo 2",2,2,1,38
+788,../partidos/1966_urss_chile.php,8,23,20-Jul-1966,"1ra Ronda, Grupo 4",87,2,1,20
+789,../partidos/1966_hungria_bulgaria.php,8,24,20-Jul-1966,"1ra Ronda, Grupo 3",46,3,1,13
+790,../partidos/1966_portugal_corea_del_norte.php,8,25,23-Jul-1966,Cuartos,71,5,3,23
+791,../partidos/1966_inglaterra_argentina.php,8,26,23-Jul-1966,Cuartos,49,1,0,7
+792,../partidos/1966_alemania_occidental_uruguay.php,8,27,23-Jul-1966,Cuartos,2,4,0,89
+793,../partidos/1966_urss_hungria.php,8,28,23-Jul-1966,Cuartos,87,2,1,46
+794,../partidos/1966_alemania_occidental_urss.php,8,29,25-Jul-1966,Semis,2,2,1,87
+795,../partidos/1966_inglaterra_portugal.php,8,30,26-Jul-1966,Semis,49,2,1,71
+796,../partidos/1966_portugal_urss.php,8,31,28-Jul-1966,3er Puesto,71,2,1,87
+797,../partidos/1966_inglaterra_alemania_occidental.php,8,32,30-Jul-1966,Final,49,4,2,2
+798,../partidos/1962_uruguay_colombia.php,7,1,30-May-1962,"1ra Ronda, Grupo 1",89,2,1,22
+799,../partidos/1962_brasil_mexico.php,7,2,30-May-1962,"1ra Ronda, Grupo 3",12,2,0,62
+800,../partidos/1962_chile_suiza.php,7,3,30-May-1962,"1ra Ronda, Grupo 2",20,3,1,82
+801,../partidos/1962_argentina_bulgaria.php,7,4,30-May-1962,"1ra Ronda, Grupo 4",7,1,0,13
+802,../partidos/1962_checoslovaquia_espana.php,7,5,31-May-1962,"1ra Ronda, Grupo 3",19,1,0,38
+803,../partidos/1962_urss_yugoslavia.php,7,6,31-May-1962,"1ra Ronda, Grupo 1",87,2,0,91
+804,../partidos/1962_hungria_inglaterra.php,7,7,31-May-1962,"1ra Ronda, Grupo 4",46,2,1,49
+805,../partidos/1962_alemania_occidental_italia.php,7,8,31-May-1962,"1ra Ronda, Grupo 2",2,0,0,56
+806,../partidos/1962_chile_italia.php,7,9,02-Jun-1962,"1ra Ronda, Grupo 2",20,2,0,56
+807,../partidos/1962_brasil_checoslovaquia.php,7,10,02-Jun-1962,"1ra Ronda, Grupo 3",12,0,0,19
+808,../partidos/1962_yugoslavia_uruguay.php,7,11,02-Jun-1962,"1ra Ronda, Grupo 1",91,3,1,89
+809,../partidos/1962_inglaterra_argentina.php,7,12,02-Jun-1962,"1ra Ronda, Grupo 4",49,3,1,7
+810,../partidos/1962_hungria_bulgaria.php,7,13,03-Jun-1962,"1ra Ronda, Grupo 4",46,6,1,13
+811,../partidos/1962_urss_colombia.php,7,14,03-Jun-1962,"1ra Ronda, Grupo 1",87,4,4,22
+812,../partidos/1962_espana_mexico.php,7,15,03-Jun-1962,"1ra Ronda, Grupo 3",38,1,0,62
+813,../partidos/1962_alemania_occidental_suiza.php,7,16,03-Jun-1962,"1ra Ronda, Grupo 2",2,2,1,82
+814,../partidos/1962_alemania_occidental_chile.php,7,17,06-Jun-1962,"1ra Ronda, Grupo 2",2,2,0,20
+815,../partidos/1962_hungria_argentina.php,7,18,06-Jun-1962,"1ra Ronda, Grupo 4",46,0,0,7
+816,../partidos/1962_urss_uruguay.php,7,19,06-Jun-1962,"1ra Ronda, Grupo 1",87,2,1,89
+817,../partidos/1962_brasil_espana.php,7,20,06-Jun-1962,"1ra Ronda, Grupo 3",12,2,1,38
+818,../partidos/1962_yugoslavia_colombia.php,7,21,07-Jun-1962,"1ra Ronda, Grupo 1",91,5,0,22
+819,../partidos/1962_mexico_checoslovaquia.php,7,22,07-Jun-1962,"1ra Ronda, Grupo 3",62,3,1,19
+820,../partidos/1962_italia_suiza.php,7,23,07-Jun-1962,"1ra Ronda, Grupo 2",56,3,0,82
+821,../partidos/1962_inglaterra_bulgaria.php,7,24,07-Jun-1962,"1ra Ronda, Grupo 4",49,0,0,13
+822,../partidos/1962_brasil_inglaterra.php,7,25,10-Jun-1962,Cuartos,12,3,1,49
+823,../partidos/1962_checoslovaquia_hungria.php,7,26,10-Jun-1962,Cuartos,19,1,0,46
+824,../partidos/1962_yugoslavia_alemania_occidental.php,7,27,10-Jun-1962,Cuartos,91,1,0,2
+825,../partidos/1962_chile_urss.php,7,28,10-Jun-1962,Cuartos,20,2,1,87
+826,../partidos/1962_yugoslavia_checoslovaquia.php,7,29,13-Jun-1962,Semis,91,1,3,19
+827,../partidos/1962_chile_brasil.php,7,30,13-Jun-1962,Semis,20,2,4,12
+828,../partidos/1962_chile_yugoslavia.php,7,31,16-Jun-1962,3er Puesto,20,1,0,91
+829,../partidos/1962_brasil_checoslovaquia_2.php,7,32,17-Jun-1962,Final,12,3,1,19
+830,../partidos/1958_hungria_gales.php,6,1,08-Jun-1958,"1ra Ronda, Grupo 3",46,1,1,41
+831,../partidos/1958_irlanda_del_norte_checoslovaquia.php,6,2,08-Jun-1958,"1ra Ronda, Grupo 1",52,1,0,19
+832,../partidos/1958_brasil_austria.php,6,3,08-Jun-1958,"1ra Ronda, Grupo 4",12,3,0,9
+833,../partidos/1958_francia_paraguay.php,6,4,08-Jun-1958,"1ra Ronda, Grupo 2",40,7,3,68
+834,../partidos/1958_argentina_alemania_occidental.php,6,5,08-Jun-1958,"1ra Ronda, Grupo 1",7,1,3,2
+835,../partidos/1958_urss_inglaterra.php,6,6,08-Jun-1958,"1ra Ronda, Grupo 4",87,2,2,49
+836,../partidos/1958_yugoslavia_escocia.php,6,7,08-Jun-1958,"1ra Ronda, Grupo 2",91,1,1,35
+837,../partidos/1958_suecia_mexico.php,6,8,08-Jun-1958,"1ra Ronda, Grupo 3",81,3,0,62
+838,../partidos/1958_yugoslavia_francia.php,6,9,11-Jun-1958,"1ra Ronda, Grupo 2",91,3,2,40
+839,../partidos/1958_paraguay_escocia.php,6,10,11-Jun-1958,"1ra Ronda, Grupo 2",68,3,2,35
+840,../partidos/1958_mexico_gales.php,6,11,11-Jun-1958,"1ra Ronda, Grupo 3",62,1,1,41
+841,../partidos/1958_alemania_occidental_checoslovaquia.php,6,12,11-Jun-1958,"1ra Ronda, Grupo 1",2,2,2,19
+842,../partidos/1958_urss_austria.php,6,13,11-Jun-1958,"1ra Ronda, Grupo 4",87,2,0,9
+843,../partidos/1958_argentina_irlanda_del_norte.php,6,14,11-Jun-1958,"1ra Ronda, Grupo 1",7,3,1,52
+844,../partidos/1958_brasil_inglaterra.php,6,15,11-Jun-1958,"1ra Ronda, Grupo 4",12,0,0,49
+845,../partidos/1958_suecia_hungria.php,6,16,12-Jun-1958,"1ra Ronda, Grupo 3",81,2,1,46
+846,../partidos/1958_francia_escocia.php,6,17,15-Jun-1958,"1ra Ronda, Grupo 2",40,2,1,35
+847,../partidos/1958_suecia_gales.php,6,18,15-Jun-1958,"1ra Ronda, Grupo 3",81,0,0,41
+848,../partidos/1958_alemania_occidental_irlanda_del_norte.php,6,19,15-Jun-1958,"1ra Ronda, Grupo 1",2,2,2,52
+849,../partidos/1958_paraguay_yugoslavia.php,6,20,15-Jun-1958,"1ra Ronda, Grupo 2",68,3,3,91
+850,../partidos/1958_brasil_urss.php,6,21,15-Jun-1958,"1ra Ronda, Grupo 4",12,2,0,87
+851,../partidos/1958_inglaterra_austria.php,6,22,15-Jun-1958,"1ra Ronda, Grupo 4",49,2,2,9
+852,../partidos/1958_hungria_mexico.php,6,23,15-Jun-1958,"1ra Ronda, Grupo 3",46,4,0,62
+853,../partidos/1958_checoslovaquia_argentina.php,6,24,15-Jun-1958,"1ra Ronda, Grupo 1",19,6,1,7
+854,../partidos/1958_irlanda_del_norte_checoslovaquia_2.php,6,25,17-Jun-1958,"1ra Ronda, Grupo 1",52,2,1,19
+855,../partidos/1958_gales_hungria.php,6,26,17-Jun-1958,"1ra Ronda, Grupo 3",41,2,1,46
+856,../partidos/1958_urss_inglaterra_2.php,6,27,17-Jun-1958,"1ra Ronda, Grupo 4",87,1,0,49
+857,../partidos/1958_francia_irlanda_del_norte.php,6,28,19-Jun-1958,Cuartos,40,4,0,52
+858,../partidos/1958_alemania_occidental_yugoslavia.php,6,29,19-Jun-1958,Cuartos,2,1,0,91
+859,../partidos/1958_brasil_gales.php,6,30,19-Jun-1958,Cuartos,12,1,0,41
+860,../partidos/1958_suecia_urss.php,6,31,19-Jun-1958,Cuartos,81,2,0,87
+861,../partidos/1958_alemania_occidental_suecia.php,6,32,24-Jun-1958,Semis,2,1,3,81
+862,../partidos/1958_francia_brasil.php,6,33,24-Jun-1958,Semis,40,2,5,12
+863,../partidos/1958_alemania_occidental_francia.php,6,34,28-Jun-1958,3er Puesto,2,3,6,40
+864,../partidos/1958_suecia_brasil.php,6,35,29-Jun-1958,Final,81,2,5,12
+865,../partidos/1954_yugoslavia_francia.php,5,1,16-Jun-1954,"1ra Ronda, Grupo 1",91,1,0,40
+866,../partidos/1954_austria_escocia.php,5,2,16-Jun-1954,"1ra Ronda, Grupo 3",9,1,0,35
+867,../partidos/1954_uruguay_checoslovaquia.php,5,3,16-Jun-1954,"1ra Ronda, Grupo 3",89,2,0,19
+868,../partidos/1954_brasil_mexico.php,5,4,16-Jun-1954,"1ra Ronda, Grupo 1",12,5,0,62
+869,../partidos/1954_hungria_corea_del_sur.php,5,5,17-Jun-1954,"1ra Ronda, Grupo 2",46,9,0,24
+870,../partidos/1954_inglaterra_belgica.php,5,6,17-Jun-1954,"1ra Ronda, Grupo 4",49,4,4,14
+871,../partidos/1954_alemania_occidental_turquia.php,5,7,17-Jun-1954,"1ra Ronda, Grupo 2",2,4,1,85
+872,../partidos/1954_suiza_italia.php,5,8,17-Jun-1954,"1ra Ronda, Grupo 4",82,2,1,56
+873,../partidos/1954_francia_mexico.php,5,9,19-Jun-1954,"1ra Ronda, Grupo 1",40,3,2,62
+874,../partidos/1954_brasil_yugoslavia.php,5,10,19-Jun-1954,"1ra Ronda, Grupo 1",12,1,1,91
+875,../partidos/1954_austria_checoslovaquia.php,5,11,19-Jun-1954,"1ra Ronda, Grupo 3",9,5,0,19
+876,../partidos/1954_uruguay_escocia.php,5,12,19-Jun-1954,"1ra Ronda, Grupo 3",89,7,0,35
+877,../partidos/1954_hungria_alemania_occidental.php,5,13,20-Jun-1954,"1ra Ronda, Grupo 2",46,8,3,2
+878,../partidos/1954_turquia_corea_del_sur.php,5,14,20-Jun-1954,"1ra Ronda, Grupo 2",85,7,0,24
+879,../partidos/1954_inglaterra_suiza.php,5,15,20-Jun-1954,"1ra Ronda, Grupo 4",49,2,0,82
+880,../partidos/1954_italia_belgica.php,5,16,20-Jun-1954,"1ra Ronda, Grupo 4",56,4,1,14
+881,../partidos/1954_suiza_italia_2.php,5,17,23-Jun-1954,"1ra Ronda, Grupo 4",82,4,1,56
+882,../partidos/1954_alemania_occidental_turquia_2.php,5,18,23-Jun-1954,"1ra Ronda, Grupo 2",2,7,2,85
+883,../partidos/1954_uruguay_inglaterra.php,5,19,26-Jun-1954,Cuartos,89,4,2,49
+884,../partidos/1954_austria_suiza.php,5,20,26-Jun-1954,Cuartos,9,7,5,82
+885,../partidos/1954_hungria_brasil.php,5,21,27-Jun-1954,Cuartos,46,4,2,12
+886,../partidos/1954_alemania_occidental_yugoslavia.php,5,22,27-Jun-1954,Cuartos,2,2,0,91
+887,../partidos/1954_hungria_uruguay.php,5,23,30-Jun-1954,Semis,46,4,2,89
+888,../partidos/1954_alemania_occidental_austria.php,5,24,30-Jun-1954,Semis,2,6,1,9
+889,../partidos/1954_uruguay_austria.php,5,25,03-Jul-1954,3er Puesto,89,1,3,9
+890,../partidos/1954_hungria_alemania_occidental_2.php,5,26,04-Jul-1954,Final,46,2,3,2
+891,../partidos/1950_brasil_mexico.php,4,1,24-Jun-1950,"1ra Ronda, Grupo 1",12,4,0,62
+892,../partidos/1950_suecia_italia.php,4,2,25-Jun-1950,"1ra Ronda, Grupo 3",81,3,2,56
+893,../partidos/1950_yugoslavia_suiza.php,4,3,25-Jun-1950,"1ra Ronda, Grupo 1",91,3,0,82
+894,../partidos/1950_inglaterra_chile.php,4,4,25-Jun-1950,"1ra Ronda, Grupo 2",49,2,0,20
+895,../partidos/1950_espana_estados_unidos.php,4,5,25-Jun-1950,"1ra Ronda, Grupo 2",38,3,1,39
+896,../partidos/1950_yugoslavia_mexico.php,4,6,28-Jun-1950,"1ra Ronda, Grupo 1",91,4,1,62
+897,../partidos/1950_brasil_suiza.php,4,7,28-Jun-1950,"1ra Ronda, Grupo 1",12,2,2,82
+898,../partidos/1950_suecia_paraguay.php,4,8,29-Jun-1950,"1ra Ronda, Grupo 3",81,2,2,68
+899,../partidos/1950_estados_unidos_inglaterra.php,4,9,29-Jun-1950,"1ra Ronda, Grupo 2",39,1,0,49
+900,../partidos/1950_espana_chile.php,4,10,29-Jun-1950,"1ra Ronda, Grupo 2",38,2,0,20
+901,../partidos/1950_brasil_yugoslavia.php,4,11,01-Jul-1950,"1ra Ronda, Grupo 1",12,2,0,91
+902,../partidos/1950_uruguay_bolivia.php,4,12,02-Jul-1950,"1ra Ronda, Grupo 4",89,8,0,10
+903,../partidos/1950_suiza_mexico.php,4,13,02-Jul-1950,"1ra Ronda, Grupo 1",82,2,1,62
+904,../partidos/1950_espana_inglaterra.php,4,14,02-Jul-1950,"1ra Ronda, Grupo 2",38,1,0,49
+905,../partidos/1950_chile_estados_unidos.php,4,15,02-Jul-1950,"1ra Ronda, Grupo 2",20,5,2,39
+906,../partidos/1950_italia_paraguay.php,4,16,02-Jul-1950,"1ra Ronda, Grupo 3",56,2,0,68
+907,../partidos/1950_brasil_suecia.php,4,17,09-Jul-1950,Ronda Final,12,7,1,81
+908,../partidos/1950_uruguay_espana.php,4,18,09-Jul-1950,Ronda Final,89,2,2,38
+909,../partidos/1950_uruguay_suecia.php,4,19,13-Jul-1950,Ronda Final,89,3,2,81
+910,../partidos/1950_brasil_espana.php,4,20,13-Jul-1950,Ronda Final,12,6,1,38
+911,../partidos/1950_suecia_espana.php,4,21,16-Jul-1950,Ronda Final,81,3,1,38
+912,../partidos/1950_uruguay_brasil.php,4,22,16-Jul-1950,Ronda Final,89,2,1,12
+913,../partidos/1938_suiza_alemania.php,3,1,04-Jun-1938,Octavos,82,1,1,1
+914,../partidos/1938_francia_belgica.php,3,2,05-Jun-1938,Octavos,40,3,1,14
+915,../partidos/1938_italia_noruega.php,3,3,05-Jun-1938,Octavos,56,2,1,64
+916,../partidos/1938_brasil_polonia.php,3,4,05-Jun-1938,Octavos,12,6,5,70
+917,../partidos/1938_hungria_indias_orientales.php,3,5,05-Jun-1938,Octavos,46,6,0,47
+918,../partidos/1938_checoslovaquia_holanda.php,3,6,05-Jun-1938,Octavos,19,3,0,66
+919,../partidos/1938_cuba_rumania.php,3,7,05-Jun-1938,Octavos,28,3,3,75
+920,../partidos/1938_suiza_alemania_2.php,3,8,09-Jun-1938,Octavos,82,4,2,1
+921,../partidos/1938_cuba_rumania_2.php,3,9,09-Jun-1938,Octavos,28,2,1,75
+922,../partidos/1938_cuba_suecia.php,3,10,12-Jun-1938,Cuartos,28,0,8,81
+923,../partidos/1938_italia_francia.php,3,11,12-Jun-1938,Cuartos,56,3,1,40
+924,../partidos/1938_hungria_suiza.php,3,12,12-Jun-1938,Cuartos,46,2,0,82
+925,../partidos/1938_brasil_checoslovaquia.php,3,13,12-Jun-1938,Cuartos,12,1,1,19
+926,../partidos/1938_brasil_checoslovaquia_2.php,3,14,14-Jun-1938,Cuartos,12,2,1,19
+927,../partidos/1938_hungria_suecia.php,3,15,16-Jun-1938,Semis,46,5,1,81
+928,../partidos/1938_brasil_italia.php,3,16,16-Jun-1938,Semis,12,1,2,56
+929,../partidos/1938_brasil_suecia.php,3,17,19-Jun-1938,3er Puesto,12,4,2,81
+930,../partidos/1938_italia_hungria.php,3,18,19-Jun-1938,Final,56,4,2,46
+931,../partidos/1934_alemania_belgica.php,2,1,27-May-1934,Octavos,1,5,2,14
+932,../partidos/1934_suecia_argentina.php,2,2,27-May-1934,Octavos,81,3,2,7
+933,../partidos/1934_italia_estados_unidos.php,2,3,27-May-1934,Octavos,56,7,1,39
+934,../partidos/1934_hungria_egipto.php,2,4,27-May-1934,Octavos,46,4,2,32
+935,../partidos/1934_espana_brasil.php,2,5,27-May-1934,Octavos,38,3,1,12
+936,../partidos/1934_checoslovaquia_rumania.php,2,6,27-May-1934,Octavos,19,2,1,75
+937,../partidos/1934_suiza_holanda.php,2,7,27-May-1934,Octavos,82,3,2,66
+938,../partidos/1934_austria_francia.php,2,8,27-May-1934,Octavos,9,3,2,40
+939,../partidos/1934_checoslovaquia_suiza.php,2,9,31-May-1934,Cuartos,19,3,2,82
+940,../partidos/1934_austria_hungria.php,2,10,31-May-1934,Cuartos,9,2,1,46
+941,../partidos/1934_alemania_suecia.php,2,11,31-May-1934,Cuartos,1,2,1,81
+942,../partidos/1934_italia_espana.php,2,12,31-May-1934,Cuartos,56,1,1,38
+943,../partidos/1934_italia_espana_2.php,2,13,01-Jun-1934,Cuartos,56,1,0,38
+944,../partidos/1934_checoslovaquia_alemania.php,2,14,03-Jun-1934,Semis,19,3,1,1
+945,../partidos/1934_italia_austria.php,2,15,03-Jun-1934,Semis,56,1,0,9
+946,../partidos/1934_austria_alemania.php,2,16,07-Jun-1934,3er Puesto,9,2,3,1
+947,../partidos/1934_italia_checoslovaquia.php,2,17,10-Jun-1934,Final,56,2,1,19
+948,../partidos/1930_francia_mexico.php,1,1,13-Jul-1930,"1ra Ronda, Grupo 1",40,4,1,62
+949,../partidos/1930_estados_unidos_belgica.php,1,2,13-Jul-1930,"1ra Ronda, Grupo 4",39,3,0,14
+950,../partidos/1930_rumania_peru.php,1,3,14-Jul-1930,"1ra Ronda, Grupo 3",75,3,1,69
+951,../partidos/1930_yugoslavia_brasil.php,1,4,14-Jul-1930,"1ra Ronda, Grupo 2",91,2,1,12
+952,../partidos/1930_argentina_francia.php,1,5,15-Jul-1930,"1ra Ronda, Grupo 1",7,1,0,40
+953,../partidos/1930_chile_mexico.php,1,6,16-Jul-1930,"1ra Ronda, Grupo 1",20,3,0,62
+954,../partidos/1930_yugoslavia_bolivia.php,1,7,17-Jul-1930,"1ra Ronda, Grupo 2",91,4,0,10
+955,../partidos/1930_estados_unidos_paraguay.php,1,8,17-Jul-1930,"1ra Ronda, Grupo 4",39,3,0,68
+956,../partidos/1930_uruguay_peru.php,1,9,18-Jul-1930,"1ra Ronda, Grupo 3",89,1,0,69
+957,../partidos/1930_argentina_mexico.php,1,10,19-Jul-1930,"1ra Ronda, Grupo 1",7,6,3,62
+958,../partidos/1930_chile_francia.php,1,11,19-Jul-1930,"1ra Ronda, Grupo 1",20,1,0,40
+959,../partidos/1930_paraguay_belgica.php,1,12,20-Jul-1930,"1ra Ronda, Grupo 4",68,1,0,14
+960,../partidos/1930_brasil_bolivia.php,1,13,20-Jul-1930,"1ra Ronda, Grupo 2",12,4,0,10
+961,../partidos/1930_uruguay_rumania.php,1,14,21-Jul-1930,"1ra Ronda, Grupo 3",89,4,0,75
+962,../partidos/1930_argentina_chile.php,1,15,22-Jul-1930,"1ra Ronda, Grupo 1",7,3,1,20
+963,../partidos/1930_argentina_estados_unidos.php,1,16,26-Jul-1930,Semis,7,6,1,39
+964,../partidos/1930_uruguay_yugoslavia.php,1,17,27-Jul-1930,Semis,89,6,1,91
+965,../partidos/1930_argentina_uruguay.php,1,18,30-Jul-1930,Final,7,2,4,89

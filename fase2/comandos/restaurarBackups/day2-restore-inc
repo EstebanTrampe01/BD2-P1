@@ -1,0 +1,107 @@
+# Comandos para restaurar el Backup Incremental de dia 2
+
+
+# ---- PREPARAR ENTORNO ----
+
+# Ir a fase2 y preparar carpetas
+cd "/home/dant/Escritorio/Repository/Usac/BD2/BD2-P1/fase2"
+mkdir -p backups/full backups/inc logs_tiempo evidencias
+
+# Extraer el tar desde backups_evidencia (solo si aun no esta extraido)
+if [ ! -d backups/full/day1 ] && [ -f backups_evidencia/full_day1.tar.gz ]; then
+  tar -xzf backups_evidencia/full_day1.tar.gz -C backups/full
+fi
+
+if [ ! -d backups/inc/day1 ] && [ -f backups_evidencia/inc_day1.tar.gz ]; then
+  tar -xzf backups_evidencia/inc_day1.tar.gz -C backups/inc
+fi
+
+if [ ! -d backups/inc/day2 ] && [ -f backups_evidencia/inc_day2.tar.gz ]; then
+  tar -xzf backups_evidencia/inc_day2.tar.gz -C backups/inc
+fi
+
+if [ ! -d backups/full/day1 ] || [ ! -d backups/inc/day1 ] || [ ! -d backups/inc/day2 ]; then
+  echo "No existe backups/full/day1 o backups/inc/day1/day2 (o sus tar.gz en backups_evidencia)"
+  exit 1
+fi
+
+# Apagar Docker de la BD
+docker compose down
+
+#  Dejar volumen limpio para restaurar
+docker volume rm fase2_mundiales_data 2>/dev/null || true
+docker volume create fase2_mundiales_data
+
+# ------ RESTAURAR -----
+
+# Preparar backup (apply-log)
+TOTAL_START="$(date '+%Y-%m-%d %H:%M:%S')"
+TOTAL_START_EPOCH="$(date +%s)"
+START="$(date '+%Y-%m-%d %H:%M:%S')"
+/usr/bin/time -f "%e" -o logs_tiempo/restore_day2_inc_prepare_base.sec \
+docker run --rm --user 0:0 \
+  -v "$PWD/backups:/backups" \
+  percona/percona-xtrabackup:8.0 \
+  xtrabackup --prepare --apply-log-only --target-dir=/backups/full/day1
+
+/usr/bin/time -f "%e" -o logs_tiempo/restore_day2_inc_prepare_apply_inc1.sec \
+docker run --rm --user 0:0 \
+  -v "$PWD/backups:/backups" \
+  percona/percona-xtrabackup:8.0 \
+  xtrabackup --prepare --apply-log-only \
+    --target-dir=/backups/full/day1 \
+    --incremental-dir=/backups/inc/day1
+
+/usr/bin/time -f "%e" -o logs_tiempo/restore_day2_inc_prepare_apply_inc2.sec \
+docker run --rm --user 0:0 \
+  -v "$PWD/backups:/backups" \
+  percona/percona-xtrabackup:8.0 \
+  xtrabackup --prepare --apply-log-only \
+    --target-dir=/backups/full/day1 \
+    --incremental-dir=/backups/inc/day2
+
+/usr/bin/time -f "%e" -o logs_tiempo/restore_day2_inc_prepare_final.sec \
+docker run --rm --user 0:0 \
+  -v "$PWD/backups:/backups" \
+  percona/percona-xtrabackup:8.0 \
+  xtrabackup --prepare --target-dir=/backups/full/day1
+
+# Restaurar backup al volumen
+/usr/bin/time -f "%e" -o logs_tiempo/restore_day2_inc_copyback.sec \
+docker run --rm --user 0:0 \
+  -v fase2_mundiales_data:/var/lib/mysql \
+  -v "$PWD/backups:/backups" \
+  percona/percona-xtrabackup:8.0 \
+  xtrabackup --copy-back \
+    --target-dir=/backups/full/day1 \
+    --datadir=/var/lib/mysql
+
+END="$(date '+%Y-%m-%d %H:%M:%S')"
+
+# Corregir permisos del datadir
+docker run --rm --user 0:0 \
+  -v fase2_mundiales_data:/var/lib/mysql \
+  mysql:8.0 \
+  bash -lc 'chown -R mysql:mysql /var/lib/mysql'
+
+# Levantar BD y 
+docker compose up -d
+
+TOTAL_END="$(date '+%Y-%m-%d %H:%M:%S')"
+TOTAL_END_EPOCH="$(date +%s)"
+TOTAL_SEC="$((TOTAL_END_EPOCH - TOTAL_START_EPOCH))"
+PREP_SEC="$(awk -v a="$(cat logs_tiempo/restore_day2_inc_prepare_base.sec)" -v b="$(cat logs_tiempo/restore_day2_inc_prepare_apply_inc1.sec)" -v c="$(cat logs_tiempo/restore_day2_inc_prepare_apply_inc2.sec)" -v d="$(cat logs_tiempo/restore_day2_inc_prepare_final.sec)" 'BEGIN {print a + b + c + d}')"
+NUCLEO_SEC="$(awk -v a="$PREP_SEC" -v b="$(cat logs_tiempo/restore_day2_inc_copyback.sec)" 'BEGIN {print a + b}')"
+
+# Guardar resumen de tiempos (nucleo y total operativa)
+{
+  echo "RESTORE INC DIA 2"
+  echo "inicio=$START"
+  echo "fin=$END"
+  echo "inicio_total_operativa=$TOTAL_START"
+  echo "fin_total_operativa=$TOTAL_END"
+  echo "duracion_prepare_seg=$PREP_SEC"
+  echo "duracion_copyback_seg=$(cat logs_tiempo/restore_day2_inc_copyback.sec)"
+  echo "duracion_restore_nucleo_seg=$NUCLEO_SEC"
+  echo "duracion_restore_total_operativa_seg=$TOTAL_SEC"
+} > evidencias/restore_day2_inc_resumen.txt
