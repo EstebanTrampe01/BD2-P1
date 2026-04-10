@@ -30,11 +30,11 @@ if [ ! -d backups/full/day1 ] || [ ! -d backups/inc/day1 ] || [ ! -d backups/inc
 fi
 
 # Apagar Docker de la BD
-docker compose down
+sudo docker compose down
 
 #  Dejar volumen limpio para restaurar
-docker volume rm fase2_mundiales_data 2>/dev/null || true
-docker volume create fase2_mundiales_data
+sudo docker volume rm fase2_mundiales_data 2>/dev/null || true
+sudo docker volume create fase2_mundiales_data
 
 # ------ RESTAURAR -----
 
@@ -43,13 +43,13 @@ TOTAL_START="$(date '+%Y-%m-%d %H:%M:%S')"
 TOTAL_START_EPOCH="$(date +%s)"
 START="$(date '+%Y-%m-%d %H:%M:%S')"
 /usr/bin/time -f "%e" -o logs_tiempo/restore_day3_inc_prepare_base.sec \
-docker run --rm --user 0:0 \
+sudo docker run --rm --user 0:0 \
   -v "$PWD/backups:/backups" \
   percona/percona-xtrabackup:8.0 \
   xtrabackup --prepare --apply-log-only --target-dir=/backups/full/day1
 
 /usr/bin/time -f "%e" -o logs_tiempo/restore_day3_inc_prepare_apply_inc1.sec \
-docker run --rm --user 0:0 \
+sudo docker run --rm --user 0:0 \
   -v "$PWD/backups:/backups" \
   percona/percona-xtrabackup:8.0 \
   xtrabackup --prepare --apply-log-only \
@@ -57,7 +57,7 @@ docker run --rm --user 0:0 \
     --incremental-dir=/backups/inc/day1
 
 /usr/bin/time -f "%e" -o logs_tiempo/restore_day3_inc_prepare_apply_inc2.sec \
-docker run --rm --user 0:0 \
+sudo docker run --rm --user 0:0 \
   -v "$PWD/backups:/backups" \
   percona/percona-xtrabackup:8.0 \
   xtrabackup --prepare --apply-log-only \
@@ -65,7 +65,7 @@ docker run --rm --user 0:0 \
     --incremental-dir=/backups/inc/day2
 
 /usr/bin/time -f "%e" -o logs_tiempo/restore_day3_inc_prepare_apply_inc3.sec \
-docker run --rm --user 0:0 \
+sudo docker run --rm --user 0:0 \
   -v "$PWD/backups:/backups" \
   percona/percona-xtrabackup:8.0 \
   xtrabackup --prepare --apply-log-only \
@@ -73,14 +73,14 @@ docker run --rm --user 0:0 \
     --incremental-dir=/backups/inc/day3
 
 /usr/bin/time -f "%e" -o logs_tiempo/restore_day3_inc_prepare_final.sec \
-docker run --rm --user 0:0 \
+sudo docker run --rm --user 0:0 \
   -v "$PWD/backups:/backups" \
   percona/percona-xtrabackup:8.0 \
   xtrabackup --prepare --target-dir=/backups/full/day1
 
 # Restaurar backup al volumen
 /usr/bin/time -f "%e" -o logs_tiempo/restore_day3_inc_copyback.sec \
-docker run --rm --user 0:0 \
+sudo docker run --rm --user 0:0 \
   -v fase2_mundiales_data:/var/lib/mysql \
   -v "$PWD/backups:/backups" \
   percona/percona-xtrabackup:8.0 \
@@ -91,13 +91,13 @@ docker run --rm --user 0:0 \
 END="$(date '+%Y-%m-%d %H:%M:%S')"
 
 # Corregir permisos del datadir
-docker run --rm --user 0:0 \
+sudo docker run --rm --user 0:0 \
   -v fase2_mundiales_data:/var/lib/mysql \
   mysql:8.0 \
   bash -lc 'chown -R mysql:mysql /var/lib/mysql'
 
 # Levantar BD y 
-docker compose up -d
+sudo docker compose up -d
 
 TOTAL_END="$(date '+%Y-%m-%d %H:%M:%S')"
 TOTAL_END_EPOCH="$(date +%s)"

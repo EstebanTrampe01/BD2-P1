@@ -1,0 +1,9 @@
+RESTORE INC DIA 3
+inicio=2026-04-09 21:57:07
+fin=2026-04-09 21:57:35
+inicio_total_operativa=2026-04-09 21:57:07
+fin_total_operativa=2026-04-09 21:57:37
+duracion_prepare_seg=24,64
+duracion_copyback_seg=3.20
+duracion_restore_nucleo_seg=27,84
+duracion_restore_total_operativa_seg=30

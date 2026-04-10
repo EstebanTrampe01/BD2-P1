@@ -19,11 +19,11 @@ if [ ! -d backups/full/day3 ]; then
 fi
 
 # Apagar Docker de la BD
-docker compose down
+ sudo docker compose down
 
 #  Dejar volumen limpio para restaurar
-docker volume rm fase2_mundiales_data 2>/dev/null || true
-docker volume create fase2_mundiales_data
+sudo docker volume rm fase2_mundiales_data 2>/dev/null || true
+sudo docker volume create fase2_mundiales_data
 
 # ------ RESTAURAR -----
 
@@ -32,14 +32,14 @@ TOTAL_START="$(date '+%Y-%m-%d %H:%M:%S')"
 TOTAL_START_EPOCH="$(date +%s)"
 START="$(date '+%Y-%m-%d %H:%M:%S')"
 /usr/bin/time -f "%e" -o logs_tiempo/restore_day3_full_prepare.sec \
-docker run --rm --user 0:0 \
+sudo docker run --rm --user 0:0 \
   -v "$PWD/backups:/backups" \
   percona/percona-xtrabackup:8.0 \
   xtrabackup --prepare --target-dir=/backups/full/day3
 
 # Restaurar backup al volumen
 /usr/bin/time -f "%e" -o logs_tiempo/restore_day3_full_copyback.sec \
-docker run --rm --user 0:0 \
+sudo docker run --rm --user 0:0 \
   -v fase2_mundiales_data:/var/lib/mysql \
   -v "$PWD/backups:/backups" \
   percona/percona-xtrabackup:8.0 \
@@ -50,13 +50,13 @@ docker run --rm --user 0:0 \
 END="$(date '+%Y-%m-%d %H:%M:%S')"
 
 # Corregir permisos del datadir
-docker run --rm --user 0:0 \
+sudo docker run --rm --user 0:0 \
   -v fase2_mundiales_data:/var/lib/mysql \
   mysql:8.0 \
   bash -lc 'chown -R mysql:mysql /var/lib/mysql'
 
 # Levantar BD y 
-docker compose up -d
+sudo docker compose up -d
 
 TOTAL_END="$(date '+%Y-%m-%d %H:%M:%S')"
 TOTAL_END_EPOCH="$(date +%s)"

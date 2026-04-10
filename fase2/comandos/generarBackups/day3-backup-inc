@@ -3,7 +3,7 @@ mkdir -p backups/inc backups_evidencia logs_tiempo evidencias
 
 START="$(date '+%Y-%m-%d %H:%M:%S')"
 /usr/bin/time -f "%e" -o logs_tiempo/inc_day3.sec \
-docker run --rm --user 0:0 --network fase2_default \
+sudo docker run --rm --user 0:0 --network fase2_default \
   -v fase2_mundiales_data:/var/lib/mysql \
   -v "$PWD/backups:/backups" \
   percona/percona-xtrabackup:8.0 \

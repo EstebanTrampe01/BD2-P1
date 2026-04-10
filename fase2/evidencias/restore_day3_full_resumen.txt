@@ -1,0 +1,9 @@
+RESTORE FULL DIA 3
+inicio=2026-04-09 18:44:09
+fin=2026-04-09 18:44:16
+inicio_total_operativa=2026-04-09 18:44:09
+fin_total_operativa=2026-04-09 18:44:19
+duracion_prepare_seg=3.32
+duracion_copyback_seg=3.55
+duracion_restore_nucleo_seg=6,87
+duracion_restore_total_operativa_seg=10
