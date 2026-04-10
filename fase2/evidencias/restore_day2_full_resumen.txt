@@ -1,9 +1,9 @@
 RESTORE FULL DIA 2
-inicio=2026-04-09 11:37:02
-fin=2026-04-09 11:37:16
-inicio_total_operativa=2026-04-09 11:37:02
-fin_total_operativa=2026-04-09 11:37:16
-duracion_prepare_seg=3.25
-duracion_copyback_seg=10.62
-duracion_restore_nucleo_seg=13,87
-duracion_restore_total_operativa_seg=14
+inicio=2026-04-09 16:54:08
+fin=2026-04-09 16:54:36
+inicio_total_operativa=2026-04-09 16:54:08
+fin_total_operativa=2026-04-09 16:54:42
+duracion_prepare_seg=8.77
+duracion_copyback_seg=19.37
+duracion_restore_nucleo_seg=28.14
+duracion_restore_total_operativa_seg=34
