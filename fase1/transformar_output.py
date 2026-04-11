@@ -12,10 +12,6 @@ DIR_SALIDA  = "./output_db"
 os.makedirs(DIR_SALIDA, exist_ok=True)
  
  
-# =============================================================================
-# UTILIDADES
-# =============================================================================
- 
 def detectar_sep(ruta):
     with open(ruta, "r", encoding="utf-8-sig") as f:
         muestra = f.read(4096)
@@ -49,7 +45,6 @@ def vacío(v):
 
 
 def _limpiar_id(v):
-    """Normaliza IDs para evitar formatos como '18.0'."""
     s = str(v).strip()
     if s in ("", "nan", "None", "NULL"):
         return ""
@@ -81,18 +76,10 @@ def _extraer_decimal(v):
 
 
 def _altura_a_cm(v):
-    """Convierte altura textual a centimetros.
-
-    Soporta formatos como:
-    - "1.82 m / 5' 11\""
-    - "1,82 m"
-    - "182"
-    """
     s = str(v).strip().lower().replace(",", ".")
     if s in ("", "nan", "none", "null", "-", "–", "—"):
         return ""
 
-    # Caso común: valor en metros seguido de 'm'
     m = re.search(r"(\d+(?:\.\d+)?)\s*m", s)
     if m:
         try:
@@ -100,7 +87,6 @@ def _altura_a_cm(v):
         except ValueError:
             return ""
 
-    # Caso número simple
     try:
         f = float(s)
         return str(int(f * 100)) if f < 3.0 else str(int(f))
@@ -108,28 +94,12 @@ def _altura_a_cm(v):
         return ""
  
  
-# =============================================================================
-# PASO 1 — Construir diccionarios de mapeo  URL → ID numérico
-# =============================================================================
- 
 def construir_mapa_selecciones(df):
-    """
-    nombre de selección (string) → id_seleccion (int)
-    En el schema nuevo la PK es id_seleccion AUTO_INCREMENT,
-    pero los CSVs crudos identifican selecciones por nombre.
-    """
     nombres = df["seleccion"].dropna().unique()
     return {nombre.strip(): idx + 1 for idx, nombre in enumerate(sorted(nombres))}
  
  
 def _normalizar_clave_url_jugador(u):
-    """Normaliza cualquier URL (absoluta o relativa) a una clave común.
-
-    Ejemplos:
-      "https://www.losmundialesdefutbol.com/jugadores/miroslav_klose.php"
-      "../jugadores/miroslav_klose.php"
-    ambos quedan en "miroslav_klose.php".
-    """
     s = str(u).strip()
     if not s:
         return ""
@@ -137,13 +107,6 @@ def _normalizar_clave_url_jugador(u):
 
 
 def _normalizar_clave_url_partido(u):
-    """Normaliza URL de partido (absoluta o relativa) a una clave comun.
-
-    Ejemplos:
-      "https://www.losmundialesdefutbol.com/partidos/2022_argentina_francia.php"
-      "../partidos/2022_argentina_francia.php"
-    ambos quedan en "2022_argentina_francia.php".
-    """
     s = str(u).strip()
     if not s:
         return ""
@@ -151,10 +114,6 @@ def _normalizar_clave_url_partido(u):
 
 
 def _slug_nombre_a_php(nombre):
-    """Convierte nombre de jugador a posible basename de URL.
-
-    Ejemplo: "Nani" -> "nani.php"
-    """
     s = str(nombre).strip().lower()
     if not s:
         return ""
@@ -166,13 +125,11 @@ def _slug_nombre_a_php(nombre):
 
 
 def construir_mapa_jugadores(df):
-    """url normalizada → id_jugador"""
     urls = df["url"].dropna().unique()
     return {_normalizar_clave_url_jugador(url): idx + 1 for idx, url in enumerate(urls)}
 
 
 def construir_mapa_jugadores_por_nombre(df, mapa_jug):
-    """nombre (string) → id_jugador (int), usando el mapa url→id ya creado."""
     nombres = df.get("nombre", pd.Series([""] * len(df))).astype(str)
     urls    = df.get("url", pd.Series([""] * len(df))).astype(str)
     mapa = {}
@@ -188,16 +145,11 @@ def construir_mapa_jugadores_por_nombre(df, mapa_jug):
  
  
 def construir_mapa_mundiales(df):
-    """
-    anio (string "1930", "1934"...) → id_mundial (int)
-    El schema usa id_mundial AUTO_INCREMENT, los CSVs usan el año.
-    """
     anios = sorted(df["anio"].dropna().unique(), key=lambda x: int(x))
     return {str(a).strip(): idx + 1 for idx, a in enumerate(anios)}
  
  
 def construir_mapa_partidos(df):
-    """url_partido → id_partido"""
     urls = df["url_partido"].dropna().unique()
     return {
         _normalizar_clave_url_partido(url): idx + 1
@@ -206,16 +158,7 @@ def construir_mapa_partidos(df):
     }
  
  
-# =============================================================================
-# PASO 2 — Transformar cada CSV
-# =============================================================================
- 
 def transformar_selecciones(df, mapa_sel):
-    """
-    Columnas crudas → columnas del schema:
-      seleccion (nombre string) → id_seleccion (int)
-    Elimina: campeon_anios, subcampeon_anios, url, fecha_scraping
-    """
     out = pd.DataFrame()
     out["id_seleccion"]       = df["seleccion"].apply(lambda x: mapa_sel.get(x.strip()))
     out["nombre"]             = df["seleccion"].str.strip()
@@ -236,11 +179,6 @@ def transformar_selecciones(df, mapa_sel):
  
  
 def transformar_mundiales(df, mapa_sel, mapa_mund):
-    """
-    anio → id_mundial
-    campeon (nombre) → id_campeon (int)
-    organizador (nombre) → id_organizador (int)
-    """
     out = pd.DataFrame()
     out["id_mundial"]             = df["anio"].apply(lambda x: mapa_mund.get(str(x).strip()))
     out["anio"]                   = df["anio"].str.strip()
@@ -258,10 +196,6 @@ def transformar_mundiales(df, mapa_sel, mapa_mund):
  
  
 def transformar_seleccion_titulos(df, mapa_sel, mapa_mund):
-    """
-    Explota campeon_anios y subcampeon_anios → filas individuales.
-    Generada desde selecciones.csv, no tiene CSV propio crudo.
-    """
     filas = []
     id_titulo = 1
     for _, r in df.iterrows():
@@ -269,7 +203,6 @@ def transformar_seleccion_titulos(df, mapa_sel, mapa_mund):
         id_sel = mapa_sel.get(sel)
         if not id_sel:
             continue
-        # campeón
         for anio in str(r.get("campeon_anios", "")).split(","):
             anio = anio.strip()
             if re.match(r"^\d{4}$", anio):
@@ -282,7 +215,6 @@ def transformar_seleccion_titulos(df, mapa_sel, mapa_mund):
                         "tipo":        "campeon"
                     })
                     id_titulo += 1
-        # subcampeón
         for anio in str(r.get("subcampeon_anios", "")).split(","):
             anio = anio.strip()
             if re.match(r"^\d{4}$", anio):
@@ -299,12 +231,6 @@ def transformar_seleccion_titulos(df, mapa_sel, mapa_mund):
  
  
 def transformar_jugadores(df, mapa_sel, mapa_jug):
-    """
-    url → id_jugador
-    seleccion (nombre) → id_seleccion_actual
-    Elimina: numeros_camiseta, campeon, url, fecha_scraping
-    Conserva source_url como referencia.
-    """
     out = pd.DataFrame()
     out["id_jugador"]           = df["url"].apply(lambda x: mapa_jug.get(_normalizar_clave_url_jugador(x)))
     out["source_url"]           = df["url"].str.strip()
@@ -326,10 +252,6 @@ def transformar_jugadores(df, mapa_sel, mapa_jug):
  
  
 def transformar_jugador_camisetas(df, mapa_jug, mapa_mund):
-    """
-    Explota numeros_camiseta (e.g. "10,19") → filas individuales.
-    Generada desde jugadores.csv.
-    """
     filas = []
     id_c = 1
     for _, r in df.iterrows():
@@ -354,11 +276,6 @@ def transformar_jugador_camisetas(df, mapa_jug, mapa_mund):
  
  
 def transformar_partidos(df, mapa_sel, mapa_mund, mapa_part):
-    """
-    url_partido → id_partido
-    mundial (anio) → id_mundial
-    local / visitante (nombre) → id_local / id_visitante
-    """
     out = pd.DataFrame()
     out["id_partido"]       = df["url_partido"].apply(
         lambda x: mapa_part.get(_normalizar_clave_url_partido(x))
@@ -379,9 +296,8 @@ def transformar_partidos(df, mapa_sel, mapa_mund, mapa_part):
         lambda x: mapa_sel.get(x.strip()) if not vacío(x) else ""
     )
 
-    # Algunas filas del CSV crudo no traen url_partido (p. ej. partidos futuros).
-    # Para mantener PK no nula en la tabla partidos, generamos IDs sintéticos
-    # para esas filas sin afectar el mapeo de partidos con URL real.
+    # Algunas filas no traen url_partido (ej. partidos futuros).
+    # Se generan IDs para mantener PK no nula.
     out["id_partido"] = pd.to_numeric(out["id_partido"], errors="coerce")
     faltantes = out["id_partido"].isna()
     if faltantes.any():
@@ -468,7 +384,6 @@ def transformar_premios(df, mapa_mund, mapa_jug, mapa_sel):
     out["id_jugador"]   = df.get("url_jugador", pd.Series([""] * len(df))).apply(
         lambda x: mapa_jug.get(_normalizar_clave_url_jugador(x)) if not vacío(x) else ""
     )
-    # jugador_o_seleccion puede ser nombre de selección
     out["id_seleccion"] = df.get("jugador_o_seleccion", pd.Series([""] * len(df))).apply(
         lambda x: mapa_sel.get(x.strip()) if not vacío(x) else ""
     )
@@ -541,10 +456,8 @@ def transformar_planteles(df, mapa_mund, mapa_sel, mapa_jug):
     out["altura_cm"]         = df.get("altura", pd.Series([""] * len(df))).apply(_altura_a_cm)
     out["club"]              = df.get("club", "")
 
-    # La tabla planteles requiere id_jugador NOT NULL. Algunos registros del
-    # CSV corresponden a "Entrenador" y no traen url_jugador, por lo que no
-    # se les puede asignar un id_jugador coherente. Filtramos todas las filas
-    # sin id_jugador para mantener la integridad del modelo relacional.
+    # La tabla planteles requiere id_jugador NOT NULL.
+    # Se filtran filas sin id_jugador.
     out = out[(out["id_jugador"] != "") & out["id_jugador"].notna()].reset_index(drop=True)
     return out
  
@@ -583,9 +496,6 @@ def transformar_partido_goles(df, mapa_mund, mapa_part, mapa_jug, mapa_sel, mapa
     out["id_partido"]   = df.get("url_partido", pd.Series([""] * len(df))).apply(
         lambda x: mapa_part.get(_normalizar_clave_url_partido(x)) if not vacío(x) else ""
     )
-    # En partido_goles.csv no viene url_jugador, sólo el nombre del jugador.
-    # Si existiera url_jugador se usa como identificador; en caso contrario
-    # se intenta mapear por nombre usando mapa_jug_por_nombre.
     def mapear_jugador_por_nombre(nombre):
         nom = str(nombre).strip()
         if vacío(nom):
@@ -593,8 +503,7 @@ def transformar_partido_goles(df, mapa_mund, mapa_part, mapa_jug, mapa_sel, mapa
         id_j = mapa_jug_por_nombre.get(nom)
         if id_j:
             return id_j
-        # Fallback: inferir basename de URL a partir del nombre
-        # (casos como "Nani" -> "nani.php").
+        # Respaldo por nombre.
         return mapa_jug.get(_slug_nombre_a_php(nom), "")
 
     if "url_jugador" in df.columns:
@@ -613,18 +522,11 @@ def transformar_partido_goles(df, mapa_mund, mapa_part, mapa_jug, mapa_sel, mapa
     return out
  
  
-# =============================================================================
-# MAIN
-# =============================================================================
- 
 def main():
     print("=" * 60)
     print("  Transformador de CSVs — Mundiales de Fútbol")
     print("=" * 60)
  
-    # ------------------------------------------------------------------
-    # Leer CSVs base para construir los mapas
-    # ------------------------------------------------------------------
     print("\n── Leyendo CSVs base para construir mapas de IDs...")
     df_sel  = leer("selecciones")
     df_jug  = leer("jugadores")
@@ -635,13 +537,6 @@ def main():
         print("\n[ERROR] Faltan CSVs base. Se necesitan: selecciones, jugadores, mundiales, partidos.")
         return
 
-    # ------------------------------------------------------------------
-    # Asegurar que todas las selecciones usadas en cualquier CSV que
-    # tenga columna "seleccion" existan en el catálogo de selecciones
-    # (incluye históricas como Yugoslavia, URSS, Alemania Occidental,
-    # etc.). De este modo evitamos id_seleccion NULL en grupos,
-    # posiciones_finales, planteles, tarjetas, etc.
-    # ------------------------------------------------------------------
     nombres_sel = set(df_sel["seleccion"].astype(str).str.strip())
     faltantes_globales = set()
 
@@ -686,15 +581,10 @@ def main():
     print(f"    mundiales   : {len(mapa_mund):,} entradas")
     print(f"    partidos    : {len(mapa_part):,} entradas")
  
-    # ------------------------------------------------------------------
-    # Transformar y guardar cada tabla
-    # ------------------------------------------------------------------
     print("\n── Transformando tablas...")
- 
-    # mundiales
+
     guardar(transformar_mundiales(df_mund, mapa_sel, mapa_mund), "mundiales")
- 
-    # selecciones + seleccion_titulos
+
     guardar(transformar_selecciones(df_sel, mapa_sel), "selecciones")
     df_st = transformar_seleccion_titulos(df_sel, mapa_sel, mapa_mund)
     if not df_st.empty:
@@ -702,7 +592,6 @@ def main():
     else:
         print("  [AVISO] seleccion_titulos vacío — revisar campeon_anios/subcampeon_anios en selecciones.csv")
  
-    # jugadores + jugador_camisetas
     guardar(transformar_jugadores(df_jug, mapa_sel, mapa_jug), "jugadores")
     df_jc = transformar_jugador_camisetas(df_jug, mapa_jug, mapa_mund)
     if not df_jc.empty:
@@ -710,10 +599,8 @@ def main():
     else:
         print("  [AVISO] jugador_camisetas vacío — revisar numeros_camiseta en jugadores.csv")
  
-    # partidos
     guardar(transformar_partidos(df_part, mapa_sel, mapa_mund, mapa_part), "partidos")
- 
-    # resto de tablas
+
     tablas = [
         ("grupos",               lambda df: transformar_grupos(df, mapa_sel, mapa_mund)),
         ("posiciones_finales",   lambda df: transformar_posiciones_finales(df, mapa_sel, mapa_mund)),
@@ -731,9 +618,6 @@ def main():
         if df is not None:
             guardar(fn(df), nombre)
  
-    # ------------------------------------------------------------------
-    # Guardar los mapas como referencia
-    # ------------------------------------------------------------------
     print("\n── Guardando mapas de referencia...")
     pd.DataFrame(list(mapa_jug.items()),  columns=["url_original", "id_jugador"]).to_csv(
         os.path.join(DIR_SALIDA, "_mapa_jugadores.csv"), index=False)

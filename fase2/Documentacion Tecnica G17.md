@@ -1,4 +1,25 @@
-# Documentacion Tecnica G17
+# Universidad de San Carlos de Guatemala
+
+## Facultad de Ingenieria
+
+### Escuela de Ciencias y Sistemas
+
+---
+
+## Sistemas de Bases de Datos 2
+
+### Proyecto Fase 2 - Documentacion tecnica
+
+**Seccion:** B  
+**Grupo:** 17  
+
+**Integrantes:**
+
+- Engel Emilio Coc Raxjal - 202200314
+- Harold Alejandro Sanchez Hernandez - 202200100
+- Juan Esteban Chacon Trampe - 202300431
+
+---
 
 ## 1. Objetivo del documento
 

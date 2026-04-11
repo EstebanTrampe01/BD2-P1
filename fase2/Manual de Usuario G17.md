@@ -1,10 +1,27 @@
-# Manual de Usuario
+# Universidad de San Carlos de Guatemala
 
-## Guia practica de Backups y Restauraciones (Fase 2 - G17)
+## Facultad de Ingenieria
 
-## 1. Objetivo
+### Escuela de Ciencias y Sistemas
 
-Este manual explica, paso a paso, como:
+---
+
+## Sistemas de Bases de Datos 2
+
+### Proyecto Fase 1 - Manual de Usuario
+
+**Seccion:** B  
+**Grupo:** 17  
+
+**Integrantes:**
+
+- Engel Emilio Coc Raxjal - 202200314
+- Harold Alejandro Sanchez Hernandez - 202200100
+- Juan Esteban Chacon Trampe - 202300431
+
+---
+
+## 1. Objetivos
 
 - realizar backups `FULL` e `INCREMENTAL`,
 - restaurar la base de datos desde respaldos,

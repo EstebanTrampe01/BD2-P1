@@ -7,66 +7,61 @@ import scrapy
 
 
 class MundialItem(scrapy.Item):
-    """Una fila por cada edicion del Mundial."""
-    anio = scrapy.Field()           # p. ej. "2022"
-    organizador = scrapy.Field()    # p. ej. "Catar"
-    campeon = scrapy.Field()        # p. ej. "Argentina"
-    selecciones = scrapy.Field()    # p. ej. "32"
-    partidos = scrapy.Field()       # p. ej. "64"
-    goles = scrapy.Field()          # p. ej. "172"
-    promedio_gol = scrapy.Field()   # p. ej. "2.69"
+    anio = scrapy.Field()
+    organizador = scrapy.Field()
+    campeon = scrapy.Field()
+    selecciones = scrapy.Field()
+    partidos = scrapy.Field()
+    goles = scrapy.Field()
+    promedio_gol = scrapy.Field()
     url = scrapy.Field()
     fecha_scraping = scrapy.Field()
 
 
 class SeleccionItem(scrapy.Item):
-    """Una fila por cada seleccion nacional."""
-    seleccion = scrapy.Field()          # p. ej. "Brasil"
-    mundiales_jugados = scrapy.Field()  # p. ej. "23"
-    campeon_veces = scrapy.Field()      # p. ej. "5"
-    campeon_anios = scrapy.Field()      # p. ej. "1958,1962,1970,1994,2002"
-    subcampeon_veces = scrapy.Field()   # p. ej. "2"
-    subcampeon_anios = scrapy.Field()   # p. ej. "1950,1998"
-    posicion_historica = scrapy.Field() # p. ej. "1"
-    partidos_jugados = scrapy.Field()   # p. ej. "114"
-    partidos_ganados = scrapy.Field()   # p. ej. "76"
-    partidos_empatados = scrapy.Field() # p. ej. "19"
-    partidos_perdidos = scrapy.Field()  # p. ej. "19"
-    goles_favor = scrapy.Field()        # p. ej. "237"
-    goles_contra = scrapy.Field()       # p. ej. "108"
-    diferencia_gol = scrapy.Field()     # p. ej. "+129"
+    seleccion = scrapy.Field()
+    mundiales_jugados = scrapy.Field()
+    campeon_veces = scrapy.Field()
+    campeon_anios = scrapy.Field()
+    subcampeon_veces = scrapy.Field()
+    subcampeon_anios = scrapy.Field()
+    posicion_historica = scrapy.Field()
+    partidos_jugados = scrapy.Field()
+    partidos_ganados = scrapy.Field()
+    partidos_empatados = scrapy.Field()
+    partidos_perdidos = scrapy.Field()
+    goles_favor = scrapy.Field()
+    goles_contra = scrapy.Field()
+    diferencia_gol = scrapy.Field()
     url = scrapy.Field()
     fecha_scraping = scrapy.Field()
 
 
 class JugadorItem(scrapy.Item):
-    """Una fila por jugador: bio + totales de carrera."""
-    nombre = scrapy.Field()             # p. ej. "Lionel Messi"
+    nombre = scrapy.Field()
     nombre_completo = scrapy.Field()
     fecha_nacimiento = scrapy.Field()
     lugar_nacimiento = scrapy.Field()
     posicion = scrapy.Field()
-    seleccion = scrapy.Field()          # p. ej. "Argentina"
+    seleccion = scrapy.Field()
     numeros_camiseta = scrapy.Field()
     altura = scrapy.Field()
     apodo = scrapy.Field()
-    # totales de carrera
-    total_mundiales = scrapy.Field()    # p. ej. "5"
-    total_partidos = scrapy.Field()     # p. ej. "26"
-    total_goles = scrapy.Field()        # p. ej. "13"
-    promedio_gol = scrapy.Field()       # p. ej. "0.50"
-    campeon = scrapy.Field()            # p. ej. "2022" (o anios separados por coma)
+    total_mundiales = scrapy.Field()
+    total_partidos = scrapy.Field()
+    total_goles = scrapy.Field()
+    promedio_gol = scrapy.Field()
+    campeon = scrapy.Field()
     url = scrapy.Field()
     fecha_scraping = scrapy.Field()
 
 
 class JugadorMundialItem(scrapy.Item):
-    """Una fila por jugador por Mundial."""
-    jugador = scrapy.Field()            # p. ej. "Lionel Messi"
-    seleccion = scrapy.Field()          # p. ej. "Argentina"
-    mundial = scrapy.Field()            # p. ej. "2022"
-    camiseta = scrapy.Field()           # p. ej. "10"
-    posicion = scrapy.Field()           # p. ej. "Delantero"
+    jugador = scrapy.Field()
+    seleccion = scrapy.Field()
+    mundial = scrapy.Field()
+    camiseta = scrapy.Field()
+    posicion = scrapy.Field()
     jugados = scrapy.Field()
     titular = scrapy.Field()
     capitan = scrapy.Field()
@@ -78,46 +73,43 @@ class JugadorMundialItem(scrapy.Item):
     pg = scrapy.Field()
     pe = scrapy.Field()
     pp = scrapy.Field()
-    posicion_final = scrapy.Field()     # posicion final del equipo en ese Mundial
+    posicion_final = scrapy.Field()
     url_jugador = scrapy.Field()
     fecha_scraping = scrapy.Field()
 
 
 class GoleadorMundialItem(scrapy.Item):
-    """Una fila por registro de goleador en _goleadores.php."""
-    mundial = scrapy.Field()            # p. ej. "2022"
-    posicion = scrapy.Field()           # p. ej. "1"
-    jugador = scrapy.Field()            # p. ej. "Kylian Mbappe"
-    seleccion = scrapy.Field()          # p. ej. "Francia"
-    goles = scrapy.Field()              # p. ej. "8"
-    partidos = scrapy.Field()           # p. ej. "7"
-    promedio_gol = scrapy.Field()       # p. ej. "1.14"
+    mundial = scrapy.Field()
+    posicion = scrapy.Field()
+    jugador = scrapy.Field()
+    seleccion = scrapy.Field()
+    goles = scrapy.Field()
+    partidos = scrapy.Field()
+    promedio_gol = scrapy.Field()
     url_jugador = scrapy.Field()
     url = scrapy.Field()
     fecha_scraping = scrapy.Field()
 
 
 class PartidoItem(scrapy.Item):
-    """Una fila por partido del calendario de un Mundial (_resultados.php)."""
-    mundial = scrapy.Field()            # p. ej. "2022"
-    num = scrapy.Field()                # p. ej. "1"
-    fecha = scrapy.Field()              # p. ej. "20-Nov-2022"
-    etapa = scrapy.Field()              # p. ej. "1ra Ronda, Grupo A"
-    local = scrapy.Field()              # p. ej. "Catar"
-    goles_local = scrapy.Field()        # p. ej. "0"
-    goles_visitante = scrapy.Field()    # p. ej. "2"
-    visitante = scrapy.Field()          # p. ej. "Ecuador"
-    url_partido = scrapy.Field()        # enlace relativo al detalle del partido
+    mundial = scrapy.Field()
+    num = scrapy.Field()
+    fecha = scrapy.Field()
+    etapa = scrapy.Field()
+    local = scrapy.Field()
+    goles_local = scrapy.Field()
+    goles_visitante = scrapy.Field()
+    visitante = scrapy.Field()
+    url_partido = scrapy.Field()
     url = scrapy.Field()
     fecha_scraping = scrapy.Field()
 
 
 class PosicionFinalItem(scrapy.Item):
-    """Una fila por seleccion en la tabla final (_posiciones_finales.php)."""
-    mundial = scrapy.Field()            # p. ej. "2022"
-    posicion = scrapy.Field()           # p. ej. "1"
-    seleccion = scrapy.Field()          # p. ej. "Argentina"
-    etapa = scrapy.Field()              # p. ej. "Final"
+    mundial = scrapy.Field()
+    posicion = scrapy.Field()
+    seleccion = scrapy.Field()
+    etapa = scrapy.Field()
     pts = scrapy.Field()
     pj = scrapy.Field()
     pg = scrapy.Field()
@@ -131,21 +123,19 @@ class PosicionFinalItem(scrapy.Item):
 
 
 class PremioItem(scrapy.Item):
-    """Una fila por premio individual en _premios.php."""
-    mundial = scrapy.Field()            # p. ej. "2022"
-    tipo_premio = scrapy.Field()        # p. ej. "Balon de Oro"
-    jugador_o_seleccion = scrapy.Field()  # p. ej. "Lionel Messi"
-    url_jugador = scrapy.Field()        # enlace relativo (puede venir vacio en premios de equipo)
+    mundial = scrapy.Field()
+    tipo_premio = scrapy.Field()
+    jugador_o_seleccion = scrapy.Field()
+    url_jugador = scrapy.Field()
     url = scrapy.Field()
     fecha_scraping = scrapy.Field()
 
 
 class GrupoItem(scrapy.Item):
-    """Una fila por seleccion en una tabla de grupo (_grupo_X.php)."""
-    mundial = scrapy.Field()            # p. ej. "2022"
-    grupo = scrapy.Field()              # p. ej. "A"
-    posicion = scrapy.Field()           # p. ej. "1"
-    seleccion = scrapy.Field()          # p. ej. "Ecuador"
+    mundial = scrapy.Field()
+    grupo = scrapy.Field()
+    posicion = scrapy.Field()
+    seleccion = scrapy.Field()
     pj = scrapy.Field()
     pg = scrapy.Field()
     pe = scrapy.Field()
@@ -154,20 +144,19 @@ class GrupoItem(scrapy.Item):
     gc = scrapy.Field()
     dif = scrapy.Field()
     pts = scrapy.Field()
-    clasificado = scrapy.Field()        # p. ej. "Si" o "No"
+    clasificado = scrapy.Field()
     url = scrapy.Field()
     fecha_scraping = scrapy.Field()
 
 
 class TarjetaItem(scrapy.Item):
-    """Una fila por registro de tarjetas de jugador en _tarjetas.php."""
     mundial = scrapy.Field()
     jugador = scrapy.Field()
     seleccion = scrapy.Field()
-    amarillas = scrapy.Field()          # conteo como texto, p. ej. "3"
-    rojas = scrapy.Field()              # conteo como texto, p. ej. "1"
-    rd = scrapy.Field()                 # roja directa, p. ej. "1" o "-"
-    ta2 = scrapy.Field()                # roja por 2a amarilla, p. ej. "1" o "-"
+    amarillas = scrapy.Field()
+    rojas = scrapy.Field()
+    rd = scrapy.Field()
+    ta2 = scrapy.Field()
     partidos = scrapy.Field()
     url_jugador = scrapy.Field()
     url = scrapy.Field()
@@ -175,44 +164,41 @@ class TarjetaItem(scrapy.Item):
 
 
 class PartidoJugadorItem(scrapy.Item):
-    """Una fila por jugador por partido (desde /partidos/)."""
     mundial = scrapy.Field()
     url_partido = scrapy.Field()
     seleccion = scrapy.Field()
     jugador = scrapy.Field()
     url_jugador = scrapy.Field()
     camiseta = scrapy.Field()
-    posicion = scrapy.Field()       # AR/DF/MC/DL
-    rol = scrapy.Field()            # Titular / Ingreso / Suplente
-    capitan = scrapy.Field()        # Si / No
+    posicion = scrapy.Field()
+    rol = scrapy.Field()
+    capitan = scrapy.Field()
     minuto_entrada = scrapy.Field()
     minuto_salida = scrapy.Field()
-    goles_count = scrapy.Field()    # p. ej. "2"
-    goles_minutos = scrapy.Field()  # p. ej. "16,31"
+    goles_count = scrapy.Field()
+    goles_minutos = scrapy.Field()
     fecha_scraping = scrapy.Field()
 
 
 class PartidoGolItem(scrapy.Item):
-    """Una fila por gol en un partido (desde /partidos/)."""
     mundial = scrapy.Field()
     url_partido = scrapy.Field()
     seleccion = scrapy.Field()
     jugador = scrapy.Field()
     minuto = scrapy.Field()
-    tipo_gol = scrapy.Field()       # normal / penal / autogol
+    tipo_gol = scrapy.Field()
     fecha_scraping = scrapy.Field()
 
 
 class PlantelItem(scrapy.Item):
-    """Una fila por jugador en un plantel mundialista."""
     mundial = scrapy.Field()
     seleccion = scrapy.Field()
     camiseta = scrapy.Field()
     jugador = scrapy.Field()
     url_jugador = scrapy.Field()
-    posicion_grupo = scrapy.Field() # Arquero/Defensor/Mediocampista/Delantero/Entrenador
+    posicion_grupo = scrapy.Field()
     fecha_nacimiento = scrapy.Field()
-    altura = scrapy.Field()         # p. ej. "1.89 m"
+    altura = scrapy.Field()
     club = scrapy.Field()
     url = scrapy.Field()
     fecha_scraping = scrapy.Field()
