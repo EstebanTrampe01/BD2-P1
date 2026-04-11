@@ -35,6 +35,7 @@
 - 8. Validaciones realizadas 
 - 9. Stored Procedures
 - 10. Guia de ejecucion
+- 11. Archivos auxiliares y evidencias con fecha
 
 ## 2. Flujo completo de datos
 
@@ -335,3 +336,43 @@ venv/bin/python cargar_bd.py
 docker exec -i mundiales_db mysql --default-character-set=utf8mb4 -u mundiales_user -pmundiales1234 mundiales < stored/sp1.sql
 docker exec -i mundiales_db mysql --default-character-set=utf8mb4 -u mundiales_user -pmundiales1234 mundiales < stored/sp2.sql
 ```
+
+
+## 11. Archivos temporales o auxiliares para carga y documentacion con screenshots
+
+### 11.1 Archivos temporales o auxiliares utilizados para la carga de datos
+
+Durante la fase  se generan archivos auxiliares en `output_db/` que sirven para mantener la trazabilidad de IDs y asegurar la integridad referencial durante la carga con `cargar_bd.py`.
+
+Archivos auxiliares principales:
+
+- `output_db/_mapa_selecciones.csv`: mapa `seleccion -> id_seleccion`.
+- `output_db/_mapa_mundiales.csv`: mapa `anio -> id_mundial`.
+- `output_db/_mapa_jugadores.csv`: mapa `url_jugador_normalizada -> id_jugador`.
+- `output_db/_mapa_partidos.csv`: mapa `url_partido_normalizada -> id_partido`.
+
+Estos archivos son consumidos por `transformar_output.py` para generar los CSV finales normalizados y permiten que `cargar_bd.py` inserte datos en el orden correcto de dependencias FK.
+
+### 11.2 Evidencias (screenshots) con fecha
+
+Las siguientes capturas documentan ejecucion de scraping, levantado de contenedor y carga de datos. La fecha/hora corresponde al timestamp del archivo en el repositorio local.
+
+1. Docker levantado (`docker compose up -d`)  
+  **Fecha:** 10-04-2026
+  ![CAP_docker-up](capturas/CAP_docker-up.png)
+
+2. Carga de datos (`cargar_bd.py`)  
+  **Fecha:** 10-04-2026  
+  ![CAP_cargaDatos](capturas/CAP_cargaDatos.png)
+
+3. Evidencia de scraping 1  
+  **Fecha:** 15-03-2026 
+  ![CAP_Scrapper1](capturas/CAP_Scrapper1.jpeg)
+
+4. Evidencia de scraping 2  
+  **Fecha:** 16-03-2026  
+  ![CAP_Scrapper2](capturas/CAP_Scrapper2.jpeg)
+
+5. Evidencia de scraping 3  
+  **Fecha:** 17-03-2026 
+  ![CAP_Scrapper3](capturas/CAP_Scrapper3.jpeg)
