@@ -23,7 +23,7 @@ from mundiales_scraper.items import (
 
 
 # ---------------------------------------------------------------------------
-# URL classification patterns
+# Patrones de clasificacion de URL
 # ---------------------------------------------------------------------------
 TIPO_URL_PATTERNS = {
     "mundial":            re.compile(r"/mundiales/\d{4}_mundial\.php"),
@@ -72,7 +72,7 @@ class MundialesSpider(scrapy.Spider):
     start_urls = [
         "https://www.losmundialesdefutbol.com/",
         # Index pages garantizan cobertura de todos los tipos aunque el DFS
-        # no llegue a procesarlos desde la homepage
+        # no llegue a procesarlos desde la pagina principal
         "https://www.losmundialesdefutbol.com/mundiales.php",
         "https://www.losmundialesdefutbol.com/selecciones.php",
         "https://www.losmundialesdefutbol.com/jugadores.php",
@@ -113,22 +113,22 @@ class MundialesSpider(scrapy.Spider):
         yield from self._seguir_enlaces(response)
 
     # -----------------------------------------------------------------------
-    # Parser: mundial  (/mundiales/YYYY_mundial.php)
+    # Parser: mundial (/mundiales/YYYY_mundial.php)
     # -----------------------------------------------------------------------
 
     def _parse_mundial(self, response, soup, url):
         now = datetime.utcnow().isoformat()
 
-        # Year from URL
+        # Anio desde la URL
         anio_m = re.search(r"/(\d{4})_mundial\.php", url)
         anio = anio_m.group(1) if anio_m else ""
 
-        # Champion: <td> that starts with "Campeón:"
+        # Campeon: <td> que inicia con "Campeon:"
         campeon = ""
         for td in soup.find_all("td"):
             txt = limpiar(td.get_text())
             if txt.startswith("Campe"):
-                # May contain a link (past WC) or plain text like "-" (future WC)
+                # Puede traer enlace (mundiales pasados) o texto plano como "-" (futuros)
                 a = td.find("a")
                 if a:
                     campeon = limpiar(a.get_text())
@@ -137,7 +137,7 @@ class MundialesSpider(scrapy.Spider):
                     campeon = raw if raw != "-" else ""
                 break
 
-        # Key stats live inside a <p> with "- Organizador:" pattern
+        # Estadisticas clave dentro de un <p> con el patron "- Organizador:"
         organizador = selecciones = partidos = goles = promedio = ""
         for p in soup.find_all("p"):
             txt = p.get_text()
@@ -169,9 +169,9 @@ class MundialesSpider(scrapy.Spider):
         )
 
     def _parse_goleadores_mundial(self, soup, url, anio, now):
-        """Extract the top-scorers mini-table on a mundial page."""
-        # The goleadores table has a <h3> "Goleadores" just above it;
-        # rows look like: <td>N.</td> <td class="a-left">flag + player link</td> <td>N goals</td>
+        """Extrae la mini tabla de goleadores en una pagina de mundial."""
+        # La tabla de goleadores tiene un <h3> "Goleadores" justo arriba
+        # Filas esperadas: <td>N.</td> <td class="a-left">bandera + enlace jugador</td> <td>N goles</td>
         goleadores_h3 = soup.find("h3", string=re.compile(r"Goleadores", re.I))
         if not goleadores_h3:
             return
@@ -189,19 +189,19 @@ class MundialesSpider(scrapy.Spider):
                 continue
             pos += 1
 
-            # player td: contains flag img + player link
+            # td de jugador: imagen de bandera + enlace a jugador
             jugador_td = tds[1]
             player_link = jugador_td.find("a")
             jugador_nombre = limpiar(player_link.get_text()) if player_link else limpiar(jugador_td.get_text())
             url_jugador = player_link["href"] if player_link and player_link.get("href") else ""
 
-            # seleccion from img alt
+            # seleccion desde alt de la imagen
             seleccion = ""
             img = jugador_td.find("img")
             if img:
                 seleccion = limpiar(img.get("alt", ""))
 
-            # goals td
+            # td de goles
             goles_txt = limpiar(tds[2].get_text())
             goles_num = re.search(r"\d+", goles_txt)
             goles = goles_num.group(0) if goles_num else goles_txt
@@ -218,7 +218,7 @@ class MundialesSpider(scrapy.Spider):
             )
 
     # -----------------------------------------------------------------------
-    # Parser: resultados  (/mundiales/YYYY_resultados.php)
+    # Parser: resultados (/mundiales/YYYY_resultados.php)
     # -----------------------------------------------------------------------
 
     def _parse_resultados(self, response, soup, url):
@@ -226,7 +226,7 @@ class MundialesSpider(scrapy.Spider):
         anio_m = re.search(r"/(\d{4})_resultados\.php", url)
         anio = anio_m.group(1) if anio_m else ""
 
-        # Each date block: div.clearfix with an h3 "Fecha: DD-Mon-YYYY"
+        # Cada bloque de fecha: div.clearfix con h3 "Fecha: DD-Mon-YYYY"
         for bloque in soup.find_all("div", class_=re.compile(r"overflow-x-auto")):
             h3 = bloque.find("h3", class_="t-enc-2")
             if not h3:
@@ -234,22 +234,22 @@ class MundialesSpider(scrapy.Spider):
             fecha_txt = limpiar(h3.get_text())
             fecha = re.sub(r"Fecha\s*:\s*", "", fecha_txt).strip()
 
-            # Each match row inside this date block
+            # Cada fila de partido dentro de este bloque
             for match_div in bloque.find_all("div", class_=re.compile(r"margen-y3")):
-                # Match number from first strong inside a wpx-30 div
+                # Numero de partido desde el primer strong en div wpx-30
                 num = ""
                 num_div = match_div.find("div", class_=re.compile(r"wpx-30"))
                 if num_div:
                     num = re.search(r"\d+", limpiar(num_div.get_text()))
                     num = num.group(0) if num else ""
 
-                # Stage from the a-left wpx-170 div
+                # Etapa desde el div a-left wpx-170
                 etapa = ""
                 etapa_div = match_div.find("div", class_=re.compile(r"wpx-170"))
                 if etapa_div:
                     etapa = limpiar(etapa_div.get_text())
 
-                # The .game div holds teams and score
+                # El div .game contiene equipos y marcador
                 game_div = match_div.find("div", class_=re.compile(r"game"))
                 if not game_div:
                     continue
@@ -258,7 +258,7 @@ class MundialesSpider(scrapy.Spider):
                 local = limpiar(imgs[0].get("alt", "")) if len(imgs) > 0 else ""
                 visitante = limpiar(imgs[1].get("alt", "")) if len(imgs) > 1 else ""
 
-                # Score link: "X - Y" text, href = match detail page
+                # Enlace de marcador: texto "X - Y", href = detalle del partido
                 score_a = game_div.find("a", href=re.compile(r"/partidos/"))
                 goles_local = goles_visitante = url_partido = ""
                 if score_a:
@@ -287,7 +287,7 @@ class MundialesSpider(scrapy.Spider):
                 )
 
     # -----------------------------------------------------------------------
-    # Parser: posiciones_finales  (/mundiales/YYYY_posiciones_finales.php)
+    # Parser: posiciones_finales (/mundiales/YYYY_posiciones_finales.php)
     # -----------------------------------------------------------------------
 
     def _parse_posiciones_finales(self, response, soup, url):
@@ -295,7 +295,7 @@ class MundialesSpider(scrapy.Spider):
         anio_m = re.search(r"/(\d{4})_posiciones_finales\.php", url)
         anio = anio_m.group(1) if anio_m else ""
 
-        # Find the rankings table — it has a header row with "Posición"
+        # Buscar tabla de posiciones: encabezado con "Posicion"
         for table in soup.find_all("table"):
             header_cells = [limpiar(td.get_text()) for td in table.find_all("tr")[0].find_all(["td", "th"])] if table.find_all("tr") else []
             if not any("Posici" in c for c in header_cells):
@@ -309,7 +309,7 @@ class MundialesSpider(scrapy.Spider):
                 if not re.match(r"^\d+$", pos_txt):
                     continue
 
-                # Selección td: use img alt if present, else text
+                # td de seleccion: usar alt de imagen si existe, sino texto
                 sel_td = tds[1]
                 img = sel_td.find("img")
                 if img:
@@ -345,7 +345,7 @@ class MundialesSpider(scrapy.Spider):
                 )
 
     # -----------------------------------------------------------------------
-    # Parser: premios  (/mundiales/YYYY_premios.php)
+    # Parser: premios (/mundiales/YYYY_premios.php)
     # -----------------------------------------------------------------------
 
     def _parse_premios(self, response, soup, url):
@@ -353,7 +353,7 @@ class MundialesSpider(scrapy.Spider):
         anio_m = re.search(r"/(\d{4})_premios\.php", url)
         anio = anio_m.group(1) if anio_m else ""
 
-        # Each award block: div > div.rd-100-30 > p.negri (award name) + p (player)
+        # Cada bloque: div > div.rd-100-30 > p.negri (premio) + p (jugador)
         for bloque in soup.find_all("div", style=re.compile(r"border")):
             for inner in bloque.find_all("div", class_=re.compile(r"rd-100-30")):
                 tipo_p = inner.find("p", class_="negri")
@@ -361,8 +361,8 @@ class MundialesSpider(scrapy.Spider):
                     continue
                 tipo_premio = limpiar(tipo_p.get_text())
 
-                # Player paragraph: the one right after the award name
-                # May have multiple players (e.g. Equipo Ideal has 11)
+                # Parrafo de jugador: va justo despues del nombre del premio
+                # Puede traer varios jugadores (ej. Equipo Ideal)
                 for p in inner.find_all("p"):
                     if "negri" in p.get("class", []):
                         continue
@@ -388,7 +388,7 @@ class MundialesSpider(scrapy.Spider):
                         )
 
     # -----------------------------------------------------------------------
-    # Parser: goleadores_completo  (/mundiales/YYYY_goleadores.php)
+    # Parser: goleadores_completo (/mundiales/YYYY_goleadores.php)
     # -----------------------------------------------------------------------
 
     def _parse_goleadores_completo(self, response, soup, url):
@@ -397,7 +397,7 @@ class MundialesSpider(scrapy.Spider):
         anio = anio_m.group(1) if anio_m else ""
 
         for table in soup.find_all("table"):
-            # Identify the scorers table by its header
+            # Identificar la tabla de goleadores por su encabezado
             header_row = table.find("tr", class_="t-enc-2")
             if not header_row:
                 continue
@@ -417,7 +417,7 @@ class MundialesSpider(scrapy.Spider):
                     continue
                 pos += 1
 
-                # Player td
+                # td de jugador
                 jugador_td = tds[1]
                 player_link = jugador_td.find("a")
                 jugador_nombre = limpiar(player_link.get_text()) if player_link else limpiar(jugador_td.get_text())
@@ -442,10 +442,10 @@ class MundialesSpider(scrapy.Spider):
                     url=url,
                     fecha_scraping=now,
                 )
-            break  # only first matching table
+            break  # solo la primera tabla que coincide
 
     # -----------------------------------------------------------------------
-    # Parser: grupo  (/mundiales/YYYY_grupo_X.php)
+    # Parser: grupo (/mundiales/YYYY_grupo_X.php)
     # -----------------------------------------------------------------------
 
     def _parse_grupo(self, response, soup, url):
@@ -455,18 +455,18 @@ class MundialesSpider(scrapy.Spider):
         grupo = anio_m.group(2).upper() if anio_m else ""
 
         for table in soup.find_all("table"):
-            # Group tables use t-enc-5 for the header row (NOT t-enc-2)
+            # Las tablas de grupo usan t-enc-5 para encabezado (no t-enc-2)
             header_row = table.find("tr", class_="t-enc-5")
             if not header_row:
                 continue
             headers = [limpiar(td.get_text()) for td in header_row.find_all(["td", "th"])]
-            # Verify it's the standings table by looking for PTS or PJ
+            # Verificar que sea tabla de posiciones buscando PTS o PJ
             if not any(h in ("PTS", "PJ") for h in headers):
                 continue
 
-            # Column order: Posición | Selección | PTS | PJ | PG | PE | PP | GF | GC | Dif | Clasificado
+            # Orden: Posicion | Seleccion | PTS | PJ | PG | PE | PP | GF | GC | Dif | Clasificado
             for tr in table.find_all("tr"):
-                # Skip header and separator rows
+                # Saltar filas de encabezado y separadores
                 if "t-enc-5" in tr.get("class", []):
                     continue
                 if tr.find("div", class_="linea-2"):
@@ -475,12 +475,12 @@ class MundialesSpider(scrapy.Spider):
                 if len(tds) < 4:
                     continue
 
-                # Position in td[0], strip trailing "."
+                # Posicion en td[0], quitar "." final
                 pos_txt = limpiar(tds[0].get_text()).rstrip(".").strip()
                 if not re.match(r"^\d+$", pos_txt):
                     continue
 
-                # Selección in td[1]: use img alt if present, else text
+                # Seleccion en td[1]: usar alt de imagen o texto
                 sel_td = tds[1]
                 img = sel_td.find("img")
                 if img:
@@ -490,7 +490,7 @@ class MundialesSpider(scrapy.Spider):
                 if not seleccion:
                     continue
 
-                # Stats: PTS PJ PG PE PP GF GC Dif [Clasificado]
+                # Estadisticas: PTS PJ PG PE PP GF GC Dif [Clasificado]
                 pts  = limpiar(tds[2].get_text()) if len(tds) > 2  else ""
                 pj   = limpiar(tds[3].get_text()) if len(tds) > 3  else ""
                 pg   = limpiar(tds[4].get_text()) if len(tds) > 4  else ""
@@ -512,10 +512,10 @@ class MundialesSpider(scrapy.Spider):
                     url=url,
                     fecha_scraping=now,
                 )
-            break  # one standings table per page
+            break  # una tabla de posiciones por pagina
 
     # -----------------------------------------------------------------------
-    # Parser: tarjetas  (/mundiales/YYYY_tarjetas.php)
+    # Parser: tarjetas (/mundiales/YYYY_tarjetas.php)
     # -----------------------------------------------------------------------
 
     def _parse_tarjetas(self, response, soup, url):
@@ -540,7 +540,7 @@ class MundialesSpider(scrapy.Spider):
                 if len(tds) < 6:
                     continue
 
-                # tds[0]=empty, tds[1]=player(colspan=2), tds[2]=amarillas,
+                # tds[0]=vacio, tds[1]=jugador(colspan=2), tds[2]=amarillas,
                 # tds[3]=rojas, tds[4]=(RD/2TA), tds[5]=partidos, tds[6]=seleccion
                 jugador_td = tds[1]
                 player_link = jugador_td.find("a")
@@ -579,7 +579,7 @@ class MundialesSpider(scrapy.Spider):
                 )
 
     # -----------------------------------------------------------------------
-    # Parser: partido  (/partidos/YYYY_eq1_eq2.php)
+    # Parser: partido (/partidos/YYYY_eq1_eq2.php)
     # -----------------------------------------------------------------------
 
     def _parse_partido(self, response, soup, url):
@@ -589,9 +589,9 @@ class MundialesSpider(scrapy.Spider):
 
         from bs4 import Tag
 
-        # === Identify local / visitante teams ===
-        # Primary: extract from Jugadores tables (same source used for partido_jugadores,
-        # guaranteed to work — first table = local, second table = visitante)
+        # === Identificar equipos local / visitante ===
+        # Principal: extraer desde tablas de Jugadores
+        # (primera tabla = local, segunda tabla = visitante)
         local = visitante = ""
         for h3 in soup.find_all("h3"):
             if "Jugadores" in limpiar(h3.get_text()):
@@ -607,7 +607,7 @@ class MundialesSpider(scrapy.Spider):
                         img = first_tr.find("img") if first_tr else None
                         visitante = limpiar(img.get("alt", "")) if img else ""
                 break
-        # Fallback: w40 divs in <main>
+        # Respaldo: divs w40 en <main>
         if not local or not visitante:
             main = soup.find("main")
             if main:
@@ -620,7 +620,7 @@ class MundialesSpider(scrapy.Spider):
                         vi = w40[-1].find("img")
                         visitante = limpiar(vi.get("alt", "")) if vi else ""
 
-        # === Parse Goles ===
+        # === Parsear goles ===
         for div in soup.find_all("div", class_=re.compile(r"bb-2")):
             if re.search(r"Goles", div.get_text()):
                 goles_container = div.find_next_sibling("div")
@@ -656,7 +656,7 @@ class MundialesSpider(scrapy.Spider):
                         )
                 break
 
-        # === Parse Jugadores ===
+        # === Parsear jugadores ===
         jugadores_h3 = None
         for h3 in soup.find_all("h3"):
             if "Jugadores" in limpiar(h3.get_text()):
@@ -740,7 +740,7 @@ class MundialesSpider(scrapy.Spider):
                         )
 
     # -----------------------------------------------------------------------
-    # Parser: plantel  (/planteles/YYYY_PAIS_jugadores.php)
+    # Parser: plantel (/planteles/YYYY_PAIS_jugadores.php)
     # -----------------------------------------------------------------------
 
     def _parse_plantel(self, response, soup, url):
@@ -808,21 +808,21 @@ class MundialesSpider(scrapy.Spider):
                 )
 
     # -----------------------------------------------------------------------
-    # Parser: seleccion  (/selecciones/PAIS_seleccion.php)
+    # Parser: seleccion (/selecciones/PAIS_seleccion.php)
     # -----------------------------------------------------------------------
 
     def _parse_seleccion(self, response, soup, url):
         now = datetime.utcnow().isoformat()
 
-        # Team name from h1
+        # Nombre del equipo desde h1
         h1 = soup.find("h1")
         nombre_raw = limpiar(h1.get_text()) if h1 else ""
-        # "Brasil en los Mundiales de Fútbol: Estadísticas Generales" → "Brasil"
+        # "Brasil en los Mundiales de Futbol: Estadisticas Generales" -> "Brasil"
         nombre = nombre_raw.split(" en los Mundiales")[0].strip()
 
         # ----------- Mundiales jugados -----------
         mundiales_jugados = ""
-        # find the td that has the country img + name then get the sibling td with the number
+        # Buscar td con imagen+pais y tomar el td hermano con el numero
         for td in soup.find_all("td"):
             span = td.find("span", class_="size-11")
             if span:
@@ -831,16 +831,16 @@ class MundialesSpider(scrapy.Spider):
                     mundiales_jugados = num
                     break
 
-        # ----------- Campeón / Subcampeón -----------
+        # ----------- Campeon / Subcampeon -----------
         campeon_anios = []
         subcampeon_anios = []
 
         for tr in soup.find_all("tr"):
             tds = tr.find_all("td")
-            # The champion row has a <tr class="t-enc-2"> with "Campeón" and "Subcampeón"
+            # La fila de campeon usa <tr class="t-enc-2"> con "Campeon" y "Subcampeon"
             enc_txt = limpiar(tr.get_text())
             if "Campeón" in enc_txt and "Subcampeón" in enc_txt:
-                # next sibling tr holds the data
+                # El siguiente tr hermano contiene los datos
                 next_tr = tr.find_next_sibling("tr")
                 if next_tr:
                     data_tds = next_tr.find_all("td")
@@ -850,12 +850,12 @@ class MundialesSpider(scrapy.Spider):
                             if yr:
                                 campeon_anios.append(yr.group(0))
                         sub_text = limpiar(data_tds[1].get_text())
-                        # "2\n1950, 1998" or "2\n1950, 1998"
+                        # Ejemplo: "2\n1950, 1998"
                         sub_years = re.findall(r"\d{4}", sub_text)
                         subcampeon_anios = sub_years
                 break
 
-        # ----------- Posición histórica -----------
+        # ----------- Posicion historica -----------
         posicion_historica = ""
         for td in soup.find_all("td"):
             prev = td.find_previous(["td", "th"])
@@ -918,13 +918,13 @@ class MundialesSpider(scrapy.Spider):
         )
 
     # -----------------------------------------------------------------------
-    # Parser: jugador  (/jugadores/NOMBRE.php)
+    # Parser: jugador (/jugadores/NOMBRE.php)
     # -----------------------------------------------------------------------
 
     def _parse_jugador(self, response, soup, url):
         now = datetime.utcnow().isoformat()
 
-        # ----------- Bio from key-value table -----------
+        # ----------- Bio desde tabla clave-valor -----------
         h1 = soup.find("h1")
         nombre = limpiar(h1.get_text()).replace(" en los Mundiales de Fútbol", "").strip() if h1 else ""
 
@@ -942,9 +942,9 @@ class MundialesSpider(scrapy.Spider):
         if seleccion_a:
             seleccion = limpiar(seleccion_a.get_text())
 
-        # ----------- Career totals -----------
+        # ----------- Totales de carrera -----------
         total_mundiales = total_partidos = total_goles = promedio_gol = campeon_anios = ""
-        # The stats summary has a t-enc-4 row with "Mundiales", "Total de Partidos", "Campeón"
+        # El resumen de stats tiene fila t-enc-4 con "Mundiales", "Total de Partidos", "Campeon"
         for tr in soup.find_all("tr", class_="t-enc-4"):
             cells = [limpiar(td.get_text()) for td in tr.find_all("td")]
             if "Mundiales" in cells and "Total de Partidos" in cells:
@@ -958,12 +958,12 @@ class MundialesSpider(scrapy.Spider):
                         nm = re.search(r"\d+", vals[1])
                         total_partidos = nm.group(0) if nm else vals[1]
                     if len(vals) >= 3:
-                        # Campeón years
+                        # Anios campeon
                         cmp_years = re.findall(r"\d{4}", vals[2])
                         campeon_anios = ",".join(cmp_years)
                 break
 
-        # Goals summary: row with "Goles" header, next row has "N Goles Anotados" and "Promedio"
+        # Resumen de goles: fila "Goles" y luego "N Goles Anotados" + "Promedio"
         for tr in soup.find_all("tr", class_="t-enc-4"):
             cells = [limpiar(td.get_text()) for td in tr.find_all("td")]
             if any("Goles" in c for c in cells) and not any("Total de Partidos" in c for c in cells):
@@ -996,26 +996,26 @@ class MundialesSpider(scrapy.Spider):
             fecha_scraping=now,
         )
 
-        # ----------- Per-mundial detail table -----------
+        # ----------- Tabla detalle por mundial -----------
         yield from self._parse_jugador_por_mundial(soup, nombre, seleccion, url, now)
 
     def _parse_jugador_por_mundial(self, soup, nombre, seleccion, url, now):
         """
-        The per-mundial stats table has a t-enc-4 header with columns:
-        Mundial | Camiseta | Posición | Jugó | Titular | Capitán | No Jugó |
+        La tabla de stats por mundial usa encabezado t-enc-4 con columnas:
+        Mundial | Camiseta | Posicion | Jugo | Titular | Capitan | No Jugo |
         Goles | Prom. Gol | Amar. | Roja | PG | PE | PP | Pos. Final
         """
         for tr in soup.find_all("tr", class_="t-enc-4"):
             cells = [limpiar(td.get_text()) for td in tr.find_all("td")]
             if "Mundial" in cells and "Jugó" in cells:
-                # Iterate data rows
+                # Recorrer filas de datos
                 current = tr.find_next_sibling("tr")
                 while current:
                     cls = current.get("class", [])
                     if "t-enc-4" in cls:
                         break
                     if "t-enc-5" in cls:
-                        # sub-header row (e.g. "Amar. / Roja") — skip it
+                        # Subencabezado (p. ej. "Amar. / Roja"): se ignora
                         current = current.find_next_sibling("tr")
                         continue
                     tds = current.find_all("td")
@@ -1023,7 +1023,7 @@ class MundialesSpider(scrapy.Spider):
                         current = current.find_next_sibling("tr")
                         continue
 
-                    # Skip separator rows and totals row
+                    # Saltar separadores y fila de totales
                     all_txt = limpiar(current.get_text())
                     if "linea" in str(current) or "Totales" in all_txt:
                         current = current.find_next_sibling("tr")
@@ -1035,7 +1035,7 @@ class MundialesSpider(scrapy.Spider):
 
                     vals = [limpiar(td.get_text()) for td in tds]
 
-                    # Mundial year
+                    # Anio del mundial
                     mundial_a = tds[0].find("a")
                     if not mundial_a:
                         current = current.find_next_sibling("tr")
@@ -1045,7 +1045,7 @@ class MundialesSpider(scrapy.Spider):
                         current = current.find_next_sibling("tr")
                         continue
 
-                    # Camiseta number is in vals[1] after stripping flag img alt
+                    # Numero de camiseta en vals[1] tras limpiar la bandera
                     camiseta = re.search(r"\d+$", vals[1])
                     camiseta = camiseta.group(0) if camiseta else ""
 
@@ -1075,7 +1075,7 @@ class MundialesSpider(scrapy.Spider):
                 break
 
     # -----------------------------------------------------------------------
-    # Link follower
+    # Seguimiento de enlaces
     # -----------------------------------------------------------------------
 
     def _seguir_enlaces(self, response):

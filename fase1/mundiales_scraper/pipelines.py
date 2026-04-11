@@ -32,7 +32,7 @@ def _ensure_dir(path: str):
 
 
 # ---------------------------------------------------------------------------
-# Field definitions per item type
+# Definicion de campos por tipo de item
 # ---------------------------------------------------------------------------
 
 MUNDIALES_FIELDS = [
@@ -121,12 +121,12 @@ PLANTELES_FIELDS = [
 
 
 # ---------------------------------------------------------------------------
-# Pipeline
+# Flujo de procesamiento
 # ---------------------------------------------------------------------------
 
 class CsvPipeline:
     """
-    Writes each typed item to its own CSV file with clean named columns.
+    Escribe cada tipo de item en su propio CSV con columnas claras.
     - mundiales.csv
     - selecciones.csv
     - jugadores.csv
