@@ -1,0 +1,84 @@
+mundial,posicion,jugador,seleccion,goles,partidos,promedio_gol,url_jugador,url,fecha_scraping
+2022,1,Kylian Mbappé,Francia,8,7,1.14,../jugadores/kylian_mbappe.php,https://www.losmundialesdefutbol.com/mundiales/2022_goleadores.php,2026-03-16T22:24:00.499384
+2022,2,Lionel Messi,Argentina,7,7,1.00,../jugadores/lionel_messi.php,https://www.losmundialesdefutbol.com/mundiales/2022_goleadores.php,2026-03-16T22:24:00.499384
+2022,3,Julian Alvarez,Argentina,4,7,0.57,../jugadores/julian_alvarez.php,https://www.losmundialesdefutbol.com/mundiales/2022_goleadores.php,2026-03-16T22:24:00.499384
+2022,5,Cody Gakpo,Paises Bajos,3,5,0.60,../jugadores/cody_gakpo.php,https://www.losmundialesdefutbol.com/mundiales/2022_goleadores.php,2026-03-16T22:24:00.499384
+2018,1,Harry Kane,Inglaterra,6,6,1.00,../jugadores/harry_kane.php,https://www.losmundialesdefutbol.com/mundiales/2018_goleadores.php,2026-03-16T22:25:42.191898
+2018,2,Denis Cheryshev,Rusia,4,5,0.80,../jugadores/denis_cheryshev.php,https://www.losmundialesdefutbol.com/mundiales/2018_goleadores.php,2026-03-16T22:25:42.191898
+2018,7,Edinson Cavani,Uruguay,3,4,0.75,../jugadores/edinson_cavani.php,https://www.losmundialesdefutbol.com/mundiales/2018_goleadores.php,2026-03-16T22:25:42.191898
+2014,1,James Rodríguez,Colombia,6,5,1.20,../jugadores/james_rodriguez.php,https://www.losmundialesdefutbol.com/mundiales/2014_goleadores.php,2026-03-16T22:25:51.309502
+2014,2,Thomas Müller,Alemania,5,7,0.71,../jugadores/thomas_mueller.php,https://www.losmundialesdefutbol.com/mundiales/2014_goleadores.php,2026-03-16T22:25:51.309502
+2014,3,Lionel Messi,Argentina,4,7,0.57,../jugadores/lionel_messi.php,https://www.losmundialesdefutbol.com/mundiales/2014_goleadores.php,2026-03-16T22:25:51.309502
+2014,6,Karim Benzema,Francia,3,5,0.60,../jugadores/karim_benzema.php,https://www.losmundialesdefutbol.com/mundiales/2014_goleadores.php,2026-03-16T22:25:51.309502
+2010,1,Diego Forlan,Uruguay,5,7,0.71,../jugadores/diego_forlan.php,https://www.losmundialesdefutbol.com/mundiales/2010_goleadores.php,2026-03-16T22:26:00.517112
+2010,5,Gonzalo Higuain,Argentina,4,4,1.00,../jugadores/gonzalo_higuain.php,https://www.losmundialesdefutbol.com/mundiales/2010_goleadores.php,2026-03-16T22:26:00.517112
+2010,8,Landon Donovan,Estados Unidos,3,4,0.75,../jugadores/landon_donovan.php,https://www.losmundialesdefutbol.com/mundiales/2010_goleadores.php,2026-03-16T22:26:00.517112
+2006,1,Miroslav Klose,Alemania,5,7,0.71,../jugadores/miroslav_klose.php,https://www.losmundialesdefutbol.com/mundiales/2006_goleadores.php,2026-03-16T22:26:09.466827
+2006,2,Hernan Crespo,Argentina,3,4,0.75,../jugadores/hernan_crespo.php,https://www.losmundialesdefutbol.com/mundiales/2006_goleadores.php,2026-03-16T22:26:09.466827
+2002,1,Ronaldo,Brasil,8,7,1.14,../jugadores/ronaldo.php,https://www.losmundialesdefutbol.com/mundiales/2002_goleadores.php,2026-03-16T22:26:18.655461
+2002,2,Miroslav Klose,Alemania,5,7,0.71,../jugadores/miroslav_klose.php,https://www.losmundialesdefutbol.com/mundiales/2002_goleadores.php,2026-03-16T22:26:18.655461
+2002,4,Jon Dahl Tomasson,Dinamarca,4,4,1.00,../jugadores/jon_dahl_tomasson.php,https://www.losmundialesdefutbol.com/mundiales/2002_goleadores.php,2026-03-16T22:26:18.655461
+2002,6,Michael Ballack,Alemania,3,6,0.50,../jugadores/michael_ballack.php,https://www.losmundialesdefutbol.com/mundiales/2002_goleadores.php,2026-03-16T22:26:18.655461
+1998,1,Davor Suker,Croacia,6,7,0.86,../jugadores/davor_suker.php,https://www.losmundialesdefutbol.com/mundiales/1998_goleadores.php,2026-03-16T22:26:27.794797
+1998,2,Gabriel Batistuta,Argentina,5,5,1.00,../jugadores/gabriel_batistuta.php,https://www.losmundialesdefutbol.com/mundiales/1998_goleadores.php,2026-03-16T22:26:27.794797
+1998,4,Luis Hernandez,México,4,4,1.00,../jugadores/luis_hernandez.php,https://www.losmundialesdefutbol.com/mundiales/1998_goleadores.php,2026-03-16T22:26:27.794797
+1998,7,Bebeto,Brasil,3,7,0.43,../jugadores/bebeto.php,https://www.losmundialesdefutbol.com/mundiales/1998_goleadores.php,2026-03-16T22:26:27.794797
+1994,1,Oleg Salenko,Rusia,6,3,2.00,../jugadores/oleg_salenko.php,https://www.losmundialesdefutbol.com/mundiales/1994_goleadores.php,2026-03-16T22:26:37.073238
+1994,3,Kennet Andersson,Suecia,5,7,0.71,../jugadores/kennet_andersson.php,https://www.losmundialesdefutbol.com/mundiales/1994_goleadores.php,2026-03-16T22:26:37.073238
+1994,7,Gabriel Batistuta,Argentina,4,4,1.00,../jugadores/gabriel_batistuta.php,https://www.losmundialesdefutbol.com/mundiales/1994_goleadores.php,2026-03-16T22:26:37.073238
+1994,10,Bebeto,Brasil,3,7,0.43,../jugadores/bebeto.php,https://www.losmundialesdefutbol.com/mundiales/1994_goleadores.php,2026-03-16T22:26:37.073238
+1990,1,Salvatore Schillaci,Italia,6,7,0.86,../jugadores/salvatore_schillaci.php,https://www.losmundialesdefutbol.com/mundiales/1990_goleadores.php,2026-03-16T22:26:45.302055
+1990,2,Tomas Skuhravy,Checoslovaquia,5,5,1.00,../jugadores/tomas_skuhravy.php,https://www.losmundialesdefutbol.com/mundiales/1990_goleadores.php,2026-03-16T22:26:45.302055
+1990,3,Gary Lineker,Inglaterra,4,7,0.57,../jugadores/gary_lineker.php,https://www.losmundialesdefutbol.com/mundiales/1990_goleadores.php,2026-03-16T22:26:45.302055
+1990,7,Andreas Brehme,Alemania Occidental,3,6,0.50,../jugadores/andreas_brehme.php,https://www.losmundialesdefutbol.com/mundiales/1990_goleadores.php,2026-03-16T22:26:45.302055
+1986,1,Gary Lineker,Inglaterra,6,5,1.20,../jugadores/gary_lineker.php,https://www.losmundialesdefutbol.com/mundiales/1986_goleadores.php,2026-03-16T22:26:55.310316
+1986,2,Emilio Butragueño,España,5,5,1.00,../jugadores/emilio_butragueno.php,https://www.losmundialesdefutbol.com/mundiales/1986_goleadores.php,2026-03-16T22:26:55.310316
+1986,5,Alessandro Altobelli,Italia,4,4,1.00,../jugadores/alessandro_altobelli.php,https://www.losmundialesdefutbol.com/mundiales/1986_goleadores.php,2026-03-16T22:26:55.310316
+1986,9,Jan Ceulemans,Bélgica,3,7,0.43,../jugadores/jan_ceulemans.php,https://www.losmundialesdefutbol.com/mundiales/1986_goleadores.php,2026-03-16T22:26:55.310316
+1982,1,Paolo Rossi,Italia,6,7,0.86,../jugadores/paolo_rossi.php,https://www.losmundialesdefutbol.com/mundiales/1982_goleadores.php,2026-03-16T22:27:03.648290
+1982,2,Karl-Heinz Rummenigge,Alemania Occidental,5,7,0.71,../jugadores/karl_heinz_rummenigge.php,https://www.losmundialesdefutbol.com/mundiales/1982_goleadores.php,2026-03-16T22:27:03.648290
+1982,3,Zbigniew Boniek,Polonia,4,6,0.67,../jugadores/zbigniew_boniek.php,https://www.losmundialesdefutbol.com/mundiales/1982_goleadores.php,2026-03-16T22:27:03.648290
+1982,5,Gerry Armstrong,Irlanda del Norte,3,5,0.60,../jugadores/gerry_armstrong.php,https://www.losmundialesdefutbol.com/mundiales/1982_goleadores.php,2026-03-16T22:27:03.648290
+1978,1,Mario Kempes,Argentina,6,7,0.86,../jugadores/mario_kempes.php,https://www.losmundialesdefutbol.com/mundiales/1978_goleadores.php,2026-03-16T22:27:13.085864
+1978,2,Teofilo Cubillas,Perú,5,6,0.83,../jugadores/teofilo_cubillas.php,https://www.losmundialesdefutbol.com/mundiales/1978_goleadores.php,2026-03-16T22:27:13.085864
+1978,4,Hans Krankl,Austria,4,6,0.67,../jugadores/hans_krankl.php,https://www.losmundialesdefutbol.com/mundiales/1978_goleadores.php,2026-03-16T22:27:13.085864
+1978,6,Dirceu,Brasil,3,7,0.43,../jugadores/dirceu.php,https://www.losmundialesdefutbol.com/mundiales/1978_goleadores.php,2026-03-16T22:27:13.085864
+1974,1,Grzegorz Lato,Polonia,7,7,1.00,../jugadores/grzegorz_lato.php,https://www.losmundialesdefutbol.com/mundiales/1974_goleadores.php,2026-03-16T22:27:21.974343
+1974,2,Johan Neeskens,Paises Bajos,5,7,0.71,../jugadores/johan_neeskens.php,https://www.losmundialesdefutbol.com/mundiales/1974_goleadores.php,2026-03-16T22:27:21.974343
+1974,4,Ralf Edstrom,Suecia,4,6,0.67,../jugadores/ralf_edstrom.php,https://www.losmundialesdefutbol.com/mundiales/1974_goleadores.php,2026-03-16T22:27:21.974343
+1974,7,Dusan Bajevic,Yugoslavia,3,3,1.00,../jugadores/dusan_bajevic.php,https://www.losmundialesdefutbol.com/mundiales/1974_goleadores.php,2026-03-16T22:27:21.974343
+1970,1,Gerd Mueller,Alemania Occidental,10,6,1.67,../jugadores/gerd_mueller.php,https://www.losmundialesdefutbol.com/mundiales/1970_goleadores.php,2026-03-16T22:27:31.733311
+1970,2,Jairzinho,Brasil,7,6,1.17,../jugadores/jairzinho.php,https://www.losmundialesdefutbol.com/mundiales/1970_goleadores.php,2026-03-16T22:27:31.733311
+1970,3,Teofilo Cubillas,Perú,5,4,1.25,../jugadores/teofilo_cubillas.php,https://www.losmundialesdefutbol.com/mundiales/1970_goleadores.php,2026-03-16T22:27:31.733311
+1970,4,Anatoly Bishovets,URSS,4,4,1.00,../jugadores/anatoly_bishovets.php,https://www.losmundialesdefutbol.com/mundiales/1970_goleadores.php,2026-03-16T22:27:31.733311
+1970,6,Gigi Riva,Italia,3,6,0.50,../jugadores/gigi_riva.php,https://www.losmundialesdefutbol.com/mundiales/1970_goleadores.php,2026-03-16T22:27:31.733311
+1966,1,Eusebio,Portugal,9,6,1.50,../jugadores/eusebio.php,https://www.losmundialesdefutbol.com/mundiales/1966_goleadores.php,2026-03-16T22:27:39.570962
+1966,2,Helmut Haller,Alemania Occidental,6,5,1.20,../jugadores/helmut_haller.php,https://www.losmundialesdefutbol.com/mundiales/1966_goleadores.php,2026-03-16T22:27:39.570962
+1966,3,Franz Beckenbauer,Alemania Occidental,4,6,0.67,../jugadores/franz_beckenbauer.php,https://www.losmundialesdefutbol.com/mundiales/1966_goleadores.php,2026-03-16T22:27:39.570962
+1966,7,Luis Artime,Argentina,3,4,0.75,../jugadores/luis_artime.php,https://www.losmundialesdefutbol.com/mundiales/1966_goleadores.php,2026-03-16T22:27:39.570962
+1962,1,Florian Albert,Hungría,4,3,1.33,../jugadores/florian_albert.php,https://www.losmundialesdefutbol.com/mundiales/1962_goleadores.php,2026-03-16T22:27:49.092336
+1962,7,Amarildo,Brasil,3,4,0.75,../jugadores/amarildo.php,https://www.losmundialesdefutbol.com/mundiales/1962_goleadores.php,2026-03-16T22:27:49.092336
+1958,1,Just Fontaine,Francia,13,6,2.17,../jugadores/just_fontaine.php,https://www.losmundialesdefutbol.com/mundiales/1958_goleadores.php,2026-03-16T22:27:58.819506
+1958,2,Pelé,Brasil,6,4,1.50,../jugadores/pele.php,https://www.losmundialesdefutbol.com/mundiales/1958_goleadores.php,2026-03-16T22:27:58.819506
+1958,4,Peter Mcparland,Irlanda del Norte,5,5,1.00,../jugadores/peter_mcparland.php,https://www.losmundialesdefutbol.com/mundiales/1958_goleadores.php,2026-03-16T22:27:58.819506
+1958,6,Kurt Hamrin,Suecia,4,5,0.80,../jugadores/kurt_hamrin.php,https://www.losmundialesdefutbol.com/mundiales/1958_goleadores.php,2026-03-16T22:27:58.819506
+1958,10,Omar Oreste Corbatta,Argentina,3,3,1.00,../jugadores/omar_oreste_corbatta.php,https://www.losmundialesdefutbol.com/mundiales/1958_goleadores.php,2026-03-16T22:27:58.819506
+1954,1,Sandor Kocsis,Hungría,11,5,2.20,../jugadores/sandor_kocsis.php,https://www.losmundialesdefutbol.com/mundiales/1954_goleadores.php,2026-03-16T22:28:07.619739
+1954,2,Sepp Huegi,Suiza,6,3,2.00,../jugadores/sepp_huegi.php,https://www.losmundialesdefutbol.com/mundiales/1954_goleadores.php,2026-03-16T22:28:07.619739
+1954,5,Robert Ballaman,Suiza,4,4,1.00,../jugadores/robert_ballaman.php,https://www.losmundialesdefutbol.com/mundiales/1954_goleadores.php,2026-03-16T22:28:07.619739
+1954,12,Leopold Anoul,Bélgica,3,2,1.50,../jugadores/leopold_anoul.php,https://www.losmundialesdefutbol.com/mundiales/1954_goleadores.php,2026-03-16T22:28:07.619739
+1950,1,Ademir,Brasil,9,6,1.50,../jugadores/ademir.php,https://www.losmundialesdefutbol.com/mundiales/1950_goleadores.php,2026-03-16T22:28:14.576868
+1950,2,Oscar Miguez,Uruguay,5,4,1.25,../jugadores/oscar_miguez.php,https://www.losmundialesdefutbol.com/mundiales/1950_goleadores.php,2026-03-16T22:28:14.576868
+1950,3,Estanislao Basora,España,4,6,0.67,../jugadores/estanislao_basora.php,https://www.losmundialesdefutbol.com/mundiales/1950_goleadores.php,2026-03-16T22:28:14.576868
+1950,7,Karl-Erik Palmer,Suecia,3,5,0.60,../jugadores/karl_erik_palmer.php,https://www.losmundialesdefutbol.com/mundiales/1950_goleadores.php,2026-03-16T22:28:14.576868
+1938,1,Leonidas,Brasil,7,4,1.75,../jugadores/leonidas.php,https://www.losmundialesdefutbol.com/mundiales/1938_goleadores.php,2026-03-16T22:28:22.971347
+1938,2,Silvio Piola,Italia,5,4,1.25,../jugadores/silvio_piola.php,https://www.losmundialesdefutbol.com/mundiales/1938_goleadores.php,2026-03-16T22:28:22.971347
+1938,5,Gino Colaussi,Italia,4,3,1.33,../jugadores/gino_colaussi.php,https://www.losmundialesdefutbol.com/mundiales/1938_goleadores.php,2026-03-16T22:28:22.971347
+1938,7,Andre Abegglen,Suiza,3,3,1.00,../jugadores/andre_abegglen.php,https://www.losmundialesdefutbol.com/mundiales/1938_goleadores.php,2026-03-16T22:28:22.971347
+1934,1,Oldrich Nejedly,Checoslovaquia,5,4,1.25,../jugadores/oldrich_nejedly.php,https://www.losmundialesdefutbol.com/mundiales/1934_goleadores.php,2026-03-16T22:28:31.776950
+1934,2,Edmund Conen,Alemania,4,4,1.00,../jugadores/edmund_conen.php,https://www.losmundialesdefutbol.com/mundiales/1934_goleadores.php,2026-03-16T22:28:31.776950
+1934,4,Leopold Kielholz,Suiza,3,2,1.50,../jugadores/leopold_kielholz.php,https://www.losmundialesdefutbol.com/mundiales/1934_goleadores.php,2026-03-16T22:28:31.776950
+1930,1,Guillermo Stabile,Argentina,8,4,2.00,../jugadores/guillermo_stabile.php,https://www.losmundialesdefutbol.com/mundiales/1930_goleadores.php,2026-03-16T22:28:41.962866
+1930,2,Pedro Cea,Uruguay,5,4,1.25,../jugadores/pedro_cea.php,https://www.losmundialesdefutbol.com/mundiales/1930_goleadores.php,2026-03-16T22:28:41.962866
+1930,3,Bert Patenaude,Estados Unidos,4,3,1.33,../jugadores/bert_patenaude.php,https://www.losmundialesdefutbol.com/mundiales/1930_goleadores.php,2026-03-16T22:28:41.962866
+1930,4,Juan Anselmo,Uruguay,3,2,1.50,../jugadores/juan_anselmo.php,https://www.losmundialesdefutbol.com/mundiales/1930_goleadores.php,2026-03-16T22:28:41.962866

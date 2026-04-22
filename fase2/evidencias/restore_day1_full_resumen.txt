@@ -1,9 +1,10 @@
 RESTORE FULL DIA 1
-inicio=2026-04-07 18:11:27
-fin=2026-04-07 18:11:44
-inicio_total_operativa=2026-04-07 18:11:27
-fin_total_operativa=2026-04-07 18:11:48
-duracion_prepare_seg=7.36
-duracion_copyback_seg=9.45
-duracion_restore_nucleo_seg=16,81
-duracion_restore_total_operativa_seg=21
+inicio=2026-04-17 20:50:51
+fin=2026-04-17 20:50:56
+inicio_total_operativa=2026-04-17 20:50:51
+fin_total_operativa=2026-04-17 20:50:57
+duracion_prepare_seg=4.70
+duracion_copyback_seg=Command exited with non-zero status 127
+0.00
+duracion_restore_nucleo_seg=4,7
+duracion_restore_total_operativa_seg=6
