@@ -105,3 +105,58 @@ Esta es la forma mas rapida de ver los datos sin instalar nada extra, los pasos 
 -->De todas formas ustede revisen y si hay que cambiar algo se cambiá.
 
 
+# metodos
+para usar los metodos solo entran a la carpeta scripts
+
+modifican los parametros que necesiten tomando en cuenta que:
+
+## en **consulta_mundial.py** 
+
+- anio → obligatorio
+- grupo → opcional, por ejemplo "A"
+- pais → opcional, por ejemplo "Argentina"
+- fecha → opcional,por ejemplo "18-Dec-2022" o "13-Jul-1930"
+```bash
+metodo_info_mundial(2010, grupo="B", pais="España")
+```
+para ejecutarlo unicamente 
+
+```bash
+python3 consulta_mundial.py
+```
+
+y devuelve un diccionario con:
+- info_general
+- grupos
+- partidos
+- posiciones_finales
+- goleadores
+- premios
+- tarjetas
+- planteles
+
+
+
+## en **consulta_pais.py** 
+
+- pais → obligatorio
+- anio → opcional
+- fase → opcional, por ejemplo "Final", "Grupo", "Semis", "Octavos"
+
+```bash
+metodo_info_pais("Brasil", anio=2014)
+```
+para ejecutarlo unicamente 
+
+```bash
+python3 consulta_pais.py
+```
+devuelve un diccionario con:
+- info_historica
+- participaciones
+- Dentro de info_historica va:
+- años de participación
+- si fue campeón
+- si fue subcampeón
+- sedes
+- estadísticas históricas
