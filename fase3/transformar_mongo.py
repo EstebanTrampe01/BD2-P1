@@ -108,6 +108,22 @@ def col_canonical(df, col):
 
 #  Derivar subcampeon desde posiciones_finales (posicion == 2)
 
+def build_subcampeon_anios_por_seleccion(df_pos):
+    mapa = defaultdict(list)
+    if df_pos is None:
+        return mapa
+
+    for _, r in df_pos.iterrows():
+        if str(r.get("posicion", "")).strip() == "2":
+            anio = texto(r.get("mundial", ""))
+            sel = canonical(texto(r.get("seleccion", "")) or "")
+            if anio and sel:
+                mapa[sel].append(anio)
+
+    for sel in mapa:
+        mapa[sel] = sorted(set(mapa[sel]), key=int)
+
+    return mapa
 
 def build_subcampeon_map(df_pos):
     mapa = {}
@@ -150,49 +166,81 @@ def build_index_mundiales(df, subcampeon_map):
     return idx
 
 
-def build_index_selecciones(df):
+def build_index_selecciones(df, subcampeon_anios_map):
     idx = {}
+
     for _, r in df.iterrows():
         nom = canonical(texto(r.get("seleccion", "")) or "")
         if not nom:
             continue
+
         campeon_anios = [
             a.strip() for a in str(r.get("campeon_anios", "")).split(",")
             if re.match(r"^\d{4}$", a.strip())
         ]
-        subcampeon_anios = [
+
+        subcampeon_anios_csv = [
             a.strip() for a in str(r.get("subcampeon_anios", "")).split(",")
             if re.match(r"^\d{4}$", a.strip())
         ]
+
+        # prioridad a lo derivado desde posiciones_finales
+        subcampeon_anios = sorted(
+            set(subcampeon_anios_csv + subcampeon_anios_map.get(nom, [])),
+            key=int
+        )
+
         if nom in idx:
-            # Fusionar filas duplicadas por alias
-            idx[nom]["campeon_anios"]    = sorted(set(idx[nom]["campeon_anios"]    + campeon_anios))
-            idx[nom]["subcampeon_anios"] = sorted(set(idx[nom]["subcampeon_anios"] + subcampeon_anios))
-            for campo in ("mundiales_jugados","campeon_veces","subcampeon_veces",
-                          "partidos_jugados","partidos_ganados","partidos_empatados",
-                          "partidos_perdidos","goles_favor","goles_contra"):
+            # fusionar filas duplicadas por alias
+            idx[nom]["campeon_anios"] = sorted(
+                set(idx[nom]["campeon_anios"] + campeon_anios),
+                key=int
+            )
+
+            idx[nom]["subcampeon_anios"] = sorted(
+                set(idx[nom]["subcampeon_anios"] + subcampeon_anios),
+                key=int
+            )
+
+            # asegurar coherencia del conteo
+            idx[nom]["subcampeon_veces"] = len(idx[nom]["subcampeon_anios"])
+            idx[nom]["campeon_veces"] = len(idx[nom]["campeon_anios"]) if idx[nom]["campeon_anios"] else idx[nom].get("campeon_veces")
+
+            for campo in (
+                "mundiales_jugados",
+                "posicion_historica",
+                "partidos_jugados",
+                "partidos_ganados",
+                "partidos_empatados",
+                "partidos_perdidos",
+                "goles_favor",
+                "goles_contra",
+                "diferencia_gol",
+            ):
                 v_nuevo = entero(r.get(campo, ""))
                 v_viejo = idx[nom].get(campo)
                 if v_nuevo is not None and (v_viejo is None or v_nuevo > v_viejo):
                     idx[nom][campo] = v_nuevo
+
             continue
 
         idx[nom] = {
-            "nombre":             nom,
-            "mundiales_jugados":  entero(r.get("mundiales_jugados", "")),
-            "campeon_veces":      entero(r.get("campeon_veces", "")),
-            "campeon_anios":      campeon_anios,
-            "subcampeon_veces":   entero(r.get("subcampeon_veces", "")),
-            "subcampeon_anios":   subcampeon_anios,
+            "nombre": nom,
+            "mundiales_jugados": entero(r.get("mundiales_jugados", "")),
+            "campeon_veces": len(campeon_anios) if campeon_anios else entero(r.get("campeon_veces", "")),
+            "campeon_anios": sorted(set(campeon_anios), key=int) if campeon_anios else [],
+            "subcampeon_veces": len(subcampeon_anios) if subcampeon_anios else entero(r.get("subcampeon_veces", "")),
+            "subcampeon_anios": subcampeon_anios,
             "posicion_historica": entero(r.get("posicion_historica", "")),
-            "partidos_jugados":   entero(r.get("partidos_jugados", "")),
-            "partidos_ganados":   entero(r.get("partidos_ganados", "")),
+            "partidos_jugados": entero(r.get("partidos_jugados", "")),
+            "partidos_ganados": entero(r.get("partidos_ganados", "")),
             "partidos_empatados": entero(r.get("partidos_empatados", "")),
-            "partidos_perdidos":  entero(r.get("partidos_perdidos", "")),
-            "goles_favor":        entero(r.get("goles_favor", "")),
-            "goles_contra":       entero(r.get("goles_contra", "")),
-            "diferencia_gol":     entero(r.get("diferencia_gol", "")),
+            "partidos_perdidos": entero(r.get("partidos_perdidos", "")),
+            "goles_favor": entero(r.get("goles_favor", "")),
+            "goles_contra": entero(r.get("goles_contra", "")),
+            "diferencia_gol": entero(r.get("diferencia_gol", "")),
         }
+
     return idx
 
 
@@ -579,8 +627,10 @@ def main():
 
     print("\n── Construccion indices")
     subcampeon_map = build_subcampeon_map(df_pos)
+    subcampeon_anios_map = build_subcampeon_anios_por_seleccion(df_pos)
+
     idx_mund = build_index_mundiales(df_mund, subcampeon_map)
-    idx_sel  = build_index_selecciones(df_sel)
+    idx_sel = build_index_selecciones(df_sel, subcampeon_anios_map)
     print(f"  Mundiales: {len(idx_mund)}  |  Selecciones: {len(idx_sel)}")
 
     print("\n── Indexando goles y alineaciones por partido")
