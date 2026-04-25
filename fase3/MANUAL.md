@@ -134,100 +134,154 @@ También se puede usar en MongoDB Compass. El README ya traía esa guía.
 
 ## 6. Qué hace `transformar_mongo.py`
 
-Este script es el núcleo del proyecto.
+Este script es el núcleo de la transformación: toma CSV relacionales y los convierte en documentos JSON listos para MongoDB.
 
-### 6.1 Lectura de CSV
+### 6.1 Entradas que consume
 
-Lee, detecta separador, limpia columnas y normaliza valores. También convierte tipos:
+Lee archivos desde `./output/` y espera principalmente:
 
-* enteros,
-* decimales,
-* texto,
-* altura en cm. 
+* `mundiales.csv`
+* `selecciones.csv`
+* `partidos.csv`
+* `grupos.csv`
+* `posiciones_finales.csv`
+* `goleadores.csv`
+* `premios.csv`
+* `tarjetas.csv`
+* `planteles.csv`
+* `jugadores_por_mundial.csv`
+* `partido_goles.csv`
+* `partido_jugadores.csv`
 
-### 6.2 Unificación de nombres
+Si falta un CSV secundario, el script sigue cuando puede. Si faltan CSV base (`mundiales`, `selecciones`, `partidos`), se detiene.
 
-Se definió un diccionario `ALIASES` y una función `canonical()` para normalizar nombres históricos de selecciones.
-Esto evita duplicados como distintos nombres para un mismo país. 
+### 6.2 Limpieza y tipado de datos
 
-### 6.3 Construcción de índices en memoria
+Antes de agrupar, aplica limpieza para dejar datos consistentes:
 
-Se generan estructuras intermedias para:
+* detección automática del separador CSV (coma o punto y coma),
+* normalización de nombres de columnas a minúscula,
+* tratamiento de valores vacíos (`""`, `nan`, `NULL`, `-`, etc.),
+* conversión de enteros y decimales,
+* normalización de texto,
+* conversión de altura a centímetros.
 
-* mundiales,
-* selecciones,
-* goles por partido,
-* alineaciones,
-* grupos,
-* posiciones,
-* premios,
-* tarjetas,
-* planteles,
-* jugadores por mundial.
+Esto evita que un mismo campo llegue con tipos distintos al documento final.
 
-### 6.4 Construcción de documentos
+### 6.3 Unificación de nombres históricos
 
-Se generan dos salidas finales:
+Usa `ALIASES` y `canonical()` para mapear variaciones históricas a un único nombre canónico (por ejemplo, nombres antiguos de selecciones).
+
+Además, el script recorre datos de partidos/grupos/posiciones para detectar selecciones que no estén en `selecciones.csv` y las agrega automáticamente para no perder historial.
+
+### 6.4 Derivación de subcampeones
+
+No depende solo de los valores de `selecciones.csv` para subcampeonatos. También calcula:
+
+* subcampeón por mundial (`posicion == 2` en `posiciones_finales`),
+* años de subcampeonato por selección.
+
+Con eso corrige inconsistencias de origen y deja `subcampeon_anios` y `subcampeon_veces` coherentes.
+
+### 6.5 Estructuras intermedias (índices en memoria)
+
+Construye mapas para armar documentos eficientes:
+
+* índice de mundiales (`anio` -> metadatos del torneo),
+* índice de selecciones (`nombre` -> estadísticas históricas),
+* goles por partido (por slug de URL),
+* alineaciones por partido (local/visitante),
+* agrupaciones por año de grupos, posiciones, goleadores, premios y tarjetas,
+* agrupaciones por año+selección de planteles y estadísticas de jugadores.
+
+Estas estructuras permiten incrustar información relacionada sin hacer joins en MongoDB.
+
+### 6.6 Construcción de documentos finales
+
+Genera dos listas de documentos:
 
 * `docs_mundiales`
-* `docs_selecciones` 
+* `docs_selecciones`
 
-#### Estructura de `selecciones`
+`docs_mundiales` guarda por edición: resumen del torneo, partidos con goles y alineaciones, grupos, posiciones finales, goleadores, premios, tarjetas y planteles.
 
-Cada selección queda con:
+`docs_selecciones` guarda por país: estadísticas históricas, años como sede y participaciones. Cada participación incluye:
 
-* datos históricos,
-* `sedes`,
-* `participaciones`,
-* y en cada participación:
+* `anio`
+* `fue_sede`
+* `fue_campeon`
+* `fue_subcampeon`
+* `grupo`
+* `posicion_final`
+* `etapa_final`
+* `partidos`
+* `plantel`
+* `estadisticas_jugadores`
 
-  * `anio`
-  * `fue_sede`
-  * `fue_campeon`
-  * `fue_subcampeon`
-  * `grupo`
-  * `posicion_final`
-  * `etapa_final`
-  * `partidos`
-  * `plantel`
-  * `estadisticas_jugadores` 
+### 6.7 Salidas que produce
+
+Escribe en `./output_mongo/`:
+
+* `mundiales.json`
+* `selecciones.json`
+
+Esos dos archivos son la entrada directa del script de carga (`cargar_mongo.py`).
 
 ---
 
 ## 7. Qué hace `cargar_mongo.py`
 
-Este script se encarga de insertar la data en MongoDB.
+Este script toma los JSON generados por la transformación y los publica en MongoDB, dejando la base lista para consultas.
 
-### 7.1 Carga de colecciones
+### 7.1 Conexión y validación de servicio
 
-Hace esto:
+Primero crea cliente Mongo con la URI configurada y ejecuta un `ping`.
 
-* lee `mundiales.json`
-* lee `selecciones.json`
-* elimina la colección anterior
-* inserta nuevamente los documentos.
+Si no hay conexión, muestra error claro y recomienda levantar Docker (`docker-compose up -d`).
 
-### 7.2 Índices creados
+### 7.2 Carga de colecciones (proceso completo)
+
+Para cada colección (`mundiales`, `selecciones`) realiza:
+
+* lectura del archivo JSON correspondiente en `./output_mongo/`,
+* validación de existencia del archivo,
+* validación de que no esté vacío,
+* limpieza de la colección destino,
+* inserción masiva con `insert_many`.
+
+Este enfoque hace la carga idempotente: ejecutar nuevamente deja el mismo estado final de datos.
+
+### 7.3 Índices creados y para qué sirven
+
+Después de insertar, crea índices para acelerar filtros usados por la CLI.
 
 #### En `mundiales`
 
-* `anio` único
-* `partidos.local`
-* `partidos.visitante`
-* `partidos.etapa`
-* `partidos.fecha`
-* `grupos.grupo`
-* `grupos.seleccion`
+* `anio` (único): búsqueda directa de una edición.
+* `partidos.local`: filtros de partidos por selección local.
+* `partidos.visitante`: filtros de partidos por selección visitante.
+* `partidos.etapa`: filtros por fase (grupos, final, etc.).
+* `partidos.fecha`: filtros por día de partido.
+* `grupos.grupo`: filtros por grupo (A, B, C...).
+* `grupos.seleccion`: consulta de selección dentro de grupos.
 
 #### En `selecciones`
 
-* `nombre` único
-* índice de texto en `nombre`
-* `participaciones.anio`
-* `participaciones.partidos.local`
-* `participaciones.partidos.visitante` 
+* `nombre` (único): búsqueda exacta por país.
+* índice de texto en `nombre`: búsqueda parcial/flexible.
+* `participaciones.anio`: filtro de historial por año.
+* `participaciones.partidos.local`: localización de partidos donde la selección fue local.
+* `participaciones.partidos.visitante`: localización de partidos donde fue visitante.
 
-Esto se hizo para que las consultas del día de la calificación respondan rápido, tal como exige el enunciado. 
+### 7.4 Resultado final de este script
+
+Al terminar, Mongo queda con:
+
+* colecciones reconstruidas,
+* datos cargados desde JSON,
+* índices listos para consultas rápidas desde `metodos_consultas.py` y `cli_consultas.py`.
+
+En resumen: `transformar_mongo.py` modela la data y `cargar_mongo.py` la publica con rendimiento de consulta.
 
 ---
 
