@@ -1,4 +1,0 @@
-BACKUP INCREMENTAL DIA 3
-inicio=2026-04-09 17:21:32
-fin=2026-04-09 17:21:43
-duracion_seg=10.87

@@ -1,4 +1,0 @@
-BACKUP FULL DIA 3
-inicio=2026-04-09 16:25:43
-fin=2026-04-09 16:25:57
-duracion_seg=14.12
